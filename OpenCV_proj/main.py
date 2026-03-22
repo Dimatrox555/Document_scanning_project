@@ -1,7 +1,7 @@
 import cv2 as cv
 import numpy as np
 
-img = cv.imread('images/test2.jpg')
+img = cv.imread('images/test3.png')
 
 ### вращение изображения
 def rotate(image, angle):
