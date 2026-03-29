@@ -1,11 +1,9 @@
 import cv2 as cv
 import numpy as np
 import json
-import math
-
 
 ### чтение png
-img = cv.imread('images/testt.png')
+img = cv.imread('images/example.jpg')
 h, w = img.shape[:2]
 
 ### чтение разметки
@@ -14,32 +12,26 @@ data = json.load(file)
 
 ### создание списка словарей с данными о точках
 point_data = []
-for i in data[1]['kp-1']:
+for i in data[3]['kp-1']:
     point_data.append(i)
 
-### создание словаря с координатами всех точек в пикселях
-points = {
-    "point1": [point_data[0]['x']/100*w, point_data[0]['y']/100*h],
-    "point2": [point_data[1]['x']/100*w, point_data[1]['y']/100*h],
-    "point3": [point_data[2]['x']/100*w, point_data[2]['y']/100*h],
-    "point4": [point_data[3]['x']/100*w, point_data[3]['y']/100*h]
-}
+### создание списка с координатами всех точек в пикселях
+points = np.array([
+    [point_data[0]['x']/100*w, point_data[0]['y']/100*h],
+    [point_data[1]['x']/100*w, point_data[1]['y']/100*h],
+    [point_data[2]['x']/100*w, point_data[2]['y']/100*h],
+    [point_data[3]['x']/100*w, point_data[3]['y']/100*h]
+], dtype=np.float32)
 
-### вычисления необходимого угла поворота через тангенс
-rotation_angle = math.degrees(math.atan2((points['point1'][1]-points['point2'][1]), (points['point2'][0]-points['point1'][0])))
+### создание точек назначения для трансформации (примерно лист а4)
+destination_points = np.array([[0, 0], [297, 0], [0, 210], [297, 210]], dtype=np.float32)
 
-### вращение изображения
-def rotate(image, angle):
-    ## добавим чёрные края по бокам чтобы изображение себя не обрезало
-
-    image_padded = cv.copyMakeBorder(image, 150, 150, 150, 150, cv.BORDER_CONSTANT, (255, 255, 255))
-    ## найдём центр вращения
-    height, width = image_padded.shape[:2]
-    rotation_point = (width // 2, height // 2)
-
-    ## найдём какую-то матрицу вращения и вернём развёрнутое изображение
-    mat = cv.getRotationMatrix2D(rotation_point, angle, 1)
-    return cv.warpAffine(image_padded, mat, (width, height))
+### трансформация изображения
+def image_transform(target):
+    ## получение матрицы перспективы из разметки и точек назначения
+    mat = cv.getPerspectiveTransform(points, destination_points*2)
+    ## вывод нужного изображения
+    return cv.warpPerspective(target, mat, (297*2, 210*2))
 
 ### конвертация изображения в чёрнобелый
 def grayscale(image):
@@ -47,8 +39,7 @@ def grayscale(image):
     return result
 
 ### программа
-
-img = rotate(img, -rotation_angle)
+img = image_transform(img)
 img = grayscale(img)
 
 ### запись готового результата в файл и показ изображения

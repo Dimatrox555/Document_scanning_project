@@ -100,5 +100,107 @@
   "created_at": "2026-03-28T18:33:59.567644Z",
   "updated_at": "2026-03-28T18:33:59.567680Z",
   "lead_time": 54.692
+},
+{
+  "img": "\/data\/upload\/1\/c2bb1620-doc_persp.png",
+  "id": 3,
+  "kp-1": [
+    {
+      "x": 21.256110220504148,
+      "y": 31.630643999563723,
+      "width": 0.2426903963943141,
+      "keypointlabels": [
+        "existing_point"
+      ],
+      "original_width": 986,
+      "original_height": 609
+    },
+    {
+      "x": 70.09319182293771,
+      "y": 23.714952411852828,
+      "width": 0.2426903963943141,
+      "keypointlabels": [
+        "existing_point"
+      ],
+      "original_width": 986,
+      "original_height": 609
+    },
+    {
+      "x": 27.00893399147006,
+      "y": 82.98590635638425,
+      "width": 0.2426903963943141,
+      "keypointlabels": [
+        "existing_point"
+      ],
+      "original_width": 986,
+      "original_height": 609
+    },
+    {
+      "x": 74.61168241100846,
+      "y": 63.42176986482979,
+      "width": 0.2426903963943141,
+      "keypointlabels": [
+        "existing_point"
+      ],
+      "original_width": 986,
+      "original_height": 609
+    }
+  ],
+  "annotator": 1,
+  "annotation_id": 3,
+  "created_at": "2026-03-29T11:15:55.955627Z",
+  "updated_at": "2026-03-29T11:15:55.955645Z",
+  "lead_time": 33.014
+},
+{
+  "img": "\/data\/upload\/1\/ed14a5cb-%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80.jpg",
+  "id": 4,
+  "kp-1": [
+    {
+      "x": 46.2800034167592,
+      "y": 0,
+      "width": 0.2874534373711751,
+      "keypointlabels": [
+        "existing_point"
+      ],
+      "original_width": 529,
+      "original_height": 387
+    },
+    {
+      "x": 95.29081448854456,
+      "y": 19.05697445972495,
+      "width": 0.2874534373711751,
+      "keypointlabels": [
+        "existing_point"
+      ],
+      "original_width": 529,
+      "original_height": 387
+    },
+    {
+      "x": 0,
+      "y": 61.493123772102166,
+      "width": 0.2874534373711751,
+      "keypointlabels": [
+        "existing_point"
+      ],
+      "original_width": 529,
+      "original_height": 387
+    },
+    {
+      "x": 62.80857606560177,
+      "y": 94.30255402750491,
+      "width": 0.2874534373711751,
+      "keypointlabels": [
+        "existing_point"
+      ],
+      "original_width": 529,
+      "original_height": 387
+    }
+  ],
+  "annotator": 1,
+  "annotation_id": 4,
+  "created_at": "2026-03-29T11:56:26.055319Z",
+  "updated_at": "2026-03-29T11:56:26.055336Z",
+  "lead_time": 37.838
 }
 ]
