@@ -8,6 +8,10 @@ import pandas as pd
 import json
 
 
+
+import cv2
+
+
 def ocr_with_confidence(img):
     df = pt.image_to_data(img, output_type = pt.Output.DATAFRAME)
     df = df[df["conf"] != -1]
@@ -34,92 +38,34 @@ def normalize_text(text):
     prepro = re.sub(r"(?<=[\d-])О|О(?=[\d-])", "0", prepro)
     return prepro
 
-def get_pattern(doc_type, feild, pattern_index=0):
-    pattern_key = patterns["doc_schemas"][doc_type][feild][pattern_index]
+def get_pattern(doc_type, field, pattern_index=0):
+    pattern_key = patterns["doc_schemas"][doc_type][field][pattern_index]
     return patterns["pattern_lib"][pattern_key]
-
-def get_full_name(text, pattern):
-    """получение фио"""
-    if not isinstance(text, str):
-        return None
-    match = re.search(pattern, text, re.IGNORECASE)
-    return " ".join(match.groups()) if match else None
-
-def get_reg_num(text, pattern):
-    """получение регистрационного номера"""
-    if not isinstance(text, str):
-        return None
-    match = re.search(pattern, text, re.IGNORECASE)
-    return match.group(1) if match else None
-
-def get_own_date(text, pattern):
-    """получение даты получения"""
-    if not isinstance(text, str):
-        return None
-    match = re.search(pattern, text, re.IGNORECASE)
-    return match.group(1) if match else None
-        
-
-def get_doc_num(text, pattern):
-    """получение номера документа"""
-    if not isinstance(text, str):
-        return None
-    match = re.search(pattern, text, re.IGNORECASE)
-    return match.group(1) if match else None
-
-def get_date_from_to(text, pattern, flg):
-    """получение даты от/до"""
-    if flg not in (0,1):
-        raise ValueError("1 или 0 надо")
-    if not isinstance(text, str):
-        return None
-    match = re.search(pattern, text, re.IGNORECASE)
-    if flg == 0:
-        return match.group(1) if match else None 
-    else: 
-        return match.group(2) if match else None 
     
-
-def get_city_name(text, pattern):
-    """получение названия города"""
-    if not isinstance(text, str):
-        return None
+def extract_document(text,doc_type,field, pattern_index=0):
+    pattern = get_pattern(doc_type, field, pattern_index)
     match = re.search(pattern, text, re.IGNORECASE)
-    return match.group(1) if match else None
-
-
-def get_new_spec(text, pattern):
-    """получение обученой специальности"""
-    if not isinstance(text, str):
+    if not match:
         return None
-    match = re.search(pattern, text, re.IGNORECASE)
-    return match.group(1) if match else None
+    if len(match.groups()) > 1 :
+        return " ".join(match.groups())
+    else:
+        return match.group(1)
 
-def get_hours_num(text,pattern):
-    if not isinstance(text, str):
-        return None
-    match = re.search(pattern, text, re.IGNORECASE)
-    return match.group(1) if match else None
 
-def get_organization(text, pattern):
-    if not isinstance(text,str):
-        return None
-    match = re.search(pattern,text, re.IGNORECASE)
-    return match.group(1) if match else None
-    
 def build_json(text,save_file=False):
     text = normalize_text(text)
     jsonn = {
-        "full_name":get_full_name(text,get_pattern("doc_type1", "full_name")),
-        "own_date":get_own_date(text,get_pattern("doc_type1", "own_date")),
-        "reg_num": get_reg_num(text,get_pattern("doc_type1", "reg_num")),
-        "doc_num": get_doc_num(text,get_pattern("doc_type1", "doc_num")),
-        "date_from": get_date_from_to(text,get_pattern("doc_type1", "date_from_to"), 0),
-        "date_to": get_date_from_to(text,get_pattern("doc_type1", "date_from_to"), 1),
-        "city_name": get_city_name(text,get_pattern("doc_type1", "city_name")),
-        "new_spec": get_new_spec(text,get_pattern("doc_type1", "new_spec")),
-        "hours_num": get_hours_num(text,get_pattern("doc_type1", "hours_num")),
-        "organization" : get_organization(text, get_pattern("doc_type1", "organization"))
+        "full_name":extract_document(text,"doc_type1", "full_name"),
+        "own_date":extract_document(text,"doc_type1", "own_date"),
+        "reg_num": extract_document(text,"doc_type1", "reg_num"),
+        "doc_num": extract_document(text,"doc_type1", "doc_num"),
+        "date_from": extract_document(text,"doc_type1", "date_from"),
+        "date_to": extract_document(text,"doc_type1", "date_to"),
+        "city_name": extract_document(text,"doc_type1", "city_name"),
+        "new_spec": extract_document(text,"doc_type1", "new_spec"),
+        "hours_num": extract_document(text, "doc_type1", "hours_num"),
+        "organization" : extract_document(text, "doc_type1", "organization")
     }
     if save_file:
         with open("result.json", "w", encoding="utf-8") as f:
@@ -130,3 +76,19 @@ def process_image(img):
     orig_conf, orig_text = ocr_with_confidence(img)
     text = orig_text
     return build_json(text)
+
+
+
+
+
+def preprocess(img):
+    big_img = cv2.resize(img, None, fx=2, fy=2)
+    gray = cv2.cvtColor(big_img, cv2.COLOR_BGR2GRAY)
+    _, thresh = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
+    return thresh
+
+img = cv2.imread("/Users/kjj/Downloads/теория вероятности/tests/photo_2026-03-30_04-50-57.jpg")
+
+df = process_image(img)
+print(df)
+print(ocr_with_confidence(img)[1])
