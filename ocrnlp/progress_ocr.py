@@ -1,15 +1,7 @@
 import pytesseract as pt 
-from PIL import Image
 from patterns import patterns
-import numpy as np
 import re
-import pandas as pd
-
 import json
-
-
-
-import cv2
 
 
 def ocr_with_confidence(img):
@@ -32,7 +24,7 @@ def replace_chars(text, mapping):
     for old_char, new_char in mapping.items():
         text = text.replace(old_char, new_char)
     return text
-
+#TODO доделать с 6 б и тд
 def normalize_text(text):
     prepro = replace_chars(text, replacements)
     prepro = re.sub(r"(?<=[\d-])О|О(?=[\d-])", "0", prepro)
@@ -76,19 +68,3 @@ def process_image(img):
     orig_conf, orig_text = ocr_with_confidence(img)
     text = orig_text
     return build_json(text)
-
-
-
-
-
-def preprocess(img):
-    big_img = cv2.resize(img, None, fx=2, fy=2)
-    gray = cv2.cvtColor(big_img, cv2.COLOR_BGR2GRAY)
-    _, thresh = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
-    return thresh
-
-img = cv2.imread("/Users/kjj/Downloads/теория вероятности/tests/photo_2026-03-30_04-50-57.jpg")
-
-df = process_image(img)
-print(df)
-print(ocr_with_confidence(img)[1])
