@@ -1,7 +1,6 @@
 import cv2 as cv
 import numpy as np
 
-img = cv.imread('images/test3.jpg')
 
 ### вращение изображения
 def rotate(image, angle):
@@ -15,10 +14,4 @@ def grayscale(image):
     result = cv.cvtColor(image, cv.COLOR_RGB2GRAY)
     return result
 
-### программа
-img = rotate(img, 90)
-img = grayscale(img)
 
-cv.imwrite("processed_images/Test.png", img)
-cv.imshow("Result", img)
-cv.waitKey(0)

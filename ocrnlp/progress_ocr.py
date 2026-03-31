@@ -2,6 +2,8 @@ import pytesseract as pt
 from patterns import patterns
 import re
 import json
+from OpenCV_proj.main import grayscale
+import cv2 as cv
 
 
 def ocr_with_confidence(img):
@@ -65,6 +67,8 @@ def build_json(text,save_file=False):
     return jsonn
 
 def process_image(img):
-    orig_conf, orig_text = ocr_with_confidence(img)
+    img1 = cv.imread(img)
+    img2 = grayscale(img1)
+    orig_conf, orig_text = ocr_with_confidence(img2)
     text = orig_text
     return build_json(text)
