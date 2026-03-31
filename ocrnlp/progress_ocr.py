@@ -67,6 +67,7 @@ def build_json(text,save_file=False):
     return jsonn
 
 def process_image(img):
+    #нельзя так
     img1 = cv.imread(img)
     img2 = grayscale(img1)
     orig_conf, orig_text = ocr_with_confidence(img2)
