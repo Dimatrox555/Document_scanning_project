@@ -10,11 +10,12 @@ destination_points = np.array([[0, 0], [297, 0], [0, 210], [297, 210]], dtype=np
 ### чтение png
 def img_read(path, k):
     result = cv.imread(path)
-    global h,w
-    h = result.shape[0]*k
-    w = result.shape[1]*k
-    result = cv.resize(result, (w, h))
-    if h: return result
+    if result != None:
+        global h,w
+        h = result.shape[0]*k
+        w = result.shape[1]*k
+        result = cv.resize(result, (w, h))
+        return result
     else: return 0
 
 ### чтение разметки
