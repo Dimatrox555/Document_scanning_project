@@ -14,7 +14,8 @@ def img_read(path, k):
     h = result.shape[0]*k
     w = result.shape[1]*k
     result = cv.resize(result, (w, h))
-    return result
+    if h: return result
+    else: return 0
 
 ### чтение разметки
 def markdown_read(path):
