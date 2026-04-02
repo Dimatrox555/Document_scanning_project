@@ -10,7 +10,7 @@ destination_points = np.array([[0, 0], [297, 0], [0, 210], [297, 210]], dtype=np
 ### чтение png
 def img_read(path, k):
     result = cv.imread(path)
-    if result != None:
+    if result.any() != None:
         global h,w
         h = result.shape[0]*k
         w = result.shape[1]*k
@@ -40,6 +40,7 @@ def markdown_read(path):
 
 ### трансформация изображения
 def image_transform(target, k):
+
     ## получение матрицы перспективы из разметки и точек назначения
     mat = cv.getPerspectiveTransform(points, destination_points*k)
     ## вывод нужного изображения
@@ -64,4 +65,5 @@ def main():
     cv.imshow("Result", img)
 
     cv.waitKey(0)
-main()
+if __name__ == "__main__":
+    main()
