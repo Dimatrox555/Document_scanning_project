@@ -54,10 +54,10 @@ def grayscale(image):
 
 def main():
     ### программа
-    img = img_read('images/synth_example.png', 2)
+    img = img_read('images/synth_example.png', 4)
     markdown_read('images/json_main.json')
 
-    img = image_transform(img, 2)
+    img = image_transform(img, 4)
     img = grayscale(img)
 
     ### запись готового результата в файл и показ изображения
