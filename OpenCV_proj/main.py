@@ -49,15 +49,17 @@ def grayscale(image):
     _, result = cv.threshold(result, 0, 255, cv.THRESH_BINARY+cv.THRESH_OTSU)
     return result
 
-### программа
-img = img_read('images/synth_example.png', 14)
-markdown_read('images/json_main.json')
+def main():
+    ### программа
+    img = img_read('images/synth_example.png', 14)
+    markdown_read('images/json_main.json')
 
-img = image_transform(img, 14)
-img = grayscale(img)
+    img = image_transform(img, 14)
+    img = grayscale(img)
 
-### запись готового результата в файл и показ изображения
-cv.imwrite("processed_images/Test.tiff", img)
-cv.imshow("Result", img)
+    ### запись готового результата в файл и показ изображения
+    cv.imwrite("processed_images/Test.tiff", img)
+    cv.imshow("Result", img)
 
-cv.waitKey(0)
+    cv.waitKey(0)
+main()
