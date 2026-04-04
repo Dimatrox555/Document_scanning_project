@@ -50,24 +50,24 @@ def grayscale(image):
     _, result = cv.threshold(result, 0, 255, cv.THRESH_BINARY+cv.THRESH_OTSU)
     return result
 
-def preprocess(img_path="images/synth_example.png", k=4):
-    ### программа
+def preprocess(img_path="synth_example.png", k=4):
+    ### создание путей
 
     parent_dir = Path(__file__).parent.absolute()
 
-    img_dir = parent_dir / img_path
+    img_dir = parent_dir / "images" / img_path
     json_dir = parent_dir / "images/json_main.json"
     output_dir = parent_dir / "processed_images/Test.tiff"
 
+    # программа
     img = read(str(img_dir), str(json_dir), k)
     img = image_transform(img, k)
     img = grayscale(img)
 
-
     ### запись готового результата в файл и показ изображения
     cv.imwrite(output_dir, img)
-    #cv.imshow("Result", img)
-    #cv.waitKey(0)
+    cv.imshow("Result", img)
+    cv.waitKey(0)
     return str(output_dir)
 
 if __name__ == "__main__":
