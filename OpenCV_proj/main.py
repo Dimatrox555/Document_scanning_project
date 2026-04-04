@@ -59,7 +59,7 @@ def preprocess(img_path="synth_example.png", k=4):
     #cv.imshow("Result", img)
 
     #cv.waitKey(0)
-
+    #
     return "processed_images/Test.tiff"
 if __name__ == "__main__":
     preprocess("synth_example.png")
