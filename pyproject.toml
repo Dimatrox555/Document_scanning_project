@@ -9,6 +9,8 @@ dependencies = [
     "pytesseract",
     "opencv-python",
     "numpy",
+    "pandas",
+    "pillow"
 ]
 
 [tool.setuptools.packages.find]
