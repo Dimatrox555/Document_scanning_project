@@ -59,7 +59,7 @@ def preprocess(img_path="images/synth_example.png", k=4):
     json_dir = parent_dir / "images/json_main.json"
     output_dir = parent_dir / "processed_images/Test.tiff"
 
-    img = read(img_dir, json_dir, k)
+    img = read(str(img_dir), str(json_dir), k)
     img = image_transform(img, k)
     img = grayscale(img)
 
@@ -68,7 +68,7 @@ def preprocess(img_path="images/synth_example.png", k=4):
     cv.imwrite(output_dir, img)
     #cv.imshow("Result", img)
     #cv.waitKey(0)
+    return str(output_dir)
 
-    return output_dir
 if __name__ == "__main__":
     preprocess()
