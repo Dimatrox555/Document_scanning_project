@@ -7,35 +7,31 @@ points = []
 ### создание точек назначения для трансформации (примерно лист а4)
 destination_points = np.array([[0, 0], [297, 0], [0, 210], [297, 210]], dtype=np.float32)
 
-### чтение png
-def img_read(path, k):
-    result = cv.imread(path)
-    if result.any() != None:
-        global h,w
-        h = result.shape[0]*k
-        w = result.shape[1]*k
-        result = cv.resize(result, (w, h))
-        return result
-    else: return 0
 
-### чтение разметки
-def markdown_read(path):
-    file = open(path, 'r')
+def read(img_path, json_path, k):
+    ## чтение картиночки
+    img_output = cv.imread("images/"+img_path)
+    h = img_output.shape[0]*k
+    w = img_output.shape[1]*k
+    img_output = cv.resize(img_output, (w,h))
+
+    ## чтение джсона
+    file = open("images/"+json_path, "r")
     data = json.load(file)
 
-    ### создание списка словарей с данными о точках
     point_data = []
     for i in data[4]['kp-1']:
         point_data.append(i)
 
-### создание списка с координатами всех точек в пикселях
     global points
     points = np.array([
-        [point_data[0]['x']/100*w, point_data[0]['y']/100*h],
-        [point_data[1]['x']/100*w, point_data[1]['y']/100*h],
-        [point_data[2]['x']/100*w, point_data[2]['y']/100*h],
-        [point_data[3]['x']/100*w, point_data[3]['y']/100*h]
+        [point_data[0]['x'] / 100 * w, point_data[0]['y'] / 100 * h],
+        [point_data[1]['x'] / 100 * w, point_data[1]['y'] / 100 * h],
+        [point_data[2]['x'] / 100 * w, point_data[2]['y'] / 100 * h],
+        [point_data[3]['x'] / 100 * w, point_data[3]['y'] / 100 * h]
     ], dtype=np.float32)
+
+    return img_output
 
 
 ### трансформация изображения
@@ -52,12 +48,10 @@ def grayscale(image):
     _, result = cv.threshold(result, 0, 255, cv.THRESH_BINARY+cv.THRESH_OTSU)
     return result
 
-def main():
+def preprocess(img_path, json_path, k):
     ### программа
-    img = img_read('images/synth_example.png', 4)
-    markdown_read('images/json_main.json')
-
-    img = image_transform(img, 4)
+    img = read(img_path, json_path, k)
+    img = image_transform(img, k)
     img = grayscale(img)
 
     ### запись готового результата в файл и показ изображения
@@ -66,4 +60,4 @@ def main():
 
     cv.waitKey(0)
 if __name__ == "__main__":
-    main()
+    preprocess("synth_example.png", "json_main.json", 4)
