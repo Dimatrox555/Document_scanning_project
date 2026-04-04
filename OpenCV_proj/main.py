@@ -11,10 +11,11 @@ destination_points = np.array([[0, 0], [297, 0], [0, 210], [297, 210]], dtype=np
 def read(img_path, json_path, k):
     ## чтение картиночки
     img_output = cv.imread("images/"+img_path)
-    h = img_output.shape[0]*k
-    w = img_output.shape[1]*k
-    img_output = cv.resize(img_output, (w,h))
-
+    if img_output != None:
+        h = img_output.shape[0]*k
+        w = img_output.shape[1]*k
+        img_output = cv.resize(img_output, (w,h))
+    else: img_output = 0
     ## чтение джсона
     file = open("images/"+json_path, "r")
     data = json.load(file)
