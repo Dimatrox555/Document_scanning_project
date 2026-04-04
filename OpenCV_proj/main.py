@@ -50,12 +50,12 @@ def grayscale(image):
 
 def preprocess(img_path="synth_example.png", k=4):
     ### программа
-    img = read(img_path, "Document_scanning_project/OpenCV_proj/images/json_main.json", k)
+    img = read(img_path, "json_main.json", k)
     img = image_transform(img, k)
     img = grayscale(img)
 
     ### запись готового результата в файл и показ изображения
-    cv.imwrite("Document_scanning_project/OpenCV_proj/processed_images/Test.tiff", img)
+    cv.imwrite("processed_images/Test.tiff", img)
     #cv.imshow("Result", img)
 
     #cv.waitKey(0)
