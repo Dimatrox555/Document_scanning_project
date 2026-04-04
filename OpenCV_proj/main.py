@@ -1,7 +1,8 @@
 import cv2 as cv
 import numpy as np
 import json
-import os
+from pathlib import Path
+
 
 points = []
 ### создание точек назначения для трансформации (примерно лист а4)
@@ -10,14 +11,14 @@ destination_points = np.array([[0, 0], [297, 0], [0, 210], [297, 210]], dtype=np
 
 def read(img_path, json_path, k):
     ## чтение картиночки
-    img_output = cv.imread("images/"+img_path)
+    img_output = cv.imread(img_path)
     if img_output.any() != None:
         h = img_output.shape[0]*k
         w = img_output.shape[1]*k
         img_output = cv.resize(img_output, (w,h))
     else: img_output = 0
     ## чтение джсона
-    file = open("images/"+json_path, "r")
+    file = open(json_path, "r")
     data = json.load(file)
 
     point_data = []
@@ -49,18 +50,25 @@ def grayscale(image):
     _, result = cv.threshold(result, 0, 255, cv.THRESH_BINARY+cv.THRESH_OTSU)
     return result
 
-def preprocess(img_path="synth_example.png", k=4):
+def preprocess(img_path="images/synth_example.png", k=4):
     ### программа
-    img = read(img_path, "json_main.json", k)
+
+    parent_dir = Path(__file__).parent.absolute()
+
+    img_dir = parent_dir / img_path
+    json_dir = parent_dir / "images/json_main.json"
+    output_dir = parent_dir / "processed_images/Test.tiff"
+
+    img = read(img_dir, json_dir, k)
     img = image_transform(img, k)
     img = grayscale(img)
 
+
     ### запись готового результата в файл и показ изображения
-    cv.imwrite("processed_images/Test.tiff", img)
+    cv.imwrite(output_dir, img)
     #cv.imshow("Result", img)
-    print(__file__)
     #cv.waitKey(0)
-    #
-    return "processed_images/Test.tiff"
+
+    return output_dir
 if __name__ == "__main__":
-    preprocess("synth_example.png")
+    preprocess()
