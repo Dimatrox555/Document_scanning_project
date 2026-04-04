@@ -1,6 +1,7 @@
 import cv2 as cv
 import numpy as np
 import json
+import os
 
 points = []
 ### создание точек назначения для трансформации (примерно лист а4)
@@ -9,14 +10,14 @@ destination_points = np.array([[0, 0], [297, 0], [0, 210], [297, 210]], dtype=np
 
 def read(img_path, json_path, k):
     ## чтение картиночки
-    img_output = cv.imread("Document_scanning_project/OpenCV_proj/images/"+img_path)
-    if img_output != None:
+    img_output = cv.imread("images/"+img_path)
+    if img_output.any() != None:
         h = img_output.shape[0]*k
         w = img_output.shape[1]*k
         img_output = cv.resize(img_output, (w,h))
     else: img_output = 0
     ## чтение джсона
-    file = open("Document_scanning_project/OpenCV_proj/images/"+json_path, "r")
+    file = open("images/"+json_path, "r")
     data = json.load(file)
 
     point_data = []
@@ -57,9 +58,9 @@ def preprocess(img_path="synth_example.png", k=4):
     ### запись готового результата в файл и показ изображения
     cv.imwrite("processed_images/Test.tiff", img)
     #cv.imshow("Result", img)
-
+    print(__file__)
     #cv.waitKey(0)
     #
-    return "Document_scanning_project/OpenCV_proj/processed_images/Test.tiff"
+    return "processed_images/Test.tiff"
 if __name__ == "__main__":
     preprocess("synth_example.png")
