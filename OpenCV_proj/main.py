@@ -38,7 +38,6 @@ def read(img_path, json_path, k):
 
 ### трансформация изображения
 def image_transform(target, k):
-
     ## получение матрицы перспективы из разметки и точек назначения
     mat = cv.getPerspectiveTransform(points, destination_points*k)
     ## вывод нужного изображения
@@ -51,7 +50,7 @@ def grayscale(image):
     return result
 
 def preprocess(img_path="synth_example.png", k=4):
-    ### создание путей
+    ### создание путейч
 
     parent_dir = Path(__file__).parent.absolute()
 
@@ -66,8 +65,8 @@ def preprocess(img_path="synth_example.png", k=4):
 
     ### запись готового результата в файл и показ изображения
     cv.imwrite(output_dir, img)
-    cv.imshow("Result", img)
-    cv.waitKey(0)
+    #cv.imshow("Result", img)
+    #cv.waitKey(0)
     return str(output_dir)
 
 if __name__ == "__main__":
