@@ -48,9 +48,9 @@ def grayscale(image):
     _, result = cv.threshold(result, 0, 255, cv.THRESH_BINARY+cv.THRESH_OTSU)
     return result
 
-def preprocess(img_path, json_path, k):
+def preprocess(img_path="synth_example.png", k=4):
     ### программа
-    img = read(img_path, json_path, k)
+    img = read(img_path, "json_main.json", k)
     img = image_transform(img, k)
     img = grayscale(img)
 
@@ -60,4 +60,4 @@ def preprocess(img_path, json_path, k):
 
     cv.waitKey(0)
 if __name__ == "__main__":
-    preprocess("synth_example.png", "json_main.json", 4)
+    preprocess("synth_example.png")
