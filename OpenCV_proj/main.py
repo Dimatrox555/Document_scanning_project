@@ -56,8 +56,10 @@ def preprocess(img_path="synth_example.png", k=4):
 
     ### запись готового результата в файл и показ изображения
     cv.imwrite("processed_images/Test.tiff", img)
-    cv.imshow("Result", img)
+    #cv.imshow("Result", img)
 
-    cv.waitKey(0)
+    #cv.waitKey(0)
+
+    return "processed_images/Test.tiff"
 if __name__ == "__main__":
     preprocess("synth_example.png")
