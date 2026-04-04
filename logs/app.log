@@ -1,0 +1,31 @@
+2026-04-05 03:44:21,696 | INFO | progress_ocr | process_image start
+2026-04-05 03:44:21,840 | DEBUG | progress_ocr | img type=<class 'str'>
+2026-04-05 03:44:21,840 | INFO | progress_ocr | ocr start
+2026-04-05 03:44:21,880 | DEBUG | pytesseract | ['tesseract', '/Users/kjj/Documents/GitHub/Document_scanning_project/OpenCV_proj/processed_images/Test.tiff', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_4kp5civ0', '-c', 'tessedit_create_tsv=1']
+2026-04-05 03:44:22,494 | DEBUG | pytesseract | ['tesseract', '/Users/kjj/Documents/GitHub/Document_scanning_project/OpenCV_proj/processed_images/Test.tiff', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_vbfd2v08', '-l', 'rus+eng', 'txt']
+2026-04-05 03:44:23,159 | WARNING | progress_ocr | LOW OCR CONF: 45.55506136666667
+2026-04-05 03:44:23,159 | DEBUG | progress_ocr | len=453
+2026-04-05 03:44:23,159 | INFO | progress_ocr | OCR done, conf=45.55506136666667
+2026-04-05 03:44:23,159 | INFO | progress_ocr | build_json start
+2026-04-05 03:44:23,160 | DEBUG | progress_ocr | field=full_name, pattern=что\s([А-ЯЁ][а-яё]+)\s([А-ЯЁ][а-яё]+)\s([А-ЯЁ][а-яё]+)
+2026-04-05 03:44:23,160 | WARNING | progress_ocr | full_name NOT FOUND
+2026-04-05 03:44:23,160 | DEBUG | progress_ocr | field=own_date, pattern=выдачи:\s+(\d{2}\.\d{2}\.\d{4})
+2026-04-05 03:44:23,161 | WARNING | progress_ocr | own_date NOT FOUND
+2026-04-05 03:44:23,161 | DEBUG | progress_ocr | field=reg_num, pattern=Регистрационный\s+номер\s+(\d+-\d+)
+2026-04-05 03:44:23,161 | DEBUG | progress_ocr | reg_num FOUND: 92-4567
+2026-04-05 03:44:23,161 | DEBUG | progress_ocr | field=doc_num, pattern=[0О]\s+ПОВЫШЕНИИ\s+КВАЛИФИКАЦИИ\s+(\d+)
+2026-04-05 03:44:23,161 | WARNING | progress_ocr | doc_num NOT FOUND
+2026-04-05 03:44:23,161 | DEBUG | progress_ocr | field=date_from, pattern=с\s+(\d{2}\s+[а-яё]+\s+\d{4}\s+г\.)\sпо\s+\d{2}\s+[а-яё]+\s+\d{4}\s+г\.
+2026-04-05 03:44:23,161 | DEBUG | progress_ocr | date_from FOUND: 10 января 2024 г.
+2026-04-05 03:44:23,161 | DEBUG | progress_ocr | field=date_to, pattern=с\s+\d{2}\s+[а-яё]+\s+\d{4}\s+г\.\sпо\s+(\d{2}\s+[а-яё]+\s+\d{4}\s+г\.)
+2026-04-05 03:44:23,162 | DEBUG | progress_ocr | date_to FOUND: 25 января 2024 г.
+2026-04-05 03:44:23,162 | DEBUG | progress_ocr | field=city_name, pattern=Город\s([А-ЯЁ][а-яё]+(?:-[А-ЯЁ]?[а-яё]+)*)
+2026-04-05 03:44:23,162 | WARNING | progress_ocr | city_name NOT FOUND
+2026-04-05 03:44:23,162 | DEBUG | progress_ocr | field=new_spec, pattern=программе\s+«([^»]+)»
+2026-04-05 03:44:23,162 | DEBUG | progress_ocr | new_spec FOUND: Анализ данных
+2026-04-05 03:44:23,162 | DEBUG | progress_ocr | field=hours_num, pattern=объёме\s+(\d+)
+2026-04-05 03:44:23,162 | WARNING | progress_ocr | hours_num NOT FOUND
+2026-04-05 03:44:23,162 | DEBUG | progress_ocr | field=organization, pattern=квалификации\s+в\s+(?:\(на\)\s+)?([\s\S]*?)\s+с\s+\d{2}\s+[а-яё]+\s+\d{4}\s+г\.
+2026-04-05 03:44:23,163 | WARNING | progress_ocr | organization NOT FOUND
+2026-04-05 03:44:23,163 | INFO | progress_ocr | fields parsed: 4/10
+2026-04-05 03:44:23,163 | INFO | progress_ocr | process_image done
