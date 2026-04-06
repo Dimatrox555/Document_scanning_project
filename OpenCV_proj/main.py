@@ -10,6 +10,7 @@ destination_points = np.array([[0, 0], [297, 0], [0, 210], [297, 210]], dtype=np
 
 
 def read(img_path, json_path, k):
+
     ## чтение картиночки
     img_output = cv.imread(img_path)
     if img_output.any() != None:
@@ -49,25 +50,35 @@ def grayscale(image):
     _, result = cv.threshold(result, 0, 255, cv.THRESH_BINARY+cv.THRESH_OTSU)
     return result
 
-def preprocess(img_path="synth_example.png", k=4):
-    ### создание путейч
-
+def preprocess(img_path="0.png", k=4):
+    ### создание путей
     parent_dir = Path(__file__).parent.absolute()
+    json_dir = parent_dir / "json/json_main.json"
 
-    img_dir = parent_dir / "images" / img_path
-    json_dir = parent_dir / "images/json_main.json"
-    output_dir = parent_dir / "processed_images/Test.tiff"
+    ## вычисление количества изображений
+    image_dir = Path("images")
+    num = sum(1 for i in image_dir.iterdir())
 
+
+    output_arr = []
     # программа
-    img = read(str(img_dir), str(json_dir), k)
-    img = image_transform(img, k)
-    img = grayscale(img)
+    for i in range(num):
 
-    ### запись готового результата в файл и показ изображения
-    cv.imwrite(output_dir, img)
-    #cv.imshow("Result", img)
+        ### создание пути вывода
+        output_dir = parent_dir / f"processed_images/{i}.tiff"
+        img_dir = parent_dir / "images" / f"{i}.png"
+        ### обработка изображения
+        img = read(str(img_dir), str(json_dir), k)
+        img = image_transform(img, k)
+        img = grayscale(img)
+
+        ### запись готового результата в файл и показ изображения
+        cv.imwrite(output_dir, img)
+        output_arr.append(str(output_dir))
+        cv.imshow("Result", img)
     #cv.waitKey(0)
-    return str(output_dir)
+    print(output_arr)
+    return output_arr
 
 if __name__ == "__main__":
     preprocess()
