@@ -1,27 +1,46 @@
 import pytesseract as pt 
 from ocrnlp.patterns import patterns
+from OpenCV_proj.main import preprocess
+from log_config import setup_logging
 import re
 import json
 import logging
-from OpenCV_proj.main import *
-from log_config import setup_logging
-from WITHOWT_NIKITA_TESTS import preprocess_local
-
-import cv2 as cv
+import time
+import uuid
 #Запуск логирования 
 setup_logging()
 logger = logging.getLogger(__name__)
 
+
+
+run_id = str(uuid.uuid4())[:8]
+logger.info("")
+logger.info("=" * 60)
+logger.info(f"run_id: {run_id}")
 
 #Подсчет среднего значения(mean_conf) уверенности и сканирование текста(text)
 def ocr_with_confidence(img):
     logger.info("ocr start")
     
     try:
-        df = pt.image_to_data(img, output_type = pt.Output.DATAFRAME)
+
+        start_data = time.perf_counter()
+        df = pt.image_to_data(img, output_type=pt.Output.DATAFRAME)
+        end_data = time.perf_counter()
+
         df = df[df["conf"] != -1]
         mean_conf = df["conf"].mean()
-        text = pt.image_to_string(img, lang = "rus+eng")
+
+        start_string = time.perf_counter()
+        text = pt.image_to_string(img, lang="rus+eng")
+        end_string = time.perf_counter()
+
+        total_ocr_time = (end_data - start_data) + (end_string - start_string)
+        
+        logger.info(f"image_to_data time: {end_data - start_data:.4f} sec")
+        logger.info(f"image_to_string time: {end_string - start_string:.4f} sec")
+        logger.info(f"total tesseract time: {total_ocr_time:.4f} sec")
+
         if mean_conf is not None and mean_conf < 50:
             logger.warning(f"LOW OCR CONF: {mean_conf}")
         else:
@@ -104,12 +123,12 @@ def build_json(text,save_file=False):
     return jsonn
 
 # функция процессинга (итоговая) (структура нуждается в доработке и согласовании с командой)
-def process_image():
+def process_image(img):
     logger.info("process_image start")
     #img2 = preprocess_local(img)
     
     try:
-        img2 = preprocess()
+        img2 = preprocess(img_path=img)
         logger.debug(f"img type={type(img2)}")
 
         orig_conf, orig_text = ocr_with_confidence(img2)
@@ -127,3 +146,6 @@ def process_image():
     except Exception:
         logger.exception("process_image failed")
         return None
+    
+logger.info("=" * 60)
+logger.info("")

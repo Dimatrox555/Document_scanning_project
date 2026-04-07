@@ -1,8 +1,15 @@
-from progress_ocr import *
-def run(img):
-    print(process_image())
+from progress_ocr import process_image
 
-#run("OpenCV_proj/processed_images/Test.tiff")
-f = process_image()
-print(f)
 
+def mass(arr):
+    """Batch wrapper around process_image for a list of inputs."""
+    t = []
+    for i in arr:
+        t.append(process_image(i))
+    print(t)
+
+
+if __name__ == "__main__":
+    # Example single-run entry point (adjust path as needed)
+    result = process_image()
+    print(result)
