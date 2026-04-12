@@ -1,151 +1,113 @@
-import pytesseract as pt 
-from ocrnlp.patterns import patterns
-from OpenCV_proj.main import preprocess
-from log_config import setup_logging
 import re
 import json
 import logging
 import time
 import uuid
-#Запуск логирования 
+
+import pytesseract as pt
+
+from ocrnlp.normalizer import normalize
+from ocrnlp.patterns import patterns
+from log_config import setup_logging
+
 setup_logging()
 logger = logging.getLogger(__name__)
 
 
+def ocr_with_confidence(img) -> tuple[float | None, str]:
+    """Прогоняет изображение через Tesseract, возвращает (уверенность, текст).
+    Уверенность — среднее значение conf по всем словам (0–100).
+    Возвращает (None, "") если Tesseract упал.
+    """
+    run_id = str(uuid.uuid4())[:8]
+    logger.info(f"[{run_id}] ocr start")
 
-run_id = str(uuid.uuid4())[:8]
-logger.info("")
-logger.info("=" * 60)
-logger.info(f"run_id: {run_id}")
-
-#Подсчет среднего значения(mean_conf) уверенности и сканирование текста(text)
-def ocr_with_confidence(img):
-    logger.info("ocr start")
-    
     try:
-
-        start_data = time.perf_counter()
+        t0 = time.perf_counter()
         df = pt.image_to_data(img, output_type=pt.Output.DATAFRAME)
-        end_data = time.perf_counter()
-
         df = df[df["conf"] != -1]
         mean_conf = df["conf"].mean()
+        t1 = time.perf_counter()
 
-        start_string = time.perf_counter()
         text = pt.image_to_string(img, lang="rus+eng")
-        end_string = time.perf_counter()
+        t2 = time.perf_counter()
 
-        total_ocr_time = (end_data - start_data) + (end_string - start_string)
-        
-        logger.info(f"image_to_data time: {end_data - start_data:.4f} sec")
-        logger.info(f"image_to_string time: {end_string - start_string:.4f} sec")
-        logger.info(f"total tesseract time: {total_ocr_time:.4f} sec")
+        logger.info(f"[{run_id}] tesseract: data={t1-t0:.3f}s  string={t2-t1:.3f}s  total={t2-t0:.3f}s")
 
         if mean_conf is not None and mean_conf < 50:
-            logger.warning(f"LOW OCR CONF: {mean_conf}")
+            logger.warning(f"[{run_id}] low confidence: {mean_conf:.1f}")
         else:
-            logger.debug(f"mean_conf={mean_conf}")
-        logger.debug(f"len={len(text)}")
+            logger.debug(f"[{run_id}] conf={mean_conf:.1f}  text_len={len(text)}")
+
         return mean_conf, text
+
     except Exception:
-        logger.exception("ocr falied")
+        logger.exception(f"[{run_id}] ocr failed")
         return None, ""
-        
-
-#TODO временный словарь замен(переедет в changes
-replacements = {
-    "A":"А", "B":"В", "E":"Е", "K":"К", "M":"М",
-    "H":"Н", "O":"О", "P":"Р", "C":"С", "T":"Т",
-    "Y":"У", "X":"Х", "a":"а", "e":"е", "o":"о",
-    "p":"р", "c":"с", "y":"у", "x":"х"
-}
 
 
-#TODO временная функция замены слов по словарю
-def replace_chars(text, mapping):
-    """замена слов по словарю"""
-    for old_char, new_char in mapping.items():
-        text = text.replace(old_char, new_char)
-    return text
-
-#TODO доделать с 6 б и тд (переедет в chages)
-def normalize_text(text):
-    prepro = replace_chars(text, replacements)
-    prepro = re.sub(r"(?<=[\d-])О|О(?=[\d-])", "0", prepro)
-    return prepro
-
-#функция получения паттерна (возможно переедет в patterns)
-def get_pattern(doc_type, field, pattern_index=0):
+def get_pattern(doc_type: str, field: str, pattern_index: int = 0) -> str:
+    """Достаёт regex-паттерн из patterns.py по типу документа и названию поля."""
     pattern_key = patterns["doc_schemas"][doc_type][field][pattern_index]
     return patterns["pattern_lib"][pattern_key]
 
-#экстраткеры на все случаи жизни, служат универсальной заменой геттеров
-def extract_document(text,doc_type,field, pattern_index=0):
+
+def extract_field(text: str, doc_type: str, field: str, pattern_index: int = 0) -> str | None:
+    """Извлекает одно поле из текста по паттерну.
+    Возвращает строку с результатом или None если паттерн не сработал.
+    """
     pattern = get_pattern(doc_type, field, pattern_index)
-
-    logger.debug(f"field={field}, pattern={pattern}")
-
     match = re.search(pattern, text, re.IGNORECASE)
+
     if not match:
-        logger.warning(f"{field} NOT FOUND")
+        logger.warning(f"  {field}: NOT FOUND")
         return None
-    if len(match.groups()) > 1 :
-        res = " ".join(match.groups())
-    else:
-        res = match.group(1)
 
-    logger.debug(f"{field} FOUND: {res}")
-    return res
+    result = " ".join(match.groups()) if len(match.groups()) > 1 else match.group(1)
+    logger.debug(f"  {field}: {result}")
+    return result
 
-#построение json с вариативным сохранением(нуждается в доработке TODO (имеется ввиду сохранение файла))
-def build_json(text,save_file=False):
-    logger.info("build_json start")
-    text = normalize_text(text)
-    jsonn = {
-        "full_name":extract_document(text,"doc_type1", "full_name"),
-        "own_date":extract_document(text,"doc_type1", "own_date"),
-        "reg_num": extract_document(text,"doc_type1", "reg_num"),
-        "doc_num": extract_document(text,"doc_type1", "doc_num"),
-        "date_from": extract_document(text,"doc_type1", "date_from"),
-        "date_to": extract_document(text,"doc_type1", "date_to"),
-        "city_name": extract_document(text,"doc_type1", "city_name"),
-        "new_spec": extract_document(text,"doc_type1", "new_spec"),
-        "hours_num": extract_document(text, "doc_type1", "hours_num"),
-        "organization" : extract_document(text, "doc_type1", "organization")
-    }
 
-    found = sum(1 for v in jsonn.values() if v is not None)
-    logger.info(f"fields parsed: {found}/{len(jsonn)}")
+def build_json(text: str, save_file: bool = False) -> dict:
+    """Нормализует текст и извлекает все поля документа.
+    Если save_file=True — дополнительно сохраняет результат в result.json.
+    """
+    text = normalize(text)
+    logger.info("extracting fields")
+
+    fields = [
+        "full_name", "own_date", "reg_num", "doc_num",
+        "date_from", "date_to", "city_name", "new_spec",
+        "hours_num", "organization",
+    ]
+    result = {field: extract_field(text, "doc_type1", field) for field in fields}
+
+    found = sum(1 for v in result.values() if v is not None)
+    logger.info(f"fields parsed: {found}/{len(result)}")
 
     if save_file:
         with open("result.json", "w", encoding="utf-8") as f:
-            json.dump(jsonn, f, ensure_ascii=False, indent=4)
-    return jsonn
+            json.dump(result, f, ensure_ascii=False, indent=4)
 
-# функция процессинга (итоговая) (структура нуждается в доработке и согласовании с командой)
-def process_image(img):
+    return result
+
+
+def process_image(img) -> dict | None:
+    """Основная точка входа. Принимает изображение, возвращает словарь с полями документа.
+    Возвращает None если OCR упал или произошла непредвиденная ошибка.
+    """
     logger.info("process_image start")
-    #img2 = preprocess_local(img)
-    
+
     try:
-        img2 = preprocess(img_path=img)
-        logger.debug(f"img type={type(img2)}")
-
-        orig_conf, orig_text = ocr_with_confidence(img2)
-        if orig_conf is None:
-            logger.error("OCR returned None")
+        conf, text = ocr_with_confidence(img)
+        if conf is None:
+            logger.error("ocr returned nothing, aborting")
             return None
-        
-        logger.info(f"OCR done, conf={orig_conf}")
 
-        result = build_json(orig_text)
-
+        result = build_json(text)
         logger.info("process_image done")
         return result
 
     except Exception:
         logger.exception("process_image failed")
         return None
-    
-logger.info("=" * 60)
-logger.info("")
