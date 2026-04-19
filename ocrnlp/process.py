@@ -1,4 +1,4 @@
-from progress_ocr import process_image
+from ocrnlp.progress_ocr import process_image
 
 
 def mass(arr):
