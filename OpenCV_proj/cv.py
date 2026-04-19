@@ -3,13 +3,28 @@ import numpy as np
 import json
 from pathlib import Path
 from pdf2image import convert_from_path
+import torch
+import torch.nn as nn
+from torchvision import models
+
+##### НЕЙРОНКА
+
+model = models.resnet18(weights="DEFAULT")
+
+model.fc = nn.Sequential(
+    nn.Linear(model.fc.in_features, 8),
+    nn.Sigmoid()
+)
+## нужно разобраться как начать обучение и кормить датасеты этой штуке
+
+##### ПРОГРАММА
 
 ### создание точек назначения для трансформации (примерно лист а4)
 destination_points = np.array([[0, 0], [297, 0], [0, 210], [297, 210]], dtype=np.float32)
-
+### абсолютный путь на папку моего проекта чтобы иные модули не взрывались
 parent_dir = Path(__file__).parent.absolute()
 
-
+### переделка пдфайла в пнг
 def pdf2png(path):
     poppler = parent_dir / "poppler" / "Library" / "bin"
     pdf_path = parent_dir / "pdfs" / path
