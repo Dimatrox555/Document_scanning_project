@@ -10,7 +10,9 @@ dependencies = [
     "opencv-python",
     "numpy",
     "pandas",
-    "pillow"
+    "pillow",
+    "pdf2image",
+    "torch"
 ]
 
 [tool.setuptools.packages.find]
