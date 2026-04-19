@@ -8,7 +8,7 @@ import pytesseract as pt
 
 from ocrnlp.normalizer import normalize
 from ocrnlp.patterns import patterns
-from log_config import setup_logging
+from ocrnlp.log_config import setup_logging
 
 setup_logging()
 logger = logging.getLogger(__name__)
@@ -106,6 +106,7 @@ def process_image(img) -> dict | None:
 
         result = build_json(text)
         logger.info("process_image done")
+        logger.info(f"scanned text:\n{text}")
         return result
 
     except Exception:
