@@ -56,7 +56,7 @@ def preprocess(img_path="0.png", k=4):
     json_dir = parent_dir / "json/json_main.json"
 
     ## вычисление количества изображений
-    image_dir = Path("images")
+    image_dir = parent_dir / "images"
     num = sum(1 for i in image_dir.iterdir())
 
 
@@ -75,7 +75,7 @@ def preprocess(img_path="0.png", k=4):
         ### запись готового результата в файл и показ изображения
         cv.imwrite(output_dir, img)
         output_arr.append(str(output_dir))
-        cv.imshow("Result", img)
+        #cv.imshow("Result", img)
     #cv.waitKey(0)
     print(output_arr)
     return output_arr
