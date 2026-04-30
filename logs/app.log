@@ -29,3 +29,414 @@
 2026-04-05 03:44:23,163 | WARNING | progress_ocr | organization NOT FOUND
 2026-04-05 03:44:23,163 | INFO | progress_ocr | fields parsed: 4/10
 2026-04-05 03:44:23,163 | INFO | progress_ocr | process_image done
+2026-04-20 04:20:46,474 | INFO | ocrnlp.progress_ocr | process_image start
+2026-04-20 04:20:46,474 | INFO | ocrnlp.progress_ocr | [4963dbce] ocr start
+2026-04-20 04:20:47,655 | DEBUG | pytesseract | ['tesseract', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_x7cibmzv_input.PNG', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_x7cibmzv', '-c', 'tessedit_create_tsv=1']
+2026-04-20 04:20:48,051 | DEBUG | pytesseract | ['tesseract', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_f1phn5rk_input.PNG', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_f1phn5rk', '-l', 'rus+eng', 'txt']
+2026-04-20 04:20:48,466 | INFO | ocrnlp.progress_ocr | [4963dbce] tesseract: data=1.541s  string=0.451s  total=1.992s
+2026-04-20 04:20:48,466 | WARNING | ocrnlp.progress_ocr | [4963dbce] low confidence: 45.6
+2026-04-20 04:20:48,467 | INFO | ocrnlp.progress_ocr | extracting fields
+2026-04-20 04:20:48,467 | DEBUG | ocrnlp.progress_ocr |   full_name: Петров Алексей Андреевич
+2026-04-20 04:20:48,468 | WARNING | ocrnlp.progress_ocr |   own_date: NOT FOUND
+2026-04-20 04:20:48,468 | DEBUG | ocrnlp.progress_ocr |   reg_num: 92-4567
+2026-04-20 04:20:48,468 | WARNING | ocrnlp.progress_ocr |   doc_num: NOT FOUND
+2026-04-20 04:20:48,468 | DEBUG | ocrnlp.progress_ocr |   date_from: 10 января 2024 г.
+2026-04-20 04:20:48,468 | DEBUG | ocrnlp.progress_ocr |   date_to: 25 января 2024 г.
+2026-04-20 04:20:48,469 | WARNING | ocrnlp.progress_ocr |   city_name: NOT FOUND
+2026-04-20 04:20:48,469 | DEBUG | ocrnlp.progress_ocr |   new_spec: Анализ данных
+2026-04-20 04:20:48,469 | WARNING | ocrnlp.progress_ocr |   hours_num: NOT FOUND
+2026-04-20 04:20:48,469 | WARNING | ocrnlp.progress_ocr |   organization: NOT FOUND
+2026-04-20 04:20:48,469 | INFO | ocrnlp.progress_ocr | fields parsed: 5/10
+2026-04-20 04:20:48,469 | INFO | ocrnlp.progress_ocr | process_image done
+2026-04-20 04:20:48,471 | INFO | ocrnlp.progress_ocr | process_image start
+2026-04-20 04:20:48,471 | INFO | ocrnlp.progress_ocr | [007c5d0c] ocr start
+2026-04-20 04:20:48,496 | DEBUG | pytesseract | ['tesseract', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_p877_kg6_input.PNG', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_p877_kg6', '-c', 'tessedit_create_tsv=1']
+2026-04-20 04:20:48,629 | DEBUG | pytesseract | ['tesseract', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_opkdrjip_input.PNG', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_opkdrjip', '-l', 'rus+eng', 'txt']
+2026-04-20 04:20:48,746 | INFO | ocrnlp.progress_ocr | [007c5d0c] tesseract: data=0.132s  string=0.142s  total=0.274s
+2026-04-20 04:20:48,746 | DEBUG | ocrnlp.progress_ocr | [007c5d0c] conf=63.3  text_len=9
+2026-04-20 04:20:48,746 | INFO | ocrnlp.progress_ocr | extracting fields
+2026-04-20 04:20:48,746 | WARNING | ocrnlp.progress_ocr |   full_name: NOT FOUND
+2026-04-20 04:20:48,746 | WARNING | ocrnlp.progress_ocr |   own_date: NOT FOUND
+2026-04-20 04:20:48,746 | WARNING | ocrnlp.progress_ocr |   reg_num: NOT FOUND
+2026-04-20 04:20:48,746 | WARNING | ocrnlp.progress_ocr |   doc_num: NOT FOUND
+2026-04-20 04:20:48,746 | WARNING | ocrnlp.progress_ocr |   date_from: NOT FOUND
+2026-04-20 04:20:48,746 | WARNING | ocrnlp.progress_ocr |   date_to: NOT FOUND
+2026-04-20 04:20:48,746 | WARNING | ocrnlp.progress_ocr |   city_name: NOT FOUND
+2026-04-20 04:20:48,746 | WARNING | ocrnlp.progress_ocr |   new_spec: NOT FOUND
+2026-04-20 04:20:48,746 | WARNING | ocrnlp.progress_ocr |   hours_num: NOT FOUND
+2026-04-20 04:20:48,746 | WARNING | ocrnlp.progress_ocr |   organization: NOT FOUND
+2026-04-20 04:20:48,746 | INFO | ocrnlp.progress_ocr | fields parsed: 0/10
+2026-04-20 04:20:48,746 | INFO | ocrnlp.progress_ocr | process_image done
+2026-04-20 04:20:48,748 | INFO | ocrnlp.progress_ocr | process_image start
+2026-04-20 04:20:48,748 | INFO | ocrnlp.progress_ocr | [eba2ca56] ocr start
+2026-04-20 04:20:48,778 | DEBUG | pytesseract | ['tesseract', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_x99b95pf_input.PNG', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_x99b95pf', '-c', 'tessedit_create_tsv=1']
+2026-04-20 04:20:48,925 | DEBUG | pytesseract | ['tesseract', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess__dk5rnjm_input.PNG', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess__dk5rnjm', '-l', 'rus+eng', 'txt']
+2026-04-20 04:20:49,079 | INFO | ocrnlp.progress_ocr | [eba2ca56] tesseract: data=0.139s  string=0.192s  total=0.331s
+2026-04-20 04:20:49,080 | DEBUG | ocrnlp.progress_ocr | [eba2ca56] conf=95.0  text_len=0
+2026-04-20 04:20:49,080 | INFO | ocrnlp.progress_ocr | extracting fields
+2026-04-20 04:20:49,080 | WARNING | ocrnlp.progress_ocr |   full_name: NOT FOUND
+2026-04-20 04:20:49,080 | WARNING | ocrnlp.progress_ocr |   own_date: NOT FOUND
+2026-04-20 04:20:49,080 | WARNING | ocrnlp.progress_ocr |   reg_num: NOT FOUND
+2026-04-20 04:20:49,080 | WARNING | ocrnlp.progress_ocr |   doc_num: NOT FOUND
+2026-04-20 04:20:49,080 | WARNING | ocrnlp.progress_ocr |   date_from: NOT FOUND
+2026-04-20 04:20:49,080 | WARNING | ocrnlp.progress_ocr |   date_to: NOT FOUND
+2026-04-20 04:20:49,080 | WARNING | ocrnlp.progress_ocr |   city_name: NOT FOUND
+2026-04-20 04:20:49,080 | WARNING | ocrnlp.progress_ocr |   new_spec: NOT FOUND
+2026-04-20 04:20:49,080 | WARNING | ocrnlp.progress_ocr |   hours_num: NOT FOUND
+2026-04-20 04:20:49,080 | WARNING | ocrnlp.progress_ocr |   organization: NOT FOUND
+2026-04-20 04:20:49,080 | INFO | ocrnlp.progress_ocr | fields parsed: 0/10
+2026-04-20 04:20:49,080 | INFO | ocrnlp.progress_ocr | process_image done
+2026-04-20 04:20:58,094 | INFO | ocrnlp.progress_ocr | process_image start
+2026-04-20 04:20:58,095 | INFO | ocrnlp.progress_ocr | [736d762b] ocr start
+2026-04-20 04:20:58,157 | DEBUG | pytesseract | ['tesseract', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_rhnbcasm_input.PNG', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_rhnbcasm', '-c', 'tessedit_create_tsv=1']
+2026-04-20 04:20:58,505 | DEBUG | pytesseract | ['tesseract', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_oogk5dr3_input.PNG', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_oogk5dr3', '-l', 'rus+eng', 'txt']
+2026-04-20 04:20:58,919 | INFO | ocrnlp.progress_ocr | [736d762b] tesseract: data=0.376s  string=0.448s  total=0.825s
+2026-04-20 04:20:58,920 | WARNING | ocrnlp.progress_ocr | [736d762b] low confidence: 45.6
+2026-04-20 04:20:58,920 | INFO | ocrnlp.progress_ocr | extracting fields
+2026-04-20 04:20:58,920 | DEBUG | ocrnlp.progress_ocr |   full_name: Петров Алексей Андреевич
+2026-04-20 04:20:58,920 | WARNING | ocrnlp.progress_ocr |   own_date: NOT FOUND
+2026-04-20 04:20:58,920 | DEBUG | ocrnlp.progress_ocr |   reg_num: 92-4567
+2026-04-20 04:20:58,921 | WARNING | ocrnlp.progress_ocr |   doc_num: NOT FOUND
+2026-04-20 04:20:58,921 | DEBUG | ocrnlp.progress_ocr |   date_from: 10 января 2024 г.
+2026-04-20 04:20:58,921 | DEBUG | ocrnlp.progress_ocr |   date_to: 25 января 2024 г.
+2026-04-20 04:20:58,921 | WARNING | ocrnlp.progress_ocr |   city_name: NOT FOUND
+2026-04-20 04:20:58,921 | DEBUG | ocrnlp.progress_ocr |   new_spec: Анализ данных
+2026-04-20 04:20:58,921 | WARNING | ocrnlp.progress_ocr |   hours_num: NOT FOUND
+2026-04-20 04:20:58,922 | WARNING | ocrnlp.progress_ocr |   organization: NOT FOUND
+2026-04-20 04:20:58,922 | INFO | ocrnlp.progress_ocr | fields parsed: 5/10
+2026-04-20 04:20:58,922 | INFO | ocrnlp.progress_ocr | process_image done
+2026-04-20 04:20:58,924 | INFO | ocrnlp.progress_ocr | process_image start
+2026-04-20 04:20:58,924 | INFO | ocrnlp.progress_ocr | [ed52a05e] ocr start
+2026-04-20 04:20:58,949 | DEBUG | pytesseract | ['tesseract', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_h2ezwz57_input.PNG', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_h2ezwz57', '-c', 'tessedit_create_tsv=1']
+2026-04-20 04:20:59,080 | DEBUG | pytesseract | ['tesseract', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_0axlzw3m_input.PNG', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_0axlzw3m', '-l', 'rus+eng', 'txt']
+2026-04-20 04:20:59,194 | INFO | ocrnlp.progress_ocr | [ed52a05e] tesseract: data=0.132s  string=0.138s  total=0.270s
+2026-04-20 04:20:59,194 | DEBUG | ocrnlp.progress_ocr | [ed52a05e] conf=63.3  text_len=9
+2026-04-20 04:20:59,194 | INFO | ocrnlp.progress_ocr | extracting fields
+2026-04-20 04:20:59,194 | WARNING | ocrnlp.progress_ocr |   full_name: NOT FOUND
+2026-04-20 04:20:59,194 | WARNING | ocrnlp.progress_ocr |   own_date: NOT FOUND
+2026-04-20 04:20:59,194 | WARNING | ocrnlp.progress_ocr |   reg_num: NOT FOUND
+2026-04-20 04:20:59,194 | WARNING | ocrnlp.progress_ocr |   doc_num: NOT FOUND
+2026-04-20 04:20:59,194 | WARNING | ocrnlp.progress_ocr |   date_from: NOT FOUND
+2026-04-20 04:20:59,194 | WARNING | ocrnlp.progress_ocr |   date_to: NOT FOUND
+2026-04-20 04:20:59,194 | WARNING | ocrnlp.progress_ocr |   city_name: NOT FOUND
+2026-04-20 04:20:59,194 | WARNING | ocrnlp.progress_ocr |   new_spec: NOT FOUND
+2026-04-20 04:20:59,194 | WARNING | ocrnlp.progress_ocr |   hours_num: NOT FOUND
+2026-04-20 04:20:59,194 | WARNING | ocrnlp.progress_ocr |   organization: NOT FOUND
+2026-04-20 04:20:59,194 | INFO | ocrnlp.progress_ocr | fields parsed: 0/10
+2026-04-20 04:20:59,194 | INFO | ocrnlp.progress_ocr | process_image done
+2026-04-20 04:20:59,196 | INFO | ocrnlp.progress_ocr | process_image start
+2026-04-20 04:20:59,196 | INFO | ocrnlp.progress_ocr | [1321c22b] ocr start
+2026-04-20 04:20:59,226 | DEBUG | pytesseract | ['tesseract', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_2c2g69xd_input.PNG', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_2c2g69xd', '-c', 'tessedit_create_tsv=1']
+2026-04-20 04:20:59,352 | DEBUG | pytesseract | ['tesseract', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_8pcodi05_input.PNG', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_8pcodi05', '-l', 'rus+eng', 'txt']
+2026-04-20 04:20:59,456 | INFO | ocrnlp.progress_ocr | [1321c22b] tesseract: data=0.126s  string=0.133s  total=0.260s
+2026-04-20 04:20:59,456 | DEBUG | ocrnlp.progress_ocr | [1321c22b] conf=95.0  text_len=0
+2026-04-20 04:20:59,456 | INFO | ocrnlp.progress_ocr | extracting fields
+2026-04-20 04:20:59,456 | WARNING | ocrnlp.progress_ocr |   full_name: NOT FOUND
+2026-04-20 04:20:59,456 | WARNING | ocrnlp.progress_ocr |   own_date: NOT FOUND
+2026-04-20 04:20:59,456 | WARNING | ocrnlp.progress_ocr |   reg_num: NOT FOUND
+2026-04-20 04:20:59,456 | WARNING | ocrnlp.progress_ocr |   doc_num: NOT FOUND
+2026-04-20 04:20:59,456 | WARNING | ocrnlp.progress_ocr |   date_from: NOT FOUND
+2026-04-20 04:20:59,456 | WARNING | ocrnlp.progress_ocr |   date_to: NOT FOUND
+2026-04-20 04:20:59,456 | WARNING | ocrnlp.progress_ocr |   city_name: NOT FOUND
+2026-04-20 04:20:59,456 | WARNING | ocrnlp.progress_ocr |   new_spec: NOT FOUND
+2026-04-20 04:20:59,456 | WARNING | ocrnlp.progress_ocr |   hours_num: NOT FOUND
+2026-04-20 04:20:59,457 | WARNING | ocrnlp.progress_ocr |   organization: NOT FOUND
+2026-04-20 04:20:59,457 | INFO | ocrnlp.progress_ocr | fields parsed: 0/10
+2026-04-20 04:20:59,457 | INFO | ocrnlp.progress_ocr | process_image done
+2026-04-20 04:29:50,298 | INFO | ocrnlp.progress_ocr | process_image start
+2026-04-20 04:29:50,298 | INFO | ocrnlp.progress_ocr | [72b46dee] ocr start
+2026-04-20 04:29:50,395 | DEBUG | pytesseract | ['tesseract', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_lrxggv5s_input.PNG', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_lrxggv5s', '-c', 'tessedit_create_tsv=1']
+2026-04-20 04:29:50,764 | DEBUG | pytesseract | ['tesseract', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_b998922b_input.PNG', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_b998922b', '-l', 'rus+eng', 'txt']
+2026-04-20 04:29:51,181 | INFO | ocrnlp.progress_ocr | [72b46dee] tesseract: data=0.432s  string=0.451s  total=0.883s
+2026-04-20 04:29:51,181 | WARNING | ocrnlp.progress_ocr | [72b46dee] low confidence: 45.6
+2026-04-20 04:29:51,182 | INFO | ocrnlp.progress_ocr | extracting fields
+2026-04-20 04:29:51,182 | DEBUG | ocrnlp.progress_ocr |   full_name: Петров Алексей Андреевич
+2026-04-20 04:29:51,182 | WARNING | ocrnlp.progress_ocr |   own_date: NOT FOUND
+2026-04-20 04:29:51,182 | DEBUG | ocrnlp.progress_ocr |   reg_num: 92-4567
+2026-04-20 04:29:51,182 | WARNING | ocrnlp.progress_ocr |   doc_num: NOT FOUND
+2026-04-20 04:29:51,183 | DEBUG | ocrnlp.progress_ocr |   date_from: 10 января 2024 г.
+2026-04-20 04:29:51,183 | DEBUG | ocrnlp.progress_ocr |   date_to: 25 января 2024 г.
+2026-04-20 04:29:51,183 | WARNING | ocrnlp.progress_ocr |   city_name: NOT FOUND
+2026-04-20 04:29:51,183 | DEBUG | ocrnlp.progress_ocr |   new_spec: Анализ данных
+2026-04-20 04:29:51,183 | WARNING | ocrnlp.progress_ocr |   hours_num: NOT FOUND
+2026-04-20 04:29:51,183 | WARNING | ocrnlp.progress_ocr |   organization: NOT FOUND
+2026-04-20 04:29:51,183 | INFO | ocrnlp.progress_ocr | fields parsed: 5/10
+2026-04-20 04:29:51,183 | INFO | ocrnlp.progress_ocr | process_image done
+2026-04-20 04:29:51,183 | INFO | ocrnlp.progress_ocr | scanned text:
+000 «Компания Пример
+
+we
+
+УДОСТОВЕРЕНИЕ
+
+© ПОВЫШЕНИИ КВАЛИФИКАЦИИ
+
+876543210987
+
+"Документ о квалификации
+
+Регистрационный номер
+92-4567
+
+Город
+‘Санкт-Петербург
+
+Дата выдачи
+26.01.2024
+
+Настоящее удостоверение синдетельствует о TOM, что
+
+Петров
+Алексей Андреевич
+
+прошёл(а) повышение квалификации = (на)
+
+ООО «Компания Пример»
+Учебный центр «Профи»
+с 10 января 2024 г. по 25 января 2024 г.
+
+по дополнительной профессиональной программе
+«Анализ данных»
+
+
+2026-04-20 04:29:51,186 | INFO | ocrnlp.progress_ocr | process_image start
+2026-04-20 04:29:51,186 | INFO | ocrnlp.progress_ocr | [5e550ed0] ocr start
+2026-04-20 04:29:51,210 | DEBUG | pytesseract | ['tesseract', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_6a4cse2h_input.PNG', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_6a4cse2h', '-c', 'tessedit_create_tsv=1']
+2026-04-20 04:29:51,340 | DEBUG | pytesseract | ['tesseract', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_erdm7_0x_input.PNG', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_erdm7_0x', '-l', 'rus+eng', 'txt']
+2026-04-20 04:29:51,452 | INFO | ocrnlp.progress_ocr | [5e550ed0] tesseract: data=0.130s  string=0.137s  total=0.267s
+2026-04-20 04:29:51,452 | DEBUG | ocrnlp.progress_ocr | [5e550ed0] conf=63.3  text_len=9
+2026-04-20 04:29:51,453 | INFO | ocrnlp.progress_ocr | extracting fields
+2026-04-20 04:29:51,453 | WARNING | ocrnlp.progress_ocr |   full_name: NOT FOUND
+2026-04-20 04:29:51,453 | WARNING | ocrnlp.progress_ocr |   own_date: NOT FOUND
+2026-04-20 04:29:51,453 | WARNING | ocrnlp.progress_ocr |   reg_num: NOT FOUND
+2026-04-20 04:29:51,453 | WARNING | ocrnlp.progress_ocr |   doc_num: NOT FOUND
+2026-04-20 04:29:51,453 | WARNING | ocrnlp.progress_ocr |   date_from: NOT FOUND
+2026-04-20 04:29:51,453 | WARNING | ocrnlp.progress_ocr |   date_to: NOT FOUND
+2026-04-20 04:29:51,453 | WARNING | ocrnlp.progress_ocr |   city_name: NOT FOUND
+2026-04-20 04:29:51,453 | WARNING | ocrnlp.progress_ocr |   new_spec: NOT FOUND
+2026-04-20 04:29:51,453 | WARNING | ocrnlp.progress_ocr |   hours_num: NOT FOUND
+2026-04-20 04:29:51,453 | WARNING | ocrnlp.progress_ocr |   organization: NOT FOUND
+2026-04-20 04:29:51,453 | INFO | ocrnlp.progress_ocr | fields parsed: 0/10
+2026-04-20 04:29:51,453 | INFO | ocrnlp.progress_ocr | process_image done
+2026-04-20 04:29:51,453 | INFO | ocrnlp.progress_ocr | scanned text:
+ДОКУМЕНТ
+
+2026-04-20 04:29:51,455 | INFO | ocrnlp.progress_ocr | process_image start
+2026-04-20 04:29:51,455 | INFO | ocrnlp.progress_ocr | [85e75edb] ocr start
+2026-04-20 04:29:51,485 | DEBUG | pytesseract | ['tesseract', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_alxkwp33_input.PNG', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_alxkwp33', '-c', 'tessedit_create_tsv=1']
+2026-04-20 04:29:51,619 | DEBUG | pytesseract | ['tesseract', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_x6eqb52g_input.PNG', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_x6eqb52g', '-l', 'rus+eng', 'txt']
+2026-04-20 04:29:51,727 | INFO | ocrnlp.progress_ocr | [85e75edb] tesseract: data=0.133s  string=0.139s  total=0.272s
+2026-04-20 04:29:51,727 | DEBUG | ocrnlp.progress_ocr | [85e75edb] conf=95.0  text_len=0
+2026-04-20 04:29:51,728 | INFO | ocrnlp.progress_ocr | extracting fields
+2026-04-20 04:29:51,728 | WARNING | ocrnlp.progress_ocr |   full_name: NOT FOUND
+2026-04-20 04:29:51,728 | WARNING | ocrnlp.progress_ocr |   own_date: NOT FOUND
+2026-04-20 04:29:51,728 | WARNING | ocrnlp.progress_ocr |   reg_num: NOT FOUND
+2026-04-20 04:29:51,728 | WARNING | ocrnlp.progress_ocr |   doc_num: NOT FOUND
+2026-04-20 04:29:51,728 | WARNING | ocrnlp.progress_ocr |   date_from: NOT FOUND
+2026-04-20 04:29:51,728 | WARNING | ocrnlp.progress_ocr |   date_to: NOT FOUND
+2026-04-20 04:29:51,728 | WARNING | ocrnlp.progress_ocr |   city_name: NOT FOUND
+2026-04-20 04:29:51,728 | WARNING | ocrnlp.progress_ocr |   new_spec: NOT FOUND
+2026-04-20 04:29:51,728 | WARNING | ocrnlp.progress_ocr |   hours_num: NOT FOUND
+2026-04-20 04:29:51,728 | WARNING | ocrnlp.progress_ocr |   organization: NOT FOUND
+2026-04-20 04:29:51,728 | INFO | ocrnlp.progress_ocr | fields parsed: 0/10
+2026-04-20 04:29:51,728 | INFO | ocrnlp.progress_ocr | process_image done
+2026-04-20 04:29:51,728 | INFO | ocrnlp.progress_ocr | scanned text:
+
+2026-04-20 04:38:16,069 | INFO | ocrnlp.progress_ocr | process_image start
+2026-04-20 04:38:16,070 | INFO | ocrnlp.progress_ocr | [5044f1d2] ocr start
+2026-04-20 04:38:16,169 | DEBUG | pytesseract | ['tesseract', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_6nkz32uf_input.PNG', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_6nkz32uf', '-c', 'tessedit_create_tsv=1']
+2026-04-20 04:38:16,552 | DEBUG | pytesseract | ['tesseract', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_s4kafrz2_input.PNG', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_s4kafrz2', '-l', 'rus+eng', 'txt']
+2026-04-20 04:38:16,977 | INFO | ocrnlp.progress_ocr | [5044f1d2] tesseract: data=0.447s  string=0.460s  total=0.906s
+2026-04-20 04:38:16,977 | WARNING | ocrnlp.progress_ocr | [5044f1d2] low confidence: 45.6
+2026-04-20 04:38:16,977 | INFO | ocrnlp.progress_ocr | extracting fields
+2026-04-20 04:38:16,978 | DEBUG | ocrnlp.progress_ocr |   full_name: Петров Алексей Андреевич
+2026-04-20 04:38:16,978 | DEBUG | ocrnlp.progress_ocr |   own_date: 26.01.2024
+2026-04-20 04:38:16,978 | DEBUG | ocrnlp.progress_ocr |   reg_num: 92-4567
+2026-04-20 04:38:16,978 | DEBUG | ocrnlp.progress_ocr |   doc_num: 876543210987
+2026-04-20 04:38:16,978 | DEBUG | ocrnlp.progress_ocr |   date_from: 10 января 2024 г.
+2026-04-20 04:38:16,978 | DEBUG | ocrnlp.progress_ocr |   date_to: 25 января 2024 г.
+2026-04-20 04:38:16,979 | DEBUG | ocrnlp.progress_ocr |   city_name: Санкт-Петербург
+2026-04-20 04:38:16,979 | DEBUG | ocrnlp.progress_ocr |   new_spec: Анализ данных
+2026-04-20 04:38:16,979 | WARNING | ocrnlp.progress_ocr |   hours_num: NOT FOUND
+2026-04-20 04:38:16,979 | WARNING | ocrnlp.progress_ocr |   organization: NOT FOUND
+2026-04-20 04:38:16,979 | INFO | ocrnlp.progress_ocr | fields parsed: 8/10
+2026-04-20 04:38:16,979 | INFO | ocrnlp.progress_ocr | process_image done
+2026-04-20 04:38:16,979 | INFO | ocrnlp.progress_ocr | scanned text:
+000 «Компания Пример
+
+we
+
+УДОСТОВЕРЕНИЕ
+
+© ПОВЫШЕНИИ КВАЛИФИКАЦИИ
+
+876543210987
+
+"Документ о квалификации
+
+Регистрационный номер
+92-4567
+
+Город
+‘Санкт-Петербург
+
+Дата выдачи
+26.01.2024
+
+Настоящее удостоверение синдетельствует о TOM, что
+
+Петров
+Алексей Андреевич
+
+прошёл(а) повышение квалификации = (на)
+
+ООО «Компания Пример»
+Учебный центр «Профи»
+с 10 января 2024 г. по 25 января 2024 г.
+
+по дополнительной профессиональной программе
+«Анализ данных»
+
+
+2026-04-20 04:38:16,982 | INFO | ocrnlp.progress_ocr | process_image start
+2026-04-20 04:38:16,982 | INFO | ocrnlp.progress_ocr | [068d07bd] ocr start
+2026-04-20 04:38:17,008 | DEBUG | pytesseract | ['tesseract', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_a7gzltu9_input.PNG', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_a7gzltu9', '-c', 'tessedit_create_tsv=1']
+2026-04-20 04:38:17,149 | DEBUG | pytesseract | ['tesseract', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_uuaif3zi_input.PNG', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_uuaif3zi', '-l', 'rus+eng', 'txt']
+2026-04-20 04:38:17,264 | INFO | ocrnlp.progress_ocr | [068d07bd] tesseract: data=0.141s  string=0.142s  total=0.283s
+2026-04-20 04:38:17,265 | DEBUG | ocrnlp.progress_ocr | [068d07bd] conf=63.3  text_len=9
+2026-04-20 04:38:17,265 | INFO | ocrnlp.progress_ocr | extracting fields
+2026-04-20 04:38:17,265 | WARNING | ocrnlp.progress_ocr |   full_name: NOT FOUND
+2026-04-20 04:38:17,265 | WARNING | ocrnlp.progress_ocr |   own_date: NOT FOUND
+2026-04-20 04:38:17,265 | WARNING | ocrnlp.progress_ocr |   reg_num: NOT FOUND
+2026-04-20 04:38:17,265 | WARNING | ocrnlp.progress_ocr |   doc_num: NOT FOUND
+2026-04-20 04:38:17,265 | WARNING | ocrnlp.progress_ocr |   date_from: NOT FOUND
+2026-04-20 04:38:17,265 | WARNING | ocrnlp.progress_ocr |   date_to: NOT FOUND
+2026-04-20 04:38:17,265 | WARNING | ocrnlp.progress_ocr |   city_name: NOT FOUND
+2026-04-20 04:38:17,265 | WARNING | ocrnlp.progress_ocr |   new_spec: NOT FOUND
+2026-04-20 04:38:17,265 | WARNING | ocrnlp.progress_ocr |   hours_num: NOT FOUND
+2026-04-20 04:38:17,265 | WARNING | ocrnlp.progress_ocr |   organization: NOT FOUND
+2026-04-20 04:38:17,265 | INFO | ocrnlp.progress_ocr | fields parsed: 0/10
+2026-04-20 04:38:17,265 | INFO | ocrnlp.progress_ocr | process_image done
+2026-04-20 04:38:17,265 | INFO | ocrnlp.progress_ocr | scanned text:
+ДОКУМЕНТ
+
+2026-04-20 04:38:17,267 | INFO | ocrnlp.progress_ocr | process_image start
+2026-04-20 04:38:17,267 | INFO | ocrnlp.progress_ocr | [336c9d82] ocr start
+2026-04-20 04:38:17,297 | DEBUG | pytesseract | ['tesseract', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_76mi0v7h_input.PNG', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_76mi0v7h', '-c', 'tessedit_create_tsv=1']
+2026-04-20 04:38:17,427 | DEBUG | pytesseract | ['tesseract', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_z0b0fbim_input.PNG', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_z0b0fbim', '-l', 'rus+eng', 'txt']
+2026-04-20 04:38:17,531 | INFO | ocrnlp.progress_ocr | [336c9d82] tesseract: data=0.130s  string=0.133s  total=0.263s
+2026-04-20 04:38:17,531 | DEBUG | ocrnlp.progress_ocr | [336c9d82] conf=95.0  text_len=0
+2026-04-20 04:38:17,531 | INFO | ocrnlp.progress_ocr | extracting fields
+2026-04-20 04:38:17,531 | WARNING | ocrnlp.progress_ocr |   full_name: NOT FOUND
+2026-04-20 04:38:17,531 | WARNING | ocrnlp.progress_ocr |   own_date: NOT FOUND
+2026-04-20 04:38:17,531 | WARNING | ocrnlp.progress_ocr |   reg_num: NOT FOUND
+2026-04-20 04:38:17,531 | WARNING | ocrnlp.progress_ocr |   doc_num: NOT FOUND
+2026-04-20 04:38:17,531 | WARNING | ocrnlp.progress_ocr |   date_from: NOT FOUND
+2026-04-20 04:38:17,531 | WARNING | ocrnlp.progress_ocr |   date_to: NOT FOUND
+2026-04-20 04:38:17,531 | WARNING | ocrnlp.progress_ocr |   city_name: NOT FOUND
+2026-04-20 04:38:17,531 | WARNING | ocrnlp.progress_ocr |   new_spec: NOT FOUND
+2026-04-20 04:38:17,531 | WARNING | ocrnlp.progress_ocr |   hours_num: NOT FOUND
+2026-04-20 04:38:17,531 | WARNING | ocrnlp.progress_ocr |   organization: NOT FOUND
+2026-04-20 04:38:17,531 | INFO | ocrnlp.progress_ocr | fields parsed: 0/10
+2026-04-20 04:38:17,531 | INFO | ocrnlp.progress_ocr | process_image done
+2026-04-20 04:38:17,531 | INFO | ocrnlp.progress_ocr | scanned text:
+
+2026-04-20 15:42:35,700 | INFO | ocrnlp.progress_ocr | process_image start
+2026-04-20 15:42:35,700 | INFO | ocrnlp.progress_ocr | [ead2ac3b] ocr start
+2026-04-20 15:42:35,813 | DEBUG | pytesseract | ['tesseract', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_izo0exge_input.PNG', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_izo0exge', '-c', 'tessedit_create_tsv=1']
+2026-04-20 15:42:36,187 | DEBUG | pytesseract | ['tesseract', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_lu6jurzz_input.PNG', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_lu6jurzz', '-l', 'rus+eng', 'txt']
+2026-04-20 15:42:36,637 | INFO | ocrnlp.progress_ocr | [ead2ac3b] tesseract: data=0.451s  string=0.486s  total=0.937s
+2026-04-20 15:42:36,637 | WARNING | ocrnlp.progress_ocr | [ead2ac3b] low confidence: 45.6
+2026-04-20 15:42:36,638 | INFO | ocrnlp.progress_ocr | extracting fields
+2026-04-20 15:42:36,638 | DEBUG | ocrnlp.progress_ocr |   full_name: Петров Алексей Андреевич
+2026-04-20 15:42:36,639 | DEBUG | ocrnlp.progress_ocr |   own_date: 26.01.2024
+2026-04-20 15:42:36,639 | DEBUG | ocrnlp.progress_ocr |   reg_num: 92-4567
+2026-04-20 15:42:36,639 | DEBUG | ocrnlp.progress_ocr |   doc_num: 876543210987
+2026-04-20 15:42:36,639 | DEBUG | ocrnlp.progress_ocr |   date_from: 10 января 2024 г.
+2026-04-20 15:42:36,639 | DEBUG | ocrnlp.progress_ocr |   date_to: 25 января 2024 г.
+2026-04-20 15:42:36,640 | DEBUG | ocrnlp.progress_ocr |   city_name: Санкт-Петербург
+2026-04-20 15:42:36,640 | DEBUG | ocrnlp.progress_ocr |   new_spec: Анализ данных
+2026-04-20 15:42:36,640 | WARNING | ocrnlp.progress_ocr |   hours_num: NOT FOUND
+2026-04-20 15:42:36,640 | WARNING | ocrnlp.progress_ocr |   organization: NOT FOUND
+2026-04-20 15:42:36,640 | INFO | ocrnlp.progress_ocr | fields parsed: 8/10
+2026-04-20 15:42:36,640 | INFO | ocrnlp.progress_ocr | process_image done
+2026-04-20 15:42:36,640 | INFO | ocrnlp.progress_ocr | scanned text:
+000 «Компания Пример
+
+we
+
+УДОСТОВЕРЕНИЕ
+
+© ПОВЫШЕНИИ КВАЛИФИКАЦИИ
+
+876543210987
+
+"Документ о квалификации
+
+Регистрационный номер
+92-4567
+
+Город
+‘Санкт-Петербург
+
+Дата выдачи
+26.01.2024
+
+Настоящее удостоверение синдетельствует о TOM, что
+
+Петров
+Алексей Андреевич
+
+прошёл(а) повышение квалификации = (на)
+
+ООО «Компания Пример»
+Учебный центр «Профи»
+с 10 января 2024 г. по 25 января 2024 г.
+
+по дополнительной профессиональной программе
+«Анализ данных»
+
+
+2026-04-20 15:42:36,642 | INFO | ocrnlp.progress_ocr | process_image start
+2026-04-20 15:42:36,642 | INFO | ocrnlp.progress_ocr | [aef8a009] ocr start
+2026-04-20 15:42:36,667 | DEBUG | pytesseract | ['tesseract', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_tukm32yf_input.PNG', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_tukm32yf', '-c', 'tessedit_create_tsv=1']
+2026-04-20 15:42:36,801 | DEBUG | pytesseract | ['tesseract', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_68gx6l8q_input.PNG', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_68gx6l8q', '-l', 'rus+eng', 'txt']
+2026-04-20 15:42:36,918 | INFO | ocrnlp.progress_ocr | [aef8a009] tesseract: data=0.133s  string=0.143s  total=0.275s
+2026-04-20 15:42:36,918 | DEBUG | ocrnlp.progress_ocr | [aef8a009] conf=63.3  text_len=9
+2026-04-20 15:42:36,918 | INFO | ocrnlp.progress_ocr | extracting fields
+2026-04-20 15:42:36,918 | WARNING | ocrnlp.progress_ocr |   full_name: NOT FOUND
+2026-04-20 15:42:36,918 | WARNING | ocrnlp.progress_ocr |   own_date: NOT FOUND
+2026-04-20 15:42:36,918 | WARNING | ocrnlp.progress_ocr |   reg_num: NOT FOUND
+2026-04-20 15:42:36,918 | WARNING | ocrnlp.progress_ocr |   doc_num: NOT FOUND
+2026-04-20 15:42:36,918 | WARNING | ocrnlp.progress_ocr |   date_from: NOT FOUND
+2026-04-20 15:42:36,918 | WARNING | ocrnlp.progress_ocr |   date_to: NOT FOUND
+2026-04-20 15:42:36,918 | WARNING | ocrnlp.progress_ocr |   city_name: NOT FOUND
+2026-04-20 15:42:36,918 | WARNING | ocrnlp.progress_ocr |   new_spec: NOT FOUND
+2026-04-20 15:42:36,918 | WARNING | ocrnlp.progress_ocr |   hours_num: NOT FOUND
+2026-04-20 15:42:36,918 | WARNING | ocrnlp.progress_ocr |   organization: NOT FOUND
+2026-04-20 15:42:36,918 | INFO | ocrnlp.progress_ocr | fields parsed: 0/10
+2026-04-20 15:42:36,918 | INFO | ocrnlp.progress_ocr | process_image done
+2026-04-20 15:42:36,918 | INFO | ocrnlp.progress_ocr | scanned text:
+ДОКУМЕНТ
+
+2026-04-20 15:42:36,920 | INFO | ocrnlp.progress_ocr | process_image start
+2026-04-20 15:42:36,920 | INFO | ocrnlp.progress_ocr | [0d64f395] ocr start
+2026-04-20 15:42:36,950 | DEBUG | pytesseract | ['tesseract', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_w15oerae_input.PNG', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_w15oerae', '-c', 'tessedit_create_tsv=1']
+2026-04-20 15:42:37,081 | DEBUG | pytesseract | ['tesseract', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_7hn5cyco_input.PNG', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_7hn5cyco', '-l', 'rus+eng', 'txt']
+2026-04-20 15:42:37,191 | INFO | ocrnlp.progress_ocr | [0d64f395] tesseract: data=0.131s  string=0.140s  total=0.271s
+2026-04-20 15:42:37,191 | DEBUG | ocrnlp.progress_ocr | [0d64f395] conf=95.0  text_len=0
+2026-04-20 15:42:37,191 | INFO | ocrnlp.progress_ocr | extracting fields
+2026-04-20 15:42:37,191 | WARNING | ocrnlp.progress_ocr |   full_name: NOT FOUND
+2026-04-20 15:42:37,191 | WARNING | ocrnlp.progress_ocr |   own_date: NOT FOUND
+2026-04-20 15:42:37,191 | WARNING | ocrnlp.progress_ocr |   reg_num: NOT FOUND
+2026-04-20 15:42:37,191 | WARNING | ocrnlp.progress_ocr |   doc_num: NOT FOUND
+2026-04-20 15:42:37,191 | WARNING | ocrnlp.progress_ocr |   date_from: NOT FOUND
+2026-04-20 15:42:37,191 | WARNING | ocrnlp.progress_ocr |   date_to: NOT FOUND
+2026-04-20 15:42:37,191 | WARNING | ocrnlp.progress_ocr |   city_name: NOT FOUND
+2026-04-20 15:42:37,191 | WARNING | ocrnlp.progress_ocr |   new_spec: NOT FOUND
+2026-04-20 15:42:37,191 | WARNING | ocrnlp.progress_ocr |   hours_num: NOT FOUND
+2026-04-20 15:42:37,191 | WARNING | ocrnlp.progress_ocr |   organization: NOT FOUND
+2026-04-20 15:42:37,191 | INFO | ocrnlp.progress_ocr | fields parsed: 0/10
+2026-04-20 15:42:37,191 | INFO | ocrnlp.progress_ocr | process_image done
+2026-04-20 15:42:37,191 | INFO | ocrnlp.progress_ocr | scanned text:
+

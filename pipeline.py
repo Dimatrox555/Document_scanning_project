@@ -1,6 +1,6 @@
 import cv2
 
-from OpenCV_proj.main import preprocess
+from OpenCV_proj.cv import preprocess
 from ocrnlp.progress_ocr import process_image
 
 
