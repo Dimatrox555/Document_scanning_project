@@ -29,3 +29,903 @@
 2026-04-05 03:44:23,163 | WARNING | progress_ocr | organization NOT FOUND
 2026-04-05 03:44:23,163 | INFO | progress_ocr | fields parsed: 4/10
 2026-04-05 03:44:23,163 | INFO | progress_ocr | process_image done
+2026-04-20 10:39:08,951 | INFO | ocrnlp.progress_ocr | process_image start
+2026-04-20 10:39:08,952 | INFO | ocrnlp.progress_ocr | [86848f6a] ocr start
+2026-04-20 10:39:08,955 | ERROR | ocrnlp.progress_ocr | [86848f6a] ocr failed
+Traceback (most recent call last):
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 451, in get_tesseract_version
+    output = subprocess.check_output(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] Не удается найти указанный файл
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\TraitPhoe\Desktop\Python_project\Document_scanning_project\ocrnlp\progress_ocr.py", line 27, in ocr_with_confidence
+    df = pt.image_to_data(img, output_type=pt.Output.DATAFRAME)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 590, in image_to_data
+    if get_tesseract_version(cached=True) < TESSERACT_MIN_VERSION:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 163, in wrapper
+    wrapper._result = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 458, in get_tesseract_version
+    raise TesseractNotFoundError()
+pytesseract.pytesseract.TesseractNotFoundError: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-04-20 10:39:09,070 | ERROR | ocrnlp.progress_ocr | ocr returned nothing, aborting
+2026-04-20 10:40:47,236 | INFO | ocrnlp.progress_ocr | process_image start
+2026-04-20 10:40:47,238 | INFO | ocrnlp.progress_ocr | [969f021f] ocr start
+2026-04-20 10:40:47,242 | ERROR | ocrnlp.progress_ocr | [969f021f] ocr failed
+Traceback (most recent call last):
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 451, in get_tesseract_version
+    output = subprocess.check_output(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] Не удается найти указанный файл
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\TraitPhoe\Desktop\Python_project\Document_scanning_project\ocrnlp\progress_ocr.py", line 27, in ocr_with_confidence
+    df = pt.image_to_data(img, output_type=pt.Output.DATAFRAME)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 590, in image_to_data
+    if get_tesseract_version(cached=True) < TESSERACT_MIN_VERSION:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 163, in wrapper
+    wrapper._result = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 458, in get_tesseract_version
+    raise TesseractNotFoundError()
+pytesseract.pytesseract.TesseractNotFoundError: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-04-20 10:40:47,251 | ERROR | ocrnlp.progress_ocr | ocr returned nothing, aborting
+2026-04-20 10:40:47,281 | INFO | ocrnlp.progress_ocr | process_image start
+2026-04-20 10:40:47,282 | INFO | ocrnlp.progress_ocr | [548948d1] ocr start
+2026-04-20 10:40:47,286 | ERROR | ocrnlp.progress_ocr | [548948d1] ocr failed
+Traceback (most recent call last):
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 451, in get_tesseract_version
+    output = subprocess.check_output(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] Не удается найти указанный файл
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\TraitPhoe\Desktop\Python_project\Document_scanning_project\ocrnlp\progress_ocr.py", line 27, in ocr_with_confidence
+    df = pt.image_to_data(img, output_type=pt.Output.DATAFRAME)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 590, in image_to_data
+    if get_tesseract_version(cached=True) < TESSERACT_MIN_VERSION:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 163, in wrapper
+    wrapper._result = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 458, in get_tesseract_version
+    raise TesseractNotFoundError()
+pytesseract.pytesseract.TesseractNotFoundError: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-04-20 10:40:47,290 | ERROR | ocrnlp.progress_ocr | ocr returned nothing, aborting
+2026-04-20 10:40:47,338 | INFO | ocrnlp.progress_ocr | process_image start
+2026-04-20 10:40:47,339 | INFO | ocrnlp.progress_ocr | [d905b0c2] ocr start
+2026-04-20 10:40:47,344 | ERROR | ocrnlp.progress_ocr | [d905b0c2] ocr failed
+Traceback (most recent call last):
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 451, in get_tesseract_version
+    output = subprocess.check_output(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] Не удается найти указанный файл
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\TraitPhoe\Desktop\Python_project\Document_scanning_project\ocrnlp\progress_ocr.py", line 27, in ocr_with_confidence
+    df = pt.image_to_data(img, output_type=pt.Output.DATAFRAME)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 590, in image_to_data
+    if get_tesseract_version(cached=True) < TESSERACT_MIN_VERSION:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 163, in wrapper
+    wrapper._result = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 458, in get_tesseract_version
+    raise TesseractNotFoundError()
+pytesseract.pytesseract.TesseractNotFoundError: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-04-20 10:40:47,349 | ERROR | ocrnlp.progress_ocr | ocr returned nothing, aborting
+2026-04-20 10:40:47,401 | INFO | ocrnlp.progress_ocr | process_image start
+2026-04-20 10:40:47,401 | INFO | ocrnlp.progress_ocr | [7c9b34ce] ocr start
+2026-04-20 10:40:47,408 | ERROR | ocrnlp.progress_ocr | [7c9b34ce] ocr failed
+Traceback (most recent call last):
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 451, in get_tesseract_version
+    output = subprocess.check_output(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] Не удается найти указанный файл
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\TraitPhoe\Desktop\Python_project\Document_scanning_project\ocrnlp\progress_ocr.py", line 27, in ocr_with_confidence
+    df = pt.image_to_data(img, output_type=pt.Output.DATAFRAME)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 590, in image_to_data
+    if get_tesseract_version(cached=True) < TESSERACT_MIN_VERSION:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 163, in wrapper
+    wrapper._result = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 458, in get_tesseract_version
+    raise TesseractNotFoundError()
+pytesseract.pytesseract.TesseractNotFoundError: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-04-20 10:40:47,414 | ERROR | ocrnlp.progress_ocr | ocr returned nothing, aborting
+2026-04-20 10:40:47,472 | INFO | ocrnlp.progress_ocr | process_image start
+2026-04-20 10:40:47,473 | INFO | ocrnlp.progress_ocr | [9d3e70a8] ocr start
+2026-04-20 10:40:47,481 | ERROR | ocrnlp.progress_ocr | [9d3e70a8] ocr failed
+Traceback (most recent call last):
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 451, in get_tesseract_version
+    output = subprocess.check_output(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] Не удается найти указанный файл
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\TraitPhoe\Desktop\Python_project\Document_scanning_project\ocrnlp\progress_ocr.py", line 27, in ocr_with_confidence
+    df = pt.image_to_data(img, output_type=pt.Output.DATAFRAME)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 590, in image_to_data
+    if get_tesseract_version(cached=True) < TESSERACT_MIN_VERSION:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 163, in wrapper
+    wrapper._result = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 458, in get_tesseract_version
+    raise TesseractNotFoundError()
+pytesseract.pytesseract.TesseractNotFoundError: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-04-20 10:40:47,491 | ERROR | ocrnlp.progress_ocr | ocr returned nothing, aborting
+2026-04-20 10:40:47,542 | INFO | ocrnlp.progress_ocr | process_image start
+2026-04-20 10:40:47,543 | INFO | ocrnlp.progress_ocr | [13bbb4cf] ocr start
+2026-04-20 10:40:47,548 | ERROR | ocrnlp.progress_ocr | [13bbb4cf] ocr failed
+Traceback (most recent call last):
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 451, in get_tesseract_version
+    output = subprocess.check_output(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] Не удается найти указанный файл
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\TraitPhoe\Desktop\Python_project\Document_scanning_project\ocrnlp\progress_ocr.py", line 27, in ocr_with_confidence
+    df = pt.image_to_data(img, output_type=pt.Output.DATAFRAME)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 590, in image_to_data
+    if get_tesseract_version(cached=True) < TESSERACT_MIN_VERSION:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 163, in wrapper
+    wrapper._result = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 458, in get_tesseract_version
+    raise TesseractNotFoundError()
+pytesseract.pytesseract.TesseractNotFoundError: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-04-20 10:40:47,555 | ERROR | ocrnlp.progress_ocr | ocr returned nothing, aborting
+2026-04-20 10:41:14,573 | INFO | ocrnlp.progress_ocr | process_image start
+2026-04-20 10:41:14,574 | INFO | ocrnlp.progress_ocr | [1b3736f0] ocr start
+2026-04-20 10:41:14,576 | ERROR | ocrnlp.progress_ocr | [1b3736f0] ocr failed
+Traceback (most recent call last):
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 451, in get_tesseract_version
+    output = subprocess.check_output(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] Не удается найти указанный файл
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\TraitPhoe\Desktop\Python_project\Document_scanning_project\ocrnlp\progress_ocr.py", line 27, in ocr_with_confidence
+    df = pt.image_to_data(img, output_type=pt.Output.DATAFRAME)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 590, in image_to_data
+    if get_tesseract_version(cached=True) < TESSERACT_MIN_VERSION:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 163, in wrapper
+    wrapper._result = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 458, in get_tesseract_version
+    raise TesseractNotFoundError()
+pytesseract.pytesseract.TesseractNotFoundError: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-04-20 10:41:14,581 | ERROR | ocrnlp.progress_ocr | ocr returned nothing, aborting
+2026-04-20 10:41:14,597 | INFO | ocrnlp.progress_ocr | process_image start
+2026-04-20 10:41:14,597 | INFO | ocrnlp.progress_ocr | [3f45adba] ocr start
+2026-04-20 10:41:14,599 | ERROR | ocrnlp.progress_ocr | [3f45adba] ocr failed
+Traceback (most recent call last):
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 451, in get_tesseract_version
+    output = subprocess.check_output(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] Не удается найти указанный файл
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\TraitPhoe\Desktop\Python_project\Document_scanning_project\ocrnlp\progress_ocr.py", line 27, in ocr_with_confidence
+    df = pt.image_to_data(img, output_type=pt.Output.DATAFRAME)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 590, in image_to_data
+    if get_tesseract_version(cached=True) < TESSERACT_MIN_VERSION:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 163, in wrapper
+    wrapper._result = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 458, in get_tesseract_version
+    raise TesseractNotFoundError()
+pytesseract.pytesseract.TesseractNotFoundError: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-04-20 10:41:14,601 | ERROR | ocrnlp.progress_ocr | ocr returned nothing, aborting
+2026-04-20 10:41:14,617 | INFO | ocrnlp.progress_ocr | process_image start
+2026-04-20 10:41:14,617 | INFO | ocrnlp.progress_ocr | [0ac8b26e] ocr start
+2026-04-20 10:41:14,618 | ERROR | ocrnlp.progress_ocr | [0ac8b26e] ocr failed
+Traceback (most recent call last):
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 451, in get_tesseract_version
+    output = subprocess.check_output(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] Не удается найти указанный файл
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\TraitPhoe\Desktop\Python_project\Document_scanning_project\ocrnlp\progress_ocr.py", line 27, in ocr_with_confidence
+    df = pt.image_to_data(img, output_type=pt.Output.DATAFRAME)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 590, in image_to_data
+    if get_tesseract_version(cached=True) < TESSERACT_MIN_VERSION:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 163, in wrapper
+    wrapper._result = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 458, in get_tesseract_version
+    raise TesseractNotFoundError()
+pytesseract.pytesseract.TesseractNotFoundError: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-04-20 10:41:14,620 | ERROR | ocrnlp.progress_ocr | ocr returned nothing, aborting
+2026-04-20 10:41:14,635 | INFO | ocrnlp.progress_ocr | process_image start
+2026-04-20 10:41:14,635 | INFO | ocrnlp.progress_ocr | [4d92206b] ocr start
+2026-04-20 10:41:14,637 | ERROR | ocrnlp.progress_ocr | [4d92206b] ocr failed
+Traceback (most recent call last):
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 451, in get_tesseract_version
+    output = subprocess.check_output(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] Не удается найти указанный файл
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\TraitPhoe\Desktop\Python_project\Document_scanning_project\ocrnlp\progress_ocr.py", line 27, in ocr_with_confidence
+    df = pt.image_to_data(img, output_type=pt.Output.DATAFRAME)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 590, in image_to_data
+    if get_tesseract_version(cached=True) < TESSERACT_MIN_VERSION:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 163, in wrapper
+    wrapper._result = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 458, in get_tesseract_version
+    raise TesseractNotFoundError()
+pytesseract.pytesseract.TesseractNotFoundError: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-04-20 10:41:14,638 | ERROR | ocrnlp.progress_ocr | ocr returned nothing, aborting
+2026-04-20 10:41:14,653 | INFO | ocrnlp.progress_ocr | process_image start
+2026-04-20 10:41:14,653 | INFO | ocrnlp.progress_ocr | [28e723fe] ocr start
+2026-04-20 10:41:14,655 | ERROR | ocrnlp.progress_ocr | [28e723fe] ocr failed
+Traceback (most recent call last):
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 451, in get_tesseract_version
+    output = subprocess.check_output(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] Не удается найти указанный файл
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\TraitPhoe\Desktop\Python_project\Document_scanning_project\ocrnlp\progress_ocr.py", line 27, in ocr_with_confidence
+    df = pt.image_to_data(img, output_type=pt.Output.DATAFRAME)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 590, in image_to_data
+    if get_tesseract_version(cached=True) < TESSERACT_MIN_VERSION:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 163, in wrapper
+    wrapper._result = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 458, in get_tesseract_version
+    raise TesseractNotFoundError()
+pytesseract.pytesseract.TesseractNotFoundError: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-04-20 10:41:14,657 | ERROR | ocrnlp.progress_ocr | ocr returned nothing, aborting
+2026-04-20 10:41:14,672 | INFO | ocrnlp.progress_ocr | process_image start
+2026-04-20 10:41:14,672 | INFO | ocrnlp.progress_ocr | [fe101b34] ocr start
+2026-04-20 10:41:14,673 | ERROR | ocrnlp.progress_ocr | [fe101b34] ocr failed
+Traceback (most recent call last):
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 451, in get_tesseract_version
+    output = subprocess.check_output(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] Не удается найти указанный файл
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\TraitPhoe\Desktop\Python_project\Document_scanning_project\ocrnlp\progress_ocr.py", line 27, in ocr_with_confidence
+    df = pt.image_to_data(img, output_type=pt.Output.DATAFRAME)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 590, in image_to_data
+    if get_tesseract_version(cached=True) < TESSERACT_MIN_VERSION:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 163, in wrapper
+    wrapper._result = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 458, in get_tesseract_version
+    raise TesseractNotFoundError()
+pytesseract.pytesseract.TesseractNotFoundError: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-04-20 10:41:14,675 | ERROR | ocrnlp.progress_ocr | ocr returned nothing, aborting
+2026-04-20 10:50:37,374 | INFO | ocrnlp.progress_ocr | process_image start
+2026-04-20 10:50:37,377 | INFO | ocrnlp.progress_ocr | [fbb24ea5] ocr start
+2026-04-20 10:50:37,381 | ERROR | ocrnlp.progress_ocr | [fbb24ea5] ocr failed
+Traceback (most recent call last):
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 451, in get_tesseract_version
+    output = subprocess.check_output(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] Не удается найти указанный файл
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\TraitPhoe\Desktop\Python_project\Document_scanning_project\ocrnlp\progress_ocr.py", line 27, in ocr_with_confidence
+    df = pt.image_to_data(img, output_type=pt.Output.DATAFRAME)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 590, in image_to_data
+    if get_tesseract_version(cached=True) < TESSERACT_MIN_VERSION:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 163, in wrapper
+    wrapper._result = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 458, in get_tesseract_version
+    raise TesseractNotFoundError()
+pytesseract.pytesseract.TesseractNotFoundError: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-04-20 10:50:37,390 | ERROR | ocrnlp.progress_ocr | ocr returned nothing, aborting
+2026-04-20 10:50:37,416 | INFO | ocrnlp.progress_ocr | process_image start
+2026-04-20 10:50:37,416 | INFO | ocrnlp.progress_ocr | [70cfe707] ocr start
+2026-04-20 10:50:37,419 | ERROR | ocrnlp.progress_ocr | [70cfe707] ocr failed
+Traceback (most recent call last):
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 451, in get_tesseract_version
+    output = subprocess.check_output(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] Не удается найти указанный файл
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\TraitPhoe\Desktop\Python_project\Document_scanning_project\ocrnlp\progress_ocr.py", line 27, in ocr_with_confidence
+    df = pt.image_to_data(img, output_type=pt.Output.DATAFRAME)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 590, in image_to_data
+    if get_tesseract_version(cached=True) < TESSERACT_MIN_VERSION:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 163, in wrapper
+    wrapper._result = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 458, in get_tesseract_version
+    raise TesseractNotFoundError()
+pytesseract.pytesseract.TesseractNotFoundError: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-04-20 10:50:37,423 | ERROR | ocrnlp.progress_ocr | ocr returned nothing, aborting
+2026-04-20 10:50:37,450 | INFO | ocrnlp.progress_ocr | process_image start
+2026-04-20 10:50:37,450 | INFO | ocrnlp.progress_ocr | [8cc719a5] ocr start
+2026-04-20 10:50:37,453 | ERROR | ocrnlp.progress_ocr | [8cc719a5] ocr failed
+Traceback (most recent call last):
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 451, in get_tesseract_version
+    output = subprocess.check_output(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] Не удается найти указанный файл
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\TraitPhoe\Desktop\Python_project\Document_scanning_project\ocrnlp\progress_ocr.py", line 27, in ocr_with_confidence
+    df = pt.image_to_data(img, output_type=pt.Output.DATAFRAME)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 590, in image_to_data
+    if get_tesseract_version(cached=True) < TESSERACT_MIN_VERSION:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 163, in wrapper
+    wrapper._result = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 458, in get_tesseract_version
+    raise TesseractNotFoundError()
+pytesseract.pytesseract.TesseractNotFoundError: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-04-20 10:50:37,456 | ERROR | ocrnlp.progress_ocr | ocr returned nothing, aborting
+2026-04-20 10:50:37,483 | INFO | ocrnlp.progress_ocr | process_image start
+2026-04-20 10:50:37,484 | INFO | ocrnlp.progress_ocr | [4ae55faf] ocr start
+2026-04-20 10:50:37,486 | ERROR | ocrnlp.progress_ocr | [4ae55faf] ocr failed
+Traceback (most recent call last):
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 451, in get_tesseract_version
+    output = subprocess.check_output(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] Не удается найти указанный файл
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\TraitPhoe\Desktop\Python_project\Document_scanning_project\ocrnlp\progress_ocr.py", line 27, in ocr_with_confidence
+    df = pt.image_to_data(img, output_type=pt.Output.DATAFRAME)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 590, in image_to_data
+    if get_tesseract_version(cached=True) < TESSERACT_MIN_VERSION:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 163, in wrapper
+    wrapper._result = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 458, in get_tesseract_version
+    raise TesseractNotFoundError()
+pytesseract.pytesseract.TesseractNotFoundError: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-04-20 10:50:37,489 | ERROR | ocrnlp.progress_ocr | ocr returned nothing, aborting
+2026-04-20 10:50:37,519 | INFO | ocrnlp.progress_ocr | process_image start
+2026-04-20 10:50:37,519 | INFO | ocrnlp.progress_ocr | [a617c731] ocr start
+2026-04-20 10:50:37,522 | ERROR | ocrnlp.progress_ocr | [a617c731] ocr failed
+Traceback (most recent call last):
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 451, in get_tesseract_version
+    output = subprocess.check_output(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] Не удается найти указанный файл
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\TraitPhoe\Desktop\Python_project\Document_scanning_project\ocrnlp\progress_ocr.py", line 27, in ocr_with_confidence
+    df = pt.image_to_data(img, output_type=pt.Output.DATAFRAME)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 590, in image_to_data
+    if get_tesseract_version(cached=True) < TESSERACT_MIN_VERSION:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 163, in wrapper
+    wrapper._result = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 458, in get_tesseract_version
+    raise TesseractNotFoundError()
+pytesseract.pytesseract.TesseractNotFoundError: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-04-20 10:50:37,526 | ERROR | ocrnlp.progress_ocr | ocr returned nothing, aborting
+2026-04-20 10:50:37,558 | INFO | ocrnlp.progress_ocr | process_image start
+2026-04-20 10:50:37,558 | INFO | ocrnlp.progress_ocr | [f9bfe4bd] ocr start
+2026-04-20 10:50:37,561 | ERROR | ocrnlp.progress_ocr | [f9bfe4bd] ocr failed
+Traceback (most recent call last):
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 451, in get_tesseract_version
+    output = subprocess.check_output(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] Не удается найти указанный файл
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\TraitPhoe\Desktop\Python_project\Document_scanning_project\ocrnlp\progress_ocr.py", line 27, in ocr_with_confidence
+    df = pt.image_to_data(img, output_type=pt.Output.DATAFRAME)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 590, in image_to_data
+    if get_tesseract_version(cached=True) < TESSERACT_MIN_VERSION:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 163, in wrapper
+    wrapper._result = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 458, in get_tesseract_version
+    raise TesseractNotFoundError()
+pytesseract.pytesseract.TesseractNotFoundError: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-04-20 10:50:37,565 | ERROR | ocrnlp.progress_ocr | ocr returned nothing, aborting
+2026-04-20 10:54:25,956 | INFO | ocrnlp.progress_ocr | process_image start
+2026-04-20 10:54:25,958 | INFO | ocrnlp.progress_ocr | [a4e4250c] ocr start
+2026-04-20 10:54:25,961 | ERROR | ocrnlp.progress_ocr | [a4e4250c] ocr failed
+Traceback (most recent call last):
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 451, in get_tesseract_version
+    output = subprocess.check_output(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] Не удается найти указанный файл
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\TraitPhoe\Desktop\Python_project\Document_scanning_project\ocrnlp\progress_ocr.py", line 27, in ocr_with_confidence
+    df = pt.image_to_data(img, output_type=pt.Output.DATAFRAME)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 590, in image_to_data
+    if get_tesseract_version(cached=True) < TESSERACT_MIN_VERSION:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 163, in wrapper
+    wrapper._result = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 458, in get_tesseract_version
+    raise TesseractNotFoundError()
+pytesseract.pytesseract.TesseractNotFoundError: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-04-20 10:54:25,969 | ERROR | ocrnlp.progress_ocr | ocr returned nothing, aborting
+2026-04-20 10:54:25,993 | INFO | ocrnlp.progress_ocr | process_image start
+2026-04-20 10:54:25,993 | INFO | ocrnlp.progress_ocr | [ce42f7fd] ocr start
+2026-04-20 10:54:25,996 | ERROR | ocrnlp.progress_ocr | [ce42f7fd] ocr failed
+Traceback (most recent call last):
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 451, in get_tesseract_version
+    output = subprocess.check_output(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] Не удается найти указанный файл
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\TraitPhoe\Desktop\Python_project\Document_scanning_project\ocrnlp\progress_ocr.py", line 27, in ocr_with_confidence
+    df = pt.image_to_data(img, output_type=pt.Output.DATAFRAME)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 590, in image_to_data
+    if get_tesseract_version(cached=True) < TESSERACT_MIN_VERSION:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 163, in wrapper
+    wrapper._result = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 458, in get_tesseract_version
+    raise TesseractNotFoundError()
+pytesseract.pytesseract.TesseractNotFoundError: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-04-20 10:54:26,000 | ERROR | ocrnlp.progress_ocr | ocr returned nothing, aborting
+2026-04-20 10:54:26,027 | INFO | ocrnlp.progress_ocr | process_image start
+2026-04-20 10:54:26,027 | INFO | ocrnlp.progress_ocr | [9f6fb07e] ocr start
+2026-04-20 10:54:26,030 | ERROR | ocrnlp.progress_ocr | [9f6fb07e] ocr failed
+Traceback (most recent call last):
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 451, in get_tesseract_version
+    output = subprocess.check_output(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] Не удается найти указанный файл
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\TraitPhoe\Desktop\Python_project\Document_scanning_project\ocrnlp\progress_ocr.py", line 27, in ocr_with_confidence
+    df = pt.image_to_data(img, output_type=pt.Output.DATAFRAME)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 590, in image_to_data
+    if get_tesseract_version(cached=True) < TESSERACT_MIN_VERSION:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 163, in wrapper
+    wrapper._result = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 458, in get_tesseract_version
+    raise TesseractNotFoundError()
+pytesseract.pytesseract.TesseractNotFoundError: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-04-20 10:54:26,034 | ERROR | ocrnlp.progress_ocr | ocr returned nothing, aborting
+2026-04-20 10:54:26,066 | INFO | ocrnlp.progress_ocr | process_image start
+2026-04-20 10:54:26,067 | INFO | ocrnlp.progress_ocr | [d244a80b] ocr start
+2026-04-20 10:54:26,069 | ERROR | ocrnlp.progress_ocr | [d244a80b] ocr failed
+Traceback (most recent call last):
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 451, in get_tesseract_version
+    output = subprocess.check_output(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] Не удается найти указанный файл
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\TraitPhoe\Desktop\Python_project\Document_scanning_project\ocrnlp\progress_ocr.py", line 27, in ocr_with_confidence
+    df = pt.image_to_data(img, output_type=pt.Output.DATAFRAME)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 590, in image_to_data
+    if get_tesseract_version(cached=True) < TESSERACT_MIN_VERSION:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 163, in wrapper
+    wrapper._result = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 458, in get_tesseract_version
+    raise TesseractNotFoundError()
+pytesseract.pytesseract.TesseractNotFoundError: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-04-20 10:54:26,072 | ERROR | ocrnlp.progress_ocr | ocr returned nothing, aborting
+2026-04-20 10:54:26,100 | INFO | ocrnlp.progress_ocr | process_image start
+2026-04-20 10:54:26,100 | INFO | ocrnlp.progress_ocr | [c670dc15] ocr start
+2026-04-20 10:54:26,103 | ERROR | ocrnlp.progress_ocr | [c670dc15] ocr failed
+Traceback (most recent call last):
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 451, in get_tesseract_version
+    output = subprocess.check_output(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] Не удается найти указанный файл
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\TraitPhoe\Desktop\Python_project\Document_scanning_project\ocrnlp\progress_ocr.py", line 27, in ocr_with_confidence
+    df = pt.image_to_data(img, output_type=pt.Output.DATAFRAME)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 590, in image_to_data
+    if get_tesseract_version(cached=True) < TESSERACT_MIN_VERSION:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 163, in wrapper
+    wrapper._result = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 458, in get_tesseract_version
+    raise TesseractNotFoundError()
+pytesseract.pytesseract.TesseractNotFoundError: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-04-20 10:54:26,105 | ERROR | ocrnlp.progress_ocr | ocr returned nothing, aborting
+2026-04-20 10:54:26,133 | INFO | ocrnlp.progress_ocr | process_image start
+2026-04-20 10:54:26,133 | INFO | ocrnlp.progress_ocr | [57eaa151] ocr start
+2026-04-20 10:54:26,136 | ERROR | ocrnlp.progress_ocr | [57eaa151] ocr failed
+Traceback (most recent call last):
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 451, in get_tesseract_version
+    output = subprocess.check_output(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\TraitPhoe\.conda\envs\mega_arbuz\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] Не удается найти указанный файл
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\TraitPhoe\Desktop\Python_project\Document_scanning_project\ocrnlp\progress_ocr.py", line 27, in ocr_with_confidence
+    df = pt.image_to_data(img, output_type=pt.Output.DATAFRAME)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 590, in image_to_data
+    if get_tesseract_version(cached=True) < TESSERACT_MIN_VERSION:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 163, in wrapper
+    wrapper._result = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TraitPhoe\AppData\Roaming\Python\Python312\site-packages\pytesseract\pytesseract.py", line 458, in get_tesseract_version
+    raise TesseractNotFoundError()
+pytesseract.pytesseract.TesseractNotFoundError: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-04-20 10:54:26,140 | ERROR | ocrnlp.progress_ocr | ocr returned nothing, aborting

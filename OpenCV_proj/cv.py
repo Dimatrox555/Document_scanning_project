@@ -3,21 +3,7 @@ import numpy as np
 import json
 from pathlib import Path
 from pdf2image import convert_from_path
-import torch
-import torch.nn as nn
-from torchvision import models
 
-##### НЕЙРОНКА
-
-model = models.resnet18(weights="DEFAULT")
-
-model.fc = nn.Sequential(
-    nn.Linear(model.fc.in_features, 8),
-    nn.Sigmoid()
-)
-## нужно разобраться как начать обучение и кормить датасеты этой штуке
-
-##### ПРОГРАММА
 
 ### создание точек назначения для трансформации (примерно лист а4)
 destination_points = np.array([[0, 0], [297, 0], [0, 210], [297, 210]], dtype=np.float32)
@@ -27,16 +13,14 @@ parent_dir = Path(__file__).parent.absolute()
 ### переделка пдфайла в пнг
 def pdf2png(path):
     poppler = parent_dir / "poppler" / "Library" / "bin"
-    pdf_path = parent_dir / "pdfs" / path
+    pdf_path = path
     images = convert_from_path(pdf_path, poppler_path=str(poppler))
-
+    ## переименовывает полученные картинки в 1234...
     for i, image in enumerate(images, start = 1):
         image.save(parent_dir / "images" / f"{i}.png", "PNG")
 
 
-
 def read(img_path, json_path, k):
-
     ## чтение картиночки
     img_output = cv.imread(img_path)
     if img_output.any() != None:
@@ -75,16 +59,18 @@ def grayscale(image):
     _, result = cv.threshold(result, 0, 255, cv.THRESH_BINARY+cv.THRESH_OTSU)
     return result
 
-def preprocess(img_path="0.png", k=4, ispdf = False):
+def preprocess(img_path="0.png", k=4):
     ### создание путей
     json_dir = parent_dir / "json/json_main.json"
-
-    ## вычисление количества изображений
+    pdf_dir = parent_dir / "pdfs/0.pdf"
     image_dir = parent_dir / "images"
+    ## вычисление количества изображений
     num = sum(1 for i in image_dir.iterdir())
 
-    if ispdf:
-        pdf2png("0.pdf")
+    ## проверка и переделка пдфов
+    if pdf_dir.exists():
+        pdf2png(pdf_dir)
+
 
     output_arr = []
     # программа
@@ -98,7 +84,7 @@ def preprocess(img_path="0.png", k=4, ispdf = False):
         img = image_transform(img, k, points)
         img = grayscale(img)
 
-        ### запись готового результата в файл и показ изображения
+        ### запись готового результата в файл
         cv.imwrite(output_dir, img)
         output_arr.append(str(output_dir))
         #cv.imshow("Result", img)

@@ -1,12 +1,10 @@
 import cv2
-
-from OpenCV_proj.main import preprocess
+from OpenCV_proj.cv import preprocess
 from ocrnlp.progress_ocr import process_image
 
 
 def run():
     image_paths = preprocess()
-
     results = []
     for path in image_paths:
         img = cv2.imread(path)
