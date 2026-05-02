@@ -5,3 +5,13 @@ __pycache__/
 *.pyc
 *.log
 logs/
+
+OpenCV_proj/images/
+OpenCV_proj/processed_images/
+
+
+ocrnlp/weight_train_model/
+ocrnlp/ocr_preprocess/
+
+
+.DS_Store

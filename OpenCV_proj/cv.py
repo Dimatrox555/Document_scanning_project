@@ -3,6 +3,8 @@ import numpy as np
 import json
 from pathlib import Path
 from pdf2image import convert_from_path
+import platform
+import shutil
 
 
 ### создание точек назначения для трансформации (примерно лист а4)
@@ -12,21 +14,32 @@ parent_dir = Path(__file__).parent.absolute()
 
 ### переделка пдфайла в пнг
 def pdf2png(path):
-    poppler = parent_dir / "poppler" / "Library" / "bin"
-    pdf_path = path
-    images = convert_from_path(pdf_path, poppler_path=str(poppler))
-    ## переименовывает полученные картинки в 1234...
-    for i, image in enumerate(images, start = 1):
-        image.save(parent_dir / "images" / f"{i}.png", "PNG")
+    pdf_path = str(path)
+
+    # try system poppler first (Mac/Linux/Windows PATH)
+    pdfinfo = shutil.which("pdfinfo")
+
+    if pdfinfo:
+        poppler_path = str(Path(pdfinfo).parent)
+    else:
+        poppler_path = None  # pdf2image will try PATH automatically
+
+    images = convert_from_path(pdf_path, poppler_path=poppler_path)
+
+    images_dir = parent_dir / "images"
+    images_dir.mkdir(parents=True, exist_ok=True)
+
+    for i, image in enumerate(images, start=1):
+        image.save(images_dir / f"{i}.png", "PNG")
 
 
 def read(img_path, json_path, k):
     ## чтение картиночки
     img_output = cv.imread(img_path)
-    if img_output.any() != None:
-        h = img_output.shape[0]*k
-        w = img_output.shape[1]*k
-        img_output = cv.resize(img_output, (w,h))
+    if img_output is not None:
+        h = int(img_output.shape[0] * k)
+        w = int(img_output.shape[1] * k)
+        img_output = cv.resize(img_output, (w, h))
     else: img_output = 0
     ## чтение джсона
     with open(json_path, "r") as file:
@@ -55,7 +68,7 @@ def image_transform(target, k, points):
 
 ### конвертация изображения в чёрно-белый
 def grayscale(image):
-    result = cv.cvtColor(image, cv.COLOR_RGB2GRAY)
+    result = cv.cvtColor(image, cv.COLOR_BGR2GRAY)
     _, result = cv.threshold(result, 0, 255, cv.THRESH_BINARY+cv.THRESH_OTSU)
     return result
 
@@ -64,13 +77,18 @@ def preprocess(img_path="0.png", k=4):
     json_dir = parent_dir / "json/json_main.json"
     pdf_dir = parent_dir / "pdfs/0.pdf"
     image_dir = parent_dir / "images"
+    image_dir.mkdir(parents=True, exist_ok=True)
     ## вычисление количества изображений
-    num = sum(1 for i in image_dir.iterdir())
+    num = sum(1 for i in image_dir.iterdir() if i.suffix.lower() == ".png")
 
     ## проверка и переделка пдфов
     if pdf_dir.exists():
         pdf2png(pdf_dir)
 
+    Path(parent_dir / "processed_images").mkdir(parents=True, exist_ok=True)
+
+    if num == 0:
+        return []
 
     output_arr = []
     # программа

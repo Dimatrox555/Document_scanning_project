@@ -6,7 +6,7 @@ import uuid
 
 import pytesseract as pt
 
-from ocrnlp.normalizer import normalize
+from ocrnlp.ocr_preprocess.normalizer import normalize
 from ocrnlp.patterns import patterns
 from ocrnlp.log_config import setup_logging
 

@@ -29,3 +29,55 @@
 2026-04-05 03:44:23,163 | WARNING | progress_ocr | organization NOT FOUND
 2026-04-05 03:44:23,163 | INFO | progress_ocr | fields parsed: 4/10
 2026-04-05 03:44:23,163 | INFO | progress_ocr | process_image done
+2026-05-03 05:42:11,644 | INFO | ocrnlp.progress_ocr | process_image start
+2026-05-03 05:42:11,644 | INFO | ocrnlp.progress_ocr | [6d13397a] ocr start
+2026-05-03 05:42:12,167 | DEBUG | pytesseract | ['tesseract', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_90lt1f6y_input.PNG', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_90lt1f6y', '-c', 'tessedit_create_tsv=1']
+2026-05-03 05:42:12,617 | DEBUG | pytesseract | ['tesseract', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_ny7iw_g__input.PNG', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_ny7iw_g_', '-l', 'rus+eng', 'txt']
+2026-05-03 05:42:12,989 | INFO | ocrnlp.progress_ocr | [6d13397a] tesseract: data=0.937s  string=0.408s  total=1.345s
+2026-05-03 05:42:12,990 | WARNING | ocrnlp.progress_ocr | [6d13397a] low confidence: 46.3
+2026-05-03 05:42:12,990 | INFO | ocrnlp.progress_ocr | extracting fields
+2026-05-03 05:42:12,991 | DEBUG | ocrnlp.progress_ocr |   full_name: Петров Алексей Андреевич
+2026-05-03 05:42:12,991 | DEBUG | ocrnlp.progress_ocr |   own_date: 26.01.2024
+2026-05-03 05:42:12,991 | DEBUG | ocrnlp.progress_ocr |   reg_num: 92-4567
+2026-05-03 05:42:12,991 | DEBUG | ocrnlp.progress_ocr |   doc_num: 876543210987
+2026-05-03 05:42:12,991 | DEBUG | ocrnlp.progress_ocr |   date_from: 10 января 2024 г.
+2026-05-03 05:42:12,991 | DEBUG | ocrnlp.progress_ocr |   date_to: 25 января 2024 г.
+2026-05-03 05:42:12,992 | DEBUG | ocrnlp.progress_ocr |   city_name: Санкт-Петербург
+2026-05-03 05:42:12,992 | DEBUG | ocrnlp.progress_ocr |   new_spec: Анализ данных
+2026-05-03 05:42:12,992 | WARNING | ocrnlp.progress_ocr |   hours_num: NOT FOUND
+2026-05-03 05:42:12,993 | WARNING | ocrnlp.progress_ocr |   organization: NOT FOUND
+2026-05-03 05:42:12,993 | INFO | ocrnlp.progress_ocr | fields parsed: 8/10
+2026-05-03 05:42:12,993 | INFO | ocrnlp.progress_ocr | process_image done
+2026-05-03 05:42:12,993 | INFO | ocrnlp.progress_ocr | scanned text:
+ООО «Компания Пример
+
+УДОСТОВЕРЕНИЕ
+
+© ПОВЫШЕНИИ КВАЛИФИКАЦИИ
+876543210987
+
+"Документ о квалификации
+
+Регистрационный номер
+92-4567
+
+Город
+Санкт-Петербург
+
+Дата выдачи
+26.01.2024
+
+Ныстоящее удостоверение синдетельствует о TOM, что
+
+Петров
+Алексей Андреевич
+
+прошёл(а) повышение квалификации = (на)
+ООО «Компания Пример»
+Учебный центр «Профи»
+с 10 января 2024 г. по 25 января 2024 г.
+
+по лополнительной професснональной программе
+«Анализ данных»
+
+
