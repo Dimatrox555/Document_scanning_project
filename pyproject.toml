@@ -17,4 +17,4 @@ dependencies = [
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["ocrnlp*", "OpenCV_proj*"]
+include = ["ocrnlp*", "OpenCV_proj*", "eval*"]

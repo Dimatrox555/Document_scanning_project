@@ -81,3 +81,969 @@
 «Анализ данных»
 
 
+2026-05-03 23:03:50,672 | DEBUG | PIL.Image | Importing AvifImagePlugin
+2026-05-03 23:03:51,441 | DEBUG | PIL.Image | Importing BlpImagePlugin
+2026-05-03 23:03:51,443 | DEBUG | PIL.Image | Importing BmpImagePlugin
+2026-05-03 23:03:51,443 | DEBUG | PIL.Image | Importing BufrStubImagePlugin
+2026-05-03 23:03:51,444 | DEBUG | PIL.Image | Importing CurImagePlugin
+2026-05-03 23:03:51,445 | DEBUG | PIL.Image | Importing DcxImagePlugin
+2026-05-03 23:03:51,446 | DEBUG | PIL.Image | Importing DdsImagePlugin
+2026-05-03 23:03:51,448 | DEBUG | PIL.Image | Importing EpsImagePlugin
+2026-05-03 23:03:51,449 | DEBUG | PIL.Image | Importing FitsImagePlugin
+2026-05-03 23:03:51,449 | DEBUG | PIL.Image | Importing FliImagePlugin
+2026-05-03 23:03:51,450 | DEBUG | PIL.Image | Importing FpxImagePlugin
+2026-05-03 23:03:51,450 | DEBUG | PIL.Image | Image: failed to import FpxImagePlugin: No module named 'olefile'
+2026-05-03 23:03:51,451 | DEBUG | PIL.Image | Importing FtexImagePlugin
+2026-05-03 23:03:51,452 | DEBUG | PIL.Image | Importing GbrImagePlugin
+2026-05-03 23:03:51,452 | DEBUG | PIL.Image | Importing GifImagePlugin
+2026-05-03 23:03:51,452 | DEBUG | PIL.Image | Importing GribStubImagePlugin
+2026-05-03 23:03:51,453 | DEBUG | PIL.Image | Importing Hdf5StubImagePlugin
+2026-05-03 23:03:51,453 | DEBUG | PIL.Image | Importing IcnsImagePlugin
+2026-05-03 23:03:51,455 | DEBUG | PIL.Image | Importing IcoImagePlugin
+2026-05-03 23:03:51,456 | DEBUG | PIL.Image | Importing ImImagePlugin
+2026-05-03 23:03:51,457 | DEBUG | PIL.Image | Importing ImtImagePlugin
+2026-05-03 23:03:51,457 | DEBUG | PIL.Image | Importing IptcImagePlugin
+2026-05-03 23:03:51,458 | DEBUG | PIL.Image | Importing JpegImagePlugin
+2026-05-03 23:03:51,458 | DEBUG | PIL.Image | Importing Jpeg2KImagePlugin
+2026-05-03 23:03:51,458 | DEBUG | PIL.Image | Importing McIdasImagePlugin
+2026-05-03 23:03:51,459 | DEBUG | PIL.Image | Importing MicImagePlugin
+2026-05-03 23:03:51,459 | DEBUG | PIL.Image | Image: failed to import MicImagePlugin: No module named 'olefile'
+2026-05-03 23:03:51,460 | DEBUG | PIL.Image | Importing MpegImagePlugin
+2026-05-03 23:03:51,460 | DEBUG | PIL.Image | Importing MpoImagePlugin
+2026-05-03 23:03:51,463 | DEBUG | PIL.Image | Importing MspImagePlugin
+2026-05-03 23:03:51,464 | DEBUG | PIL.Image | Importing PalmImagePlugin
+2026-05-03 23:03:51,466 | DEBUG | PIL.Image | Importing PcdImagePlugin
+2026-05-03 23:03:51,467 | DEBUG | PIL.Image | Importing PcxImagePlugin
+2026-05-03 23:03:51,467 | DEBUG | PIL.Image | Importing PdfImagePlugin
+2026-05-03 23:03:51,470 | DEBUG | PIL.Image | Importing PixarImagePlugin
+2026-05-03 23:03:51,471 | DEBUG | PIL.Image | Importing PngImagePlugin
+2026-05-03 23:03:51,471 | DEBUG | PIL.Image | Importing PpmImagePlugin
+2026-05-03 23:03:51,471 | DEBUG | PIL.Image | Importing PsdImagePlugin
+2026-05-03 23:03:51,473 | DEBUG | PIL.Image | Importing QoiImagePlugin
+2026-05-03 23:03:51,474 | DEBUG | PIL.Image | Importing SgiImagePlugin
+2026-05-03 23:03:51,475 | DEBUG | PIL.Image | Importing SpiderImagePlugin
+2026-05-03 23:03:51,476 | DEBUG | PIL.Image | Importing SunImagePlugin
+2026-05-03 23:03:51,476 | DEBUG | PIL.Image | Importing TgaImagePlugin
+2026-05-03 23:03:51,477 | DEBUG | PIL.Image | Importing TiffImagePlugin
+2026-05-03 23:03:51,478 | DEBUG | PIL.Image | Importing WebPImagePlugin
+2026-05-03 23:03:52,458 | DEBUG | PIL.Image | Importing WmfImagePlugin
+2026-05-03 23:03:52,458 | DEBUG | PIL.Image | Importing XbmImagePlugin
+2026-05-03 23:03:52,459 | DEBUG | PIL.Image | Importing XpmImagePlugin
+2026-05-03 23:03:52,460 | DEBUG | PIL.Image | Importing XVThumbImagePlugin
+2026-05-03 23:03:52,461 | DEBUG | PIL.TiffImagePlugin | *** TiffImageFile._open ***
+2026-05-03 23:03:52,461 | DEBUG | PIL.TiffImagePlugin | - __first: 44648
+2026-05-03 23:03:52,461 | DEBUG | PIL.TiffImagePlugin | - ifh: b'II*\x00h\xae\x00\x00'
+2026-05-03 23:03:52,462 | DEBUG | PIL.TiffImagePlugin | Seeking to frame 0, on frame -1, __next 44648, location: 8
+2026-05-03 23:03:52,462 | DEBUG | PIL.TiffImagePlugin | Loading tags, location: 44648
+2026-05-03 23:03:52,462 | DEBUG | PIL.TiffImagePlugin | tag: ImageWidth (256) - type: short (3) - value: b'\xa4\x04'
+2026-05-03 23:03:52,462 | DEBUG | PIL.TiffImagePlugin | tag: ImageLength (257) - type: short (3) - value: b'H\x03'
+2026-05-03 23:03:52,463 | DEBUG | PIL.TiffImagePlugin | tag: BitsPerSample (258) - type: short (3) - value: b'\x08\x00'
+2026-05-03 23:03:52,463 | DEBUG | PIL.TiffImagePlugin | tag: Compression (259) - type: short (3) - value: b'\x05\x00'
+2026-05-03 23:03:52,463 | DEBUG | PIL.TiffImagePlugin | tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:03:52,463 | DEBUG | PIL.TiffImagePlugin | tag: StripOffsets (273) - type: long (4) Tag Location: 44722 - Data Location: 45358 - value: <table: 560 bytes>
+2026-05-03 23:03:52,463 | DEBUG | PIL.TiffImagePlugin | tag: SamplesPerPixel (277) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:03:52,463 | DEBUG | PIL.TiffImagePlugin | tag: RowsPerStrip (278) - type: short (3) - value: b'\x06\x00'
+2026-05-03 23:03:52,463 | DEBUG | PIL.TiffImagePlugin | tag: StripByteCounts (279) - type: long (4) Tag Location: 44758 - Data Location: 44798 - value: <table: 560 bytes>
+2026-05-03 23:03:52,464 | DEBUG | PIL.TiffImagePlugin | tag: PlanarConfiguration (284) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:03:52,464 | DEBUG | PIL.TiffImagePlugin | tag: Predictor (317) - type: short (3) - value: b'\x02\x00'
+2026-05-03 23:03:52,464 | DEBUG | PIL.TiffImagePlugin | tag: SampleFormat (339) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:03:52,464 | DEBUG | PIL.TiffImagePlugin | tag: ImageWidth (256) - type: short (3) - value: b'\xa4\x04'
+2026-05-03 23:03:52,464 | DEBUG | PIL.TiffImagePlugin | tag: ImageLength (257) - type: short (3) - value: b'H\x03'
+2026-05-03 23:03:52,464 | DEBUG | PIL.TiffImagePlugin | tag: BitsPerSample (258) - type: short (3) - value: b'\x08\x00'
+2026-05-03 23:03:52,464 | DEBUG | PIL.TiffImagePlugin | tag: Compression (259) - type: short (3) - value: b'\x05\x00'
+2026-05-03 23:03:52,464 | DEBUG | PIL.TiffImagePlugin | tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:03:52,465 | DEBUG | PIL.TiffImagePlugin | tag: StripOffsets (273) - type: long (4) Tag Location: 44722 - Data Location: 45358 - value: <table: 560 bytes>
+2026-05-03 23:03:52,465 | DEBUG | PIL.TiffImagePlugin | tag: SamplesPerPixel (277) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:03:52,465 | DEBUG | PIL.TiffImagePlugin | tag: RowsPerStrip (278) - type: short (3) - value: b'\x06\x00'
+2026-05-03 23:03:52,465 | DEBUG | PIL.TiffImagePlugin | tag: StripByteCounts (279) - type: long (4) Tag Location: 44758 - Data Location: 44798 - value: <table: 560 bytes>
+2026-05-03 23:03:52,465 | DEBUG | PIL.TiffImagePlugin | tag: PlanarConfiguration (284) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:03:52,466 | DEBUG | PIL.TiffImagePlugin | tag: Predictor (317) - type: short (3) - value: b'\x02\x00'
+2026-05-03 23:03:52,466 | DEBUG | PIL.TiffImagePlugin | tag: SampleFormat (339) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:03:52,466 | DEBUG | PIL.TiffImagePlugin | *** Summary ***
+2026-05-03 23:03:52,466 | DEBUG | PIL.TiffImagePlugin | - compression: tiff_lzw
+2026-05-03 23:03:52,466 | DEBUG | PIL.TiffImagePlugin | - photometric_interpretation: 1
+2026-05-03 23:03:52,466 | DEBUG | PIL.TiffImagePlugin | - planar_configuration: 1
+2026-05-03 23:03:52,467 | DEBUG | PIL.TiffImagePlugin | - fill_order: 1
+2026-05-03 23:03:52,467 | DEBUG | PIL.TiffImagePlugin | - YCbCr subsampling: None
+2026-05-03 23:03:52,467 | DEBUG | PIL.TiffImagePlugin | - size: (1188, 840)
+2026-05-03 23:03:52,467 | DEBUG | PIL.TiffImagePlugin | format key: (b'II', 1, (1,), 1, (8,), ())
+2026-05-03 23:03:52,467 | DEBUG | PIL.TiffImagePlugin | - raw mode: L
+2026-05-03 23:03:52,467 | DEBUG | PIL.TiffImagePlugin | - pil mode: L
+2026-05-03 23:03:52,467 | INFO | ocrnlp.progress_ocr | process_image start
+2026-05-03 23:03:52,468 | INFO | ocrnlp.progress_ocr | [e59522db] ocr start
+2026-05-03 23:03:52,584 | DEBUG | PIL.TiffImagePlugin | have fileno, calling fileno version of the decoder.
+2026-05-03 23:03:52,586 | DEBUG | PIL.TiffImagePlugin | tag: ImageWidth (256) - type: short (3) - value: b'\xa4\x04'
+2026-05-03 23:03:52,587 | DEBUG | PIL.TiffImagePlugin | tag: ImageLength (257) - type: short (3) - value: b'H\x03'
+2026-05-03 23:03:52,587 | DEBUG | PIL.TiffImagePlugin | tag: BitsPerSample (258) - type: short (3) - value: b'\x08\x00'
+2026-05-03 23:03:52,587 | DEBUG | PIL.TiffImagePlugin | tag: Compression (259) - type: short (3) - value: b'\x05\x00'
+2026-05-03 23:03:52,587 | DEBUG | PIL.TiffImagePlugin | tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:03:52,587 | DEBUG | PIL.TiffImagePlugin | tag: StripOffsets (273) - type: long (4) Tag Location: 44722 - Data Location: 45358 - value: <table: 560 bytes>
+2026-05-03 23:03:52,587 | DEBUG | PIL.TiffImagePlugin | tag: SamplesPerPixel (277) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:03:52,588 | DEBUG | PIL.TiffImagePlugin | tag: RowsPerStrip (278) - type: short (3) - value: b'\x06\x00'
+2026-05-03 23:03:52,588 | DEBUG | PIL.TiffImagePlugin | tag: StripByteCounts (279) - type: long (4) Tag Location: 44758 - Data Location: 44798 - value: <table: 560 bytes>
+2026-05-03 23:03:52,588 | DEBUG | PIL.TiffImagePlugin | tag: PlanarConfiguration (284) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:03:52,588 | DEBUG | PIL.TiffImagePlugin | tag: Predictor (317) - type: short (3) - value: b'\x02\x00'
+2026-05-03 23:03:52,588 | DEBUG | PIL.TiffImagePlugin | tag: SampleFormat (339) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:03:52,589 | DEBUG | PIL.TiffImagePlugin | Tiffinfo Keys: []
+2026-05-03 23:03:52,589 | DEBUG | PIL.TiffImagePlugin | Saving using libtiff encoder
+2026-05-03 23:03:52,589 | DEBUG | PIL.TiffImagePlugin | Items: [(256, 1188), (257, 840), (258, (8,)), (259, 5), (262, 1), (273, (0, 65340, 130680, 196020, 261360, 326700, 392040, 457380, 522720, 588060, 653400, 718740, 784080, 849420, 914760, 980100)), (278, 55), (279, (65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 17820)), (284, 1)]
+2026-05-03 23:03:52,590 | DEBUG | PIL.TiffImagePlugin | Converted items: [(256, 1188), (257, 840), (258, 8), (259, 5), (262, 1), (277, 1), (278, 55), (284, 1), (317, 2)]
+2026-05-03 23:03:52,595 | DEBUG | pytesseract | ['tesseract', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_uin8dmje_input.TIFF', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_uin8dmje', '-c', 'tessedit_create_tsv=1']
+2026-05-03 23:03:52,900 | DEBUG | PIL.TiffImagePlugin | Tiffinfo Keys: []
+2026-05-03 23:03:52,900 | DEBUG | PIL.TiffImagePlugin | Saving using libtiff encoder
+2026-05-03 23:03:52,901 | DEBUG | PIL.TiffImagePlugin | Items: [(256, 1188), (257, 840), (258, (8,)), (259, 5), (262, 1), (273, (0, 65340, 130680, 196020, 261360, 326700, 392040, 457380, 522720, 588060, 653400, 718740, 784080, 849420, 914760, 980100)), (278, 55), (279, (65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 17820)), (284, 1)]
+2026-05-03 23:03:52,901 | DEBUG | PIL.TiffImagePlugin | Converted items: [(256, 1188), (257, 840), (258, 8), (259, 5), (262, 1), (277, 1), (278, 55), (284, 1), (317, 2)]
+2026-05-03 23:03:52,905 | DEBUG | pytesseract | ['tesseract', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_29jx3khc_input.TIFF', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_29jx3khc', '-l', 'rus+eng', 'txt']
+2026-05-03 23:03:53,257 | INFO | ocrnlp.progress_ocr | [e59522db] tesseract: data=0.432s  string=0.358s  total=0.790s
+2026-05-03 23:03:53,258 | WARNING | ocrnlp.progress_ocr | [e59522db] low confidence: 46.3
+2026-05-03 23:03:53,258 | INFO | ocrnlp.progress_ocr | extracting fields
+2026-05-03 23:03:53,259 | DEBUG | ocrnlp.progress_ocr |   full_name: Петров Алексей Андреевич
+2026-05-03 23:03:53,259 | DEBUG | ocrnlp.progress_ocr |   own_date: 26.01.2024
+2026-05-03 23:03:53,259 | DEBUG | ocrnlp.progress_ocr |   reg_num: 92-4567
+2026-05-03 23:03:53,259 | DEBUG | ocrnlp.progress_ocr |   doc_num: 876543210987
+2026-05-03 23:03:53,260 | DEBUG | ocrnlp.progress_ocr |   date_from: 10 января 2024 г.
+2026-05-03 23:03:53,260 | DEBUG | ocrnlp.progress_ocr |   date_to: 25 января 2024 г.
+2026-05-03 23:03:53,261 | DEBUG | ocrnlp.progress_ocr |   city_name: Санкт-Петербург
+2026-05-03 23:03:53,262 | DEBUG | ocrnlp.progress_ocr |   new_spec: Анализ данных
+2026-05-03 23:03:53,262 | WARNING | ocrnlp.progress_ocr |   hours_num: NOT FOUND
+2026-05-03 23:03:53,262 | WARNING | ocrnlp.progress_ocr |   organization: NOT FOUND
+2026-05-03 23:03:53,262 | INFO | ocrnlp.progress_ocr | fields parsed: 8/10
+2026-05-03 23:03:53,262 | INFO | ocrnlp.progress_ocr | process_image done
+2026-05-03 23:03:53,262 | INFO | ocrnlp.progress_ocr | scanned text:
+ООО «Компания Пример
+
+УДОСТОВЕРЕНИЕ
+
+© ПОВЫШЕНИИ КВАЛИФИКАЦИИ
+876543210987
+
+"Документ о квалификации
+
+Регистрационный номер
+92-4567
+
+Город
+Санкт-Петербург
+
+Дата выдачи
+26.01.2024
+
+Ныстоящее удостоверение синдетельствует о TOM, что
+
+Петров
+Алексей Андреевич
+
+прошёл(а) повышение квалификации = (на)
+ООО «Компания Пример»
+Учебный центр «Профи»
+с 10 января 2024 г. по 25 января 2024 г.
+
+по лополнительной професснональной программе
+«Анализ данных»
+
+
+2026-05-03 23:04:04,483 | DEBUG | PIL.Image | Importing AvifImagePlugin
+2026-05-03 23:04:04,489 | DEBUG | PIL.Image | Importing BlpImagePlugin
+2026-05-03 23:04:04,490 | DEBUG | PIL.Image | Importing BmpImagePlugin
+2026-05-03 23:04:04,490 | DEBUG | PIL.Image | Importing BufrStubImagePlugin
+2026-05-03 23:04:04,491 | DEBUG | PIL.Image | Importing CurImagePlugin
+2026-05-03 23:04:04,491 | DEBUG | PIL.Image | Importing DcxImagePlugin
+2026-05-03 23:04:04,491 | DEBUG | PIL.Image | Importing DdsImagePlugin
+2026-05-03 23:04:04,493 | DEBUG | PIL.Image | Importing EpsImagePlugin
+2026-05-03 23:04:04,494 | DEBUG | PIL.Image | Importing FitsImagePlugin
+2026-05-03 23:04:04,495 | DEBUG | PIL.Image | Importing FliImagePlugin
+2026-05-03 23:04:04,495 | DEBUG | PIL.Image | Importing FpxImagePlugin
+2026-05-03 23:04:04,496 | DEBUG | PIL.Image | Image: failed to import FpxImagePlugin: No module named 'olefile'
+2026-05-03 23:04:04,496 | DEBUG | PIL.Image | Importing FtexImagePlugin
+2026-05-03 23:04:04,496 | DEBUG | PIL.Image | Importing GbrImagePlugin
+2026-05-03 23:04:04,497 | DEBUG | PIL.Image | Importing GifImagePlugin
+2026-05-03 23:04:04,497 | DEBUG | PIL.Image | Importing GribStubImagePlugin
+2026-05-03 23:04:04,497 | DEBUG | PIL.Image | Importing Hdf5StubImagePlugin
+2026-05-03 23:04:04,498 | DEBUG | PIL.Image | Importing IcnsImagePlugin
+2026-05-03 23:04:04,499 | DEBUG | PIL.Image | Importing IcoImagePlugin
+2026-05-03 23:04:04,499 | DEBUG | PIL.Image | Importing ImImagePlugin
+2026-05-03 23:04:04,500 | DEBUG | PIL.Image | Importing ImtImagePlugin
+2026-05-03 23:04:04,501 | DEBUG | PIL.Image | Importing IptcImagePlugin
+2026-05-03 23:04:04,501 | DEBUG | PIL.Image | Importing JpegImagePlugin
+2026-05-03 23:04:04,501 | DEBUG | PIL.Image | Importing Jpeg2KImagePlugin
+2026-05-03 23:04:04,501 | DEBUG | PIL.Image | Importing McIdasImagePlugin
+2026-05-03 23:04:04,502 | DEBUG | PIL.Image | Importing MicImagePlugin
+2026-05-03 23:04:04,502 | DEBUG | PIL.Image | Image: failed to import MicImagePlugin: No module named 'olefile'
+2026-05-03 23:04:04,502 | DEBUG | PIL.Image | Importing MpegImagePlugin
+2026-05-03 23:04:04,503 | DEBUG | PIL.Image | Importing MpoImagePlugin
+2026-05-03 23:04:04,505 | DEBUG | PIL.Image | Importing MspImagePlugin
+2026-05-03 23:04:04,505 | DEBUG | PIL.Image | Importing PalmImagePlugin
+2026-05-03 23:04:04,506 | DEBUG | PIL.Image | Importing PcdImagePlugin
+2026-05-03 23:04:04,507 | DEBUG | PIL.Image | Importing PcxImagePlugin
+2026-05-03 23:04:04,507 | DEBUG | PIL.Image | Importing PdfImagePlugin
+2026-05-03 23:04:04,509 | DEBUG | PIL.Image | Importing PixarImagePlugin
+2026-05-03 23:04:04,510 | DEBUG | PIL.Image | Importing PngImagePlugin
+2026-05-03 23:04:04,510 | DEBUG | PIL.Image | Importing PpmImagePlugin
+2026-05-03 23:04:04,510 | DEBUG | PIL.Image | Importing PsdImagePlugin
+2026-05-03 23:04:04,510 | DEBUG | PIL.Image | Importing QoiImagePlugin
+2026-05-03 23:04:04,511 | DEBUG | PIL.Image | Importing SgiImagePlugin
+2026-05-03 23:04:04,511 | DEBUG | PIL.Image | Importing SpiderImagePlugin
+2026-05-03 23:04:04,512 | DEBUG | PIL.Image | Importing SunImagePlugin
+2026-05-03 23:04:04,512 | DEBUG | PIL.Image | Importing TgaImagePlugin
+2026-05-03 23:04:04,513 | DEBUG | PIL.Image | Importing TiffImagePlugin
+2026-05-03 23:04:04,513 | DEBUG | PIL.Image | Importing WebPImagePlugin
+2026-05-03 23:04:04,519 | DEBUG | PIL.Image | Importing WmfImagePlugin
+2026-05-03 23:04:04,519 | DEBUG | PIL.Image | Importing XbmImagePlugin
+2026-05-03 23:04:04,520 | DEBUG | PIL.Image | Importing XpmImagePlugin
+2026-05-03 23:04:04,520 | DEBUG | PIL.Image | Importing XVThumbImagePlugin
+2026-05-03 23:04:04,521 | DEBUG | PIL.TiffImagePlugin | *** TiffImageFile._open ***
+2026-05-03 23:04:04,521 | DEBUG | PIL.TiffImagePlugin | - __first: 44648
+2026-05-03 23:04:04,521 | DEBUG | PIL.TiffImagePlugin | - ifh: b'II*\x00h\xae\x00\x00'
+2026-05-03 23:04:04,522 | DEBUG | PIL.TiffImagePlugin | Seeking to frame 0, on frame -1, __next 44648, location: 8
+2026-05-03 23:04:04,522 | DEBUG | PIL.TiffImagePlugin | Loading tags, location: 44648
+2026-05-03 23:04:04,522 | DEBUG | PIL.TiffImagePlugin | tag: ImageWidth (256) - type: short (3) - value: b'\xa4\x04'
+2026-05-03 23:04:04,522 | DEBUG | PIL.TiffImagePlugin | tag: ImageLength (257) - type: short (3) - value: b'H\x03'
+2026-05-03 23:04:04,522 | DEBUG | PIL.TiffImagePlugin | tag: BitsPerSample (258) - type: short (3) - value: b'\x08\x00'
+2026-05-03 23:04:04,523 | DEBUG | PIL.TiffImagePlugin | tag: Compression (259) - type: short (3) - value: b'\x05\x00'
+2026-05-03 23:04:04,523 | DEBUG | PIL.TiffImagePlugin | tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:04:04,523 | DEBUG | PIL.TiffImagePlugin | tag: StripOffsets (273) - type: long (4) Tag Location: 44722 - Data Location: 45358 - value: <table: 560 bytes>
+2026-05-03 23:04:04,523 | DEBUG | PIL.TiffImagePlugin | tag: SamplesPerPixel (277) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:04:04,523 | DEBUG | PIL.TiffImagePlugin | tag: RowsPerStrip (278) - type: short (3) - value: b'\x06\x00'
+2026-05-03 23:04:04,523 | DEBUG | PIL.TiffImagePlugin | tag: StripByteCounts (279) - type: long (4) Tag Location: 44758 - Data Location: 44798 - value: <table: 560 bytes>
+2026-05-03 23:04:04,523 | DEBUG | PIL.TiffImagePlugin | tag: PlanarConfiguration (284) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:04:04,523 | DEBUG | PIL.TiffImagePlugin | tag: Predictor (317) - type: short (3) - value: b'\x02\x00'
+2026-05-03 23:04:04,524 | DEBUG | PIL.TiffImagePlugin | tag: SampleFormat (339) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:04:04,524 | DEBUG | PIL.TiffImagePlugin | tag: ImageWidth (256) - type: short (3) - value: b'\xa4\x04'
+2026-05-03 23:04:04,524 | DEBUG | PIL.TiffImagePlugin | tag: ImageLength (257) - type: short (3) - value: b'H\x03'
+2026-05-03 23:04:04,524 | DEBUG | PIL.TiffImagePlugin | tag: BitsPerSample (258) - type: short (3) - value: b'\x08\x00'
+2026-05-03 23:04:04,524 | DEBUG | PIL.TiffImagePlugin | tag: Compression (259) - type: short (3) - value: b'\x05\x00'
+2026-05-03 23:04:04,524 | DEBUG | PIL.TiffImagePlugin | tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:04:04,525 | DEBUG | PIL.TiffImagePlugin | tag: StripOffsets (273) - type: long (4) Tag Location: 44722 - Data Location: 45358 - value: <table: 560 bytes>
+2026-05-03 23:04:04,525 | DEBUG | PIL.TiffImagePlugin | tag: SamplesPerPixel (277) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:04:04,525 | DEBUG | PIL.TiffImagePlugin | tag: RowsPerStrip (278) - type: short (3) - value: b'\x06\x00'
+2026-05-03 23:04:04,525 | DEBUG | PIL.TiffImagePlugin | tag: StripByteCounts (279) - type: long (4) Tag Location: 44758 - Data Location: 44798 - value: <table: 560 bytes>
+2026-05-03 23:04:04,525 | DEBUG | PIL.TiffImagePlugin | tag: PlanarConfiguration (284) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:04:04,525 | DEBUG | PIL.TiffImagePlugin | tag: Predictor (317) - type: short (3) - value: b'\x02\x00'
+2026-05-03 23:04:04,526 | DEBUG | PIL.TiffImagePlugin | tag: SampleFormat (339) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:04:04,526 | DEBUG | PIL.TiffImagePlugin | *** Summary ***
+2026-05-03 23:04:04,526 | DEBUG | PIL.TiffImagePlugin | - compression: tiff_lzw
+2026-05-03 23:04:04,526 | DEBUG | PIL.TiffImagePlugin | - photometric_interpretation: 1
+2026-05-03 23:04:04,526 | DEBUG | PIL.TiffImagePlugin | - planar_configuration: 1
+2026-05-03 23:04:04,527 | DEBUG | PIL.TiffImagePlugin | - fill_order: 1
+2026-05-03 23:04:04,527 | DEBUG | PIL.TiffImagePlugin | - YCbCr subsampling: None
+2026-05-03 23:04:04,527 | DEBUG | PIL.TiffImagePlugin | - size: (1188, 840)
+2026-05-03 23:04:04,527 | DEBUG | PIL.TiffImagePlugin | format key: (b'II', 1, (1,), 1, (8,), ())
+2026-05-03 23:04:04,527 | DEBUG | PIL.TiffImagePlugin | - raw mode: L
+2026-05-03 23:04:04,528 | DEBUG | PIL.TiffImagePlugin | - pil mode: L
+2026-05-03 23:04:04,528 | INFO | ocrnlp.progress_ocr | process_image start
+2026-05-03 23:04:04,528 | INFO | ocrnlp.progress_ocr | [6787350e] ocr start
+2026-05-03 23:04:04,558 | DEBUG | PIL.TiffImagePlugin | have fileno, calling fileno version of the decoder.
+2026-05-03 23:04:04,560 | DEBUG | PIL.TiffImagePlugin | tag: ImageWidth (256) - type: short (3) - value: b'\xa4\x04'
+2026-05-03 23:04:04,560 | DEBUG | PIL.TiffImagePlugin | tag: ImageLength (257) - type: short (3) - value: b'H\x03'
+2026-05-03 23:04:04,561 | DEBUG | PIL.TiffImagePlugin | tag: BitsPerSample (258) - type: short (3) - value: b'\x08\x00'
+2026-05-03 23:04:04,561 | DEBUG | PIL.TiffImagePlugin | tag: Compression (259) - type: short (3) - value: b'\x05\x00'
+2026-05-03 23:04:04,561 | DEBUG | PIL.TiffImagePlugin | tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:04:04,561 | DEBUG | PIL.TiffImagePlugin | tag: StripOffsets (273) - type: long (4) Tag Location: 44722 - Data Location: 45358 - value: <table: 560 bytes>
+2026-05-03 23:04:04,561 | DEBUG | PIL.TiffImagePlugin | tag: SamplesPerPixel (277) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:04:04,561 | DEBUG | PIL.TiffImagePlugin | tag: RowsPerStrip (278) - type: short (3) - value: b'\x06\x00'
+2026-05-03 23:04:04,561 | DEBUG | PIL.TiffImagePlugin | tag: StripByteCounts (279) - type: long (4) Tag Location: 44758 - Data Location: 44798 - value: <table: 560 bytes>
+2026-05-03 23:04:04,562 | DEBUG | PIL.TiffImagePlugin | tag: PlanarConfiguration (284) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:04:04,562 | DEBUG | PIL.TiffImagePlugin | tag: Predictor (317) - type: short (3) - value: b'\x02\x00'
+2026-05-03 23:04:04,562 | DEBUG | PIL.TiffImagePlugin | tag: SampleFormat (339) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:04:04,562 | DEBUG | PIL.TiffImagePlugin | Tiffinfo Keys: []
+2026-05-03 23:04:04,563 | DEBUG | PIL.TiffImagePlugin | Saving using libtiff encoder
+2026-05-03 23:04:04,563 | DEBUG | PIL.TiffImagePlugin | Items: [(256, 1188), (257, 840), (258, (8,)), (259, 5), (262, 1), (273, (0, 65340, 130680, 196020, 261360, 326700, 392040, 457380, 522720, 588060, 653400, 718740, 784080, 849420, 914760, 980100)), (278, 55), (279, (65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 17820)), (284, 1)]
+2026-05-03 23:04:04,563 | DEBUG | PIL.TiffImagePlugin | Converted items: [(256, 1188), (257, 840), (258, 8), (259, 5), (262, 1), (277, 1), (278, 55), (284, 1), (317, 2)]
+2026-05-03 23:04:04,568 | DEBUG | pytesseract | ['tesseract', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_g0lljcri_input.TIFF', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_g0lljcri', '-c', 'tessedit_create_tsv=1']
+2026-05-03 23:04:04,864 | DEBUG | PIL.TiffImagePlugin | Tiffinfo Keys: []
+2026-05-03 23:04:04,864 | DEBUG | PIL.TiffImagePlugin | Saving using libtiff encoder
+2026-05-03 23:04:04,865 | DEBUG | PIL.TiffImagePlugin | Items: [(256, 1188), (257, 840), (258, (8,)), (259, 5), (262, 1), (273, (0, 65340, 130680, 196020, 261360, 326700, 392040, 457380, 522720, 588060, 653400, 718740, 784080, 849420, 914760, 980100)), (278, 55), (279, (65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 17820)), (284, 1)]
+2026-05-03 23:04:04,865 | DEBUG | PIL.TiffImagePlugin | Converted items: [(256, 1188), (257, 840), (258, 8), (259, 5), (262, 1), (277, 1), (278, 55), (284, 1), (317, 2)]
+2026-05-03 23:04:04,869 | DEBUG | pytesseract | ['tesseract', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_6uw2um0t_input.TIFF', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_6uw2um0t', '-l', 'rus+eng', 'txt']
+2026-05-03 23:04:05,214 | INFO | ocrnlp.progress_ocr | [6787350e] tesseract: data=0.336s  string=0.351s  total=0.686s
+2026-05-03 23:04:05,215 | WARNING | ocrnlp.progress_ocr | [6787350e] low confidence: 46.3
+2026-05-03 23:04:05,215 | INFO | ocrnlp.progress_ocr | extracting fields
+2026-05-03 23:04:05,216 | DEBUG | ocrnlp.progress_ocr |   full_name: Петров Алексей Андреевич
+2026-05-03 23:04:05,216 | DEBUG | ocrnlp.progress_ocr |   own_date: 26.01.2024
+2026-05-03 23:04:05,216 | DEBUG | ocrnlp.progress_ocr |   reg_num: 92-4567
+2026-05-03 23:04:05,216 | DEBUG | ocrnlp.progress_ocr |   doc_num: 876543210987
+2026-05-03 23:04:05,217 | DEBUG | ocrnlp.progress_ocr |   date_from: 10 января 2024 г.
+2026-05-03 23:04:05,217 | DEBUG | ocrnlp.progress_ocr |   date_to: 25 января 2024 г.
+2026-05-03 23:04:05,217 | DEBUG | ocrnlp.progress_ocr |   city_name: Санкт-Петербург
+2026-05-03 23:04:05,218 | DEBUG | ocrnlp.progress_ocr |   new_spec: Анализ данных
+2026-05-03 23:04:05,218 | WARNING | ocrnlp.progress_ocr |   hours_num: NOT FOUND
+2026-05-03 23:04:05,218 | WARNING | ocrnlp.progress_ocr |   organization: NOT FOUND
+2026-05-03 23:04:05,218 | INFO | ocrnlp.progress_ocr | fields parsed: 8/10
+2026-05-03 23:04:05,218 | INFO | ocrnlp.progress_ocr | process_image done
+2026-05-03 23:04:05,219 | INFO | ocrnlp.progress_ocr | scanned text:
+ООО «Компания Пример
+
+УДОСТОВЕРЕНИЕ
+
+© ПОВЫШЕНИИ КВАЛИФИКАЦИИ
+876543210987
+
+"Документ о квалификации
+
+Регистрационный номер
+92-4567
+
+Город
+Санкт-Петербург
+
+Дата выдачи
+26.01.2024
+
+Ныстоящее удостоверение синдетельствует о TOM, что
+
+Петров
+Алексей Андреевич
+
+прошёл(а) повышение квалификации = (на)
+ООО «Компания Пример»
+Учебный центр «Профи»
+с 10 января 2024 г. по 25 января 2024 г.
+
+по лополнительной професснональной программе
+«Анализ данных»
+
+
+2026-05-03 23:05:58,696 | DEBUG | PIL.Image | Importing AvifImagePlugin
+2026-05-03 23:05:58,730 | DEBUG | PIL.Image | Importing BlpImagePlugin
+2026-05-03 23:05:58,731 | DEBUG | PIL.Image | Importing BmpImagePlugin
+2026-05-03 23:05:58,731 | DEBUG | PIL.Image | Importing BufrStubImagePlugin
+2026-05-03 23:05:58,732 | DEBUG | PIL.Image | Importing CurImagePlugin
+2026-05-03 23:05:58,732 | DEBUG | PIL.Image | Importing DcxImagePlugin
+2026-05-03 23:05:58,734 | DEBUG | PIL.Image | Importing DdsImagePlugin
+2026-05-03 23:05:58,736 | DEBUG | PIL.Image | Importing EpsImagePlugin
+2026-05-03 23:05:58,738 | DEBUG | PIL.Image | Importing FitsImagePlugin
+2026-05-03 23:05:58,739 | DEBUG | PIL.Image | Importing FliImagePlugin
+2026-05-03 23:05:58,739 | DEBUG | PIL.Image | Importing FpxImagePlugin
+2026-05-03 23:05:58,743 | DEBUG | PIL.Image | Image: failed to import FpxImagePlugin: No module named 'olefile'
+2026-05-03 23:05:58,743 | DEBUG | PIL.Image | Importing FtexImagePlugin
+2026-05-03 23:05:58,745 | DEBUG | PIL.Image | Importing GbrImagePlugin
+2026-05-03 23:05:58,747 | DEBUG | PIL.Image | Importing GifImagePlugin
+2026-05-03 23:05:58,747 | DEBUG | PIL.Image | Importing GribStubImagePlugin
+2026-05-03 23:05:58,748 | DEBUG | PIL.Image | Importing Hdf5StubImagePlugin
+2026-05-03 23:05:58,748 | DEBUG | PIL.Image | Importing IcnsImagePlugin
+2026-05-03 23:05:58,751 | DEBUG | PIL.Image | Importing IcoImagePlugin
+2026-05-03 23:05:58,753 | DEBUG | PIL.Image | Importing ImImagePlugin
+2026-05-03 23:05:58,753 | DEBUG | PIL.Image | Importing ImtImagePlugin
+2026-05-03 23:05:58,754 | DEBUG | PIL.Image | Importing IptcImagePlugin
+2026-05-03 23:05:58,755 | DEBUG | PIL.Image | Importing JpegImagePlugin
+2026-05-03 23:05:58,755 | DEBUG | PIL.Image | Importing Jpeg2KImagePlugin
+2026-05-03 23:05:58,755 | DEBUG | PIL.Image | Importing McIdasImagePlugin
+2026-05-03 23:05:58,756 | DEBUG | PIL.Image | Importing MicImagePlugin
+2026-05-03 23:05:58,756 | DEBUG | PIL.Image | Image: failed to import MicImagePlugin: No module named 'olefile'
+2026-05-03 23:05:58,756 | DEBUG | PIL.Image | Importing MpegImagePlugin
+2026-05-03 23:05:58,757 | DEBUG | PIL.Image | Importing MpoImagePlugin
+2026-05-03 23:05:58,761 | DEBUG | PIL.Image | Importing MspImagePlugin
+2026-05-03 23:05:58,762 | DEBUG | PIL.Image | Importing PalmImagePlugin
+2026-05-03 23:05:58,764 | DEBUG | PIL.Image | Importing PcdImagePlugin
+2026-05-03 23:05:58,765 | DEBUG | PIL.Image | Importing PcxImagePlugin
+2026-05-03 23:05:58,765 | DEBUG | PIL.Image | Importing PdfImagePlugin
+2026-05-03 23:05:58,772 | DEBUG | PIL.Image | Importing PixarImagePlugin
+2026-05-03 23:05:58,772 | DEBUG | PIL.Image | Importing PngImagePlugin
+2026-05-03 23:05:58,772 | DEBUG | PIL.Image | Importing PpmImagePlugin
+2026-05-03 23:05:58,772 | DEBUG | PIL.Image | Importing PsdImagePlugin
+2026-05-03 23:05:58,773 | DEBUG | PIL.Image | Importing QoiImagePlugin
+2026-05-03 23:05:58,775 | DEBUG | PIL.Image | Importing SgiImagePlugin
+2026-05-03 23:05:58,775 | DEBUG | PIL.Image | Importing SpiderImagePlugin
+2026-05-03 23:05:58,776 | DEBUG | PIL.Image | Importing SunImagePlugin
+2026-05-03 23:05:58,776 | DEBUG | PIL.Image | Importing TgaImagePlugin
+2026-05-03 23:05:58,777 | DEBUG | PIL.Image | Importing TiffImagePlugin
+2026-05-03 23:05:58,777 | DEBUG | PIL.Image | Importing WebPImagePlugin
+2026-05-03 23:05:58,804 | DEBUG | PIL.Image | Importing WmfImagePlugin
+2026-05-03 23:05:58,804 | DEBUG | PIL.Image | Importing XbmImagePlugin
+2026-05-03 23:05:58,805 | DEBUG | PIL.Image | Importing XpmImagePlugin
+2026-05-03 23:05:58,806 | DEBUG | PIL.Image | Importing XVThumbImagePlugin
+2026-05-03 23:05:58,806 | DEBUG | PIL.TiffImagePlugin | *** TiffImageFile._open ***
+2026-05-03 23:05:58,806 | DEBUG | PIL.TiffImagePlugin | - __first: 44648
+2026-05-03 23:05:58,806 | DEBUG | PIL.TiffImagePlugin | - ifh: b'II*\x00h\xae\x00\x00'
+2026-05-03 23:05:58,806 | DEBUG | PIL.TiffImagePlugin | Seeking to frame 0, on frame -1, __next 44648, location: 8
+2026-05-03 23:05:58,806 | DEBUG | PIL.TiffImagePlugin | Loading tags, location: 44648
+2026-05-03 23:05:58,806 | DEBUG | PIL.TiffImagePlugin | tag: ImageWidth (256) - type: short (3) - value: b'\xa4\x04'
+2026-05-03 23:05:58,806 | DEBUG | PIL.TiffImagePlugin | tag: ImageLength (257) - type: short (3) - value: b'H\x03'
+2026-05-03 23:05:58,806 | DEBUG | PIL.TiffImagePlugin | tag: BitsPerSample (258) - type: short (3) - value: b'\x08\x00'
+2026-05-03 23:05:58,806 | DEBUG | PIL.TiffImagePlugin | tag: Compression (259) - type: short (3) - value: b'\x05\x00'
+2026-05-03 23:05:58,806 | DEBUG | PIL.TiffImagePlugin | tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:05:58,806 | DEBUG | PIL.TiffImagePlugin | tag: StripOffsets (273) - type: long (4) Tag Location: 44722 - Data Location: 45358 - value: <table: 560 bytes>
+2026-05-03 23:05:58,806 | DEBUG | PIL.TiffImagePlugin | tag: SamplesPerPixel (277) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:05:58,806 | DEBUG | PIL.TiffImagePlugin | tag: RowsPerStrip (278) - type: short (3) - value: b'\x06\x00'
+2026-05-03 23:05:58,806 | DEBUG | PIL.TiffImagePlugin | tag: StripByteCounts (279) - type: long (4) Tag Location: 44758 - Data Location: 44798 - value: <table: 560 bytes>
+2026-05-03 23:05:58,806 | DEBUG | PIL.TiffImagePlugin | tag: PlanarConfiguration (284) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:05:58,806 | DEBUG | PIL.TiffImagePlugin | tag: Predictor (317) - type: short (3) - value: b'\x02\x00'
+2026-05-03 23:05:58,806 | DEBUG | PIL.TiffImagePlugin | tag: SampleFormat (339) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:05:58,806 | DEBUG | PIL.TiffImagePlugin | tag: ImageWidth (256) - type: short (3) - value: b'\xa4\x04'
+2026-05-03 23:05:58,807 | DEBUG | PIL.TiffImagePlugin | tag: ImageLength (257) - type: short (3) - value: b'H\x03'
+2026-05-03 23:05:58,807 | DEBUG | PIL.TiffImagePlugin | tag: BitsPerSample (258) - type: short (3) - value: b'\x08\x00'
+2026-05-03 23:05:58,807 | DEBUG | PIL.TiffImagePlugin | tag: Compression (259) - type: short (3) - value: b'\x05\x00'
+2026-05-03 23:05:58,807 | DEBUG | PIL.TiffImagePlugin | tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:05:58,807 | DEBUG | PIL.TiffImagePlugin | tag: StripOffsets (273) - type: long (4) Tag Location: 44722 - Data Location: 45358 - value: <table: 560 bytes>
+2026-05-03 23:05:58,807 | DEBUG | PIL.TiffImagePlugin | tag: SamplesPerPixel (277) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:05:58,807 | DEBUG | PIL.TiffImagePlugin | tag: RowsPerStrip (278) - type: short (3) - value: b'\x06\x00'
+2026-05-03 23:05:58,807 | DEBUG | PIL.TiffImagePlugin | tag: StripByteCounts (279) - type: long (4) Tag Location: 44758 - Data Location: 44798 - value: <table: 560 bytes>
+2026-05-03 23:05:58,807 | DEBUG | PIL.TiffImagePlugin | tag: PlanarConfiguration (284) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:05:58,807 | DEBUG | PIL.TiffImagePlugin | tag: Predictor (317) - type: short (3) - value: b'\x02\x00'
+2026-05-03 23:05:58,807 | DEBUG | PIL.TiffImagePlugin | tag: SampleFormat (339) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:05:58,807 | DEBUG | PIL.TiffImagePlugin | *** Summary ***
+2026-05-03 23:05:58,807 | DEBUG | PIL.TiffImagePlugin | - compression: tiff_lzw
+2026-05-03 23:05:58,807 | DEBUG | PIL.TiffImagePlugin | - photometric_interpretation: 1
+2026-05-03 23:05:58,807 | DEBUG | PIL.TiffImagePlugin | - planar_configuration: 1
+2026-05-03 23:05:58,807 | DEBUG | PIL.TiffImagePlugin | - fill_order: 1
+2026-05-03 23:05:58,807 | DEBUG | PIL.TiffImagePlugin | - YCbCr subsampling: None
+2026-05-03 23:05:58,807 | DEBUG | PIL.TiffImagePlugin | - size: (1188, 840)
+2026-05-03 23:05:58,807 | DEBUG | PIL.TiffImagePlugin | format key: (b'II', 1, (1,), 1, (8,), ())
+2026-05-03 23:05:58,807 | DEBUG | PIL.TiffImagePlugin | - raw mode: L
+2026-05-03 23:05:58,807 | DEBUG | PIL.TiffImagePlugin | - pil mode: L
+2026-05-03 23:05:58,807 | INFO | ocrnlp.progress_ocr | process_image start
+2026-05-03 23:05:58,807 | INFO | ocrnlp.progress_ocr | [71063552] ocr start
+2026-05-03 23:05:58,882 | DEBUG | PIL.TiffImagePlugin | have fileno, calling fileno version of the decoder.
+2026-05-03 23:05:58,885 | DEBUG | PIL.TiffImagePlugin | tag: ImageWidth (256) - type: short (3) - value: b'\xa4\x04'
+2026-05-03 23:05:58,885 | DEBUG | PIL.TiffImagePlugin | tag: ImageLength (257) - type: short (3) - value: b'H\x03'
+2026-05-03 23:05:58,885 | DEBUG | PIL.TiffImagePlugin | tag: BitsPerSample (258) - type: short (3) - value: b'\x08\x00'
+2026-05-03 23:05:58,886 | DEBUG | PIL.TiffImagePlugin | tag: Compression (259) - type: short (3) - value: b'\x05\x00'
+2026-05-03 23:05:58,886 | DEBUG | PIL.TiffImagePlugin | tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:05:58,886 | DEBUG | PIL.TiffImagePlugin | tag: StripOffsets (273) - type: long (4) Tag Location: 44722 - Data Location: 45358 - value: <table: 560 bytes>
+2026-05-03 23:05:58,886 | DEBUG | PIL.TiffImagePlugin | tag: SamplesPerPixel (277) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:05:58,886 | DEBUG | PIL.TiffImagePlugin | tag: RowsPerStrip (278) - type: short (3) - value: b'\x06\x00'
+2026-05-03 23:05:58,886 | DEBUG | PIL.TiffImagePlugin | tag: StripByteCounts (279) - type: long (4) Tag Location: 44758 - Data Location: 44798 - value: <table: 560 bytes>
+2026-05-03 23:05:58,886 | DEBUG | PIL.TiffImagePlugin | tag: PlanarConfiguration (284) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:05:58,886 | DEBUG | PIL.TiffImagePlugin | tag: Predictor (317) - type: short (3) - value: b'\x02\x00'
+2026-05-03 23:05:58,886 | DEBUG | PIL.TiffImagePlugin | tag: SampleFormat (339) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:05:58,886 | DEBUG | PIL.TiffImagePlugin | Tiffinfo Keys: []
+2026-05-03 23:05:58,886 | DEBUG | PIL.TiffImagePlugin | Saving using libtiff encoder
+2026-05-03 23:05:58,886 | DEBUG | PIL.TiffImagePlugin | Items: [(256, 1188), (257, 840), (258, (8,)), (259, 5), (262, 1), (273, (0, 65340, 130680, 196020, 261360, 326700, 392040, 457380, 522720, 588060, 653400, 718740, 784080, 849420, 914760, 980100)), (278, 55), (279, (65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 17820)), (284, 1)]
+2026-05-03 23:05:58,886 | DEBUG | PIL.TiffImagePlugin | Converted items: [(256, 1188), (257, 840), (258, 8), (259, 5), (262, 1), (277, 1), (278, 55), (284, 1), (317, 2)]
+2026-05-03 23:05:58,891 | DEBUG | pytesseract | ['tesseract', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_kld_mgcd_input.TIFF', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_kld_mgcd', '-c', 'tessedit_create_tsv=1']
+2026-05-03 23:05:59,221 | DEBUG | PIL.TiffImagePlugin | Tiffinfo Keys: []
+2026-05-03 23:05:59,221 | DEBUG | PIL.TiffImagePlugin | Saving using libtiff encoder
+2026-05-03 23:05:59,221 | DEBUG | PIL.TiffImagePlugin | Items: [(256, 1188), (257, 840), (258, (8,)), (259, 5), (262, 1), (273, (0, 65340, 130680, 196020, 261360, 326700, 392040, 457380, 522720, 588060, 653400, 718740, 784080, 849420, 914760, 980100)), (278, 55), (279, (65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 17820)), (284, 1)]
+2026-05-03 23:05:59,221 | DEBUG | PIL.TiffImagePlugin | Converted items: [(256, 1188), (257, 840), (258, 8), (259, 5), (262, 1), (277, 1), (278, 55), (284, 1), (317, 2)]
+2026-05-03 23:05:59,225 | DEBUG | pytesseract | ['tesseract', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_zp8126bw_input.TIFF', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_zp8126bw', '-l', 'rus+eng', 'txt']
+2026-05-03 23:05:59,579 | INFO | ocrnlp.progress_ocr | [71063552] tesseract: data=0.414s  string=0.359s  total=0.772s
+2026-05-03 23:05:59,579 | WARNING | ocrnlp.progress_ocr | [71063552] low confidence: 46.3
+2026-05-03 23:05:59,580 | INFO | ocrnlp.progress_ocr | extracting fields
+2026-05-03 23:05:59,580 | DEBUG | ocrnlp.progress_ocr |   full_name: Петров Алексей Андреевич
+2026-05-03 23:05:59,580 | DEBUG | ocrnlp.progress_ocr |   own_date: 26.01.2024
+2026-05-03 23:05:59,580 | DEBUG | ocrnlp.progress_ocr |   reg_num: 92-4567
+2026-05-03 23:05:59,580 | DEBUG | ocrnlp.progress_ocr |   doc_num: 876543210987
+2026-05-03 23:05:59,581 | DEBUG | ocrnlp.progress_ocr |   date_from: 10 января 2024 г.
+2026-05-03 23:05:59,581 | DEBUG | ocrnlp.progress_ocr |   date_to: 25 января 2024 г.
+2026-05-03 23:05:59,581 | DEBUG | ocrnlp.progress_ocr |   city_name: Санкт-Петербург
+2026-05-03 23:05:59,581 | DEBUG | ocrnlp.progress_ocr |   new_spec: Анализ данных
+2026-05-03 23:05:59,581 | WARNING | ocrnlp.progress_ocr |   hours_num: NOT FOUND
+2026-05-03 23:05:59,581 | WARNING | ocrnlp.progress_ocr |   organization: NOT FOUND
+2026-05-03 23:05:59,581 | INFO | ocrnlp.progress_ocr | fields parsed: 8/10
+2026-05-03 23:05:59,582 | INFO | ocrnlp.progress_ocr | process_image done
+2026-05-03 23:05:59,582 | INFO | ocrnlp.progress_ocr | scanned text:
+ООО «Компания Пример
+
+УДОСТОВЕРЕНИЕ
+
+© ПОВЫШЕНИИ КВАЛИФИКАЦИИ
+876543210987
+
+"Документ о квалификации
+
+Регистрационный номер
+92-4567
+
+Город
+Санкт-Петербург
+
+Дата выдачи
+26.01.2024
+
+Ныстоящее удостоверение синдетельствует о TOM, что
+
+Петров
+Алексей Андреевич
+
+прошёл(а) повышение квалификации = (на)
+ООО «Компания Пример»
+Учебный центр «Профи»
+с 10 января 2024 г. по 25 января 2024 г.
+
+по лополнительной професснональной программе
+«Анализ данных»
+
+
+2026-05-03 23:10:19,429 | DEBUG | PIL.Image | Importing AvifImagePlugin
+2026-05-03 23:10:19,434 | DEBUG | PIL.Image | Importing BlpImagePlugin
+2026-05-03 23:10:19,434 | DEBUG | PIL.Image | Importing BmpImagePlugin
+2026-05-03 23:10:19,434 | DEBUG | PIL.Image | Importing BufrStubImagePlugin
+2026-05-03 23:10:19,435 | DEBUG | PIL.Image | Importing CurImagePlugin
+2026-05-03 23:10:19,435 | DEBUG | PIL.Image | Importing DcxImagePlugin
+2026-05-03 23:10:19,436 | DEBUG | PIL.Image | Importing DdsImagePlugin
+2026-05-03 23:10:19,437 | DEBUG | PIL.Image | Importing EpsImagePlugin
+2026-05-03 23:10:19,438 | DEBUG | PIL.Image | Importing FitsImagePlugin
+2026-05-03 23:10:19,438 | DEBUG | PIL.Image | Importing FliImagePlugin
+2026-05-03 23:10:19,439 | DEBUG | PIL.Image | Importing FpxImagePlugin
+2026-05-03 23:10:19,439 | DEBUG | PIL.Image | Image: failed to import FpxImagePlugin: No module named 'olefile'
+2026-05-03 23:10:19,439 | DEBUG | PIL.Image | Importing FtexImagePlugin
+2026-05-03 23:10:19,439 | DEBUG | PIL.Image | Importing GbrImagePlugin
+2026-05-03 23:10:19,439 | DEBUG | PIL.Image | Importing GifImagePlugin
+2026-05-03 23:10:19,439 | DEBUG | PIL.Image | Importing GribStubImagePlugin
+2026-05-03 23:10:19,440 | DEBUG | PIL.Image | Importing Hdf5StubImagePlugin
+2026-05-03 23:10:19,440 | DEBUG | PIL.Image | Importing IcnsImagePlugin
+2026-05-03 23:10:19,441 | DEBUG | PIL.Image | Importing IcoImagePlugin
+2026-05-03 23:10:19,441 | DEBUG | PIL.Image | Importing ImImagePlugin
+2026-05-03 23:10:19,442 | DEBUG | PIL.Image | Importing ImtImagePlugin
+2026-05-03 23:10:19,442 | DEBUG | PIL.Image | Importing IptcImagePlugin
+2026-05-03 23:10:19,442 | DEBUG | PIL.Image | Importing JpegImagePlugin
+2026-05-03 23:10:19,442 | DEBUG | PIL.Image | Importing Jpeg2KImagePlugin
+2026-05-03 23:10:19,442 | DEBUG | PIL.Image | Importing McIdasImagePlugin
+2026-05-03 23:10:19,443 | DEBUG | PIL.Image | Importing MicImagePlugin
+2026-05-03 23:10:19,443 | DEBUG | PIL.Image | Image: failed to import MicImagePlugin: No module named 'olefile'
+2026-05-03 23:10:19,443 | DEBUG | PIL.Image | Importing MpegImagePlugin
+2026-05-03 23:10:19,443 | DEBUG | PIL.Image | Importing MpoImagePlugin
+2026-05-03 23:10:19,445 | DEBUG | PIL.Image | Importing MspImagePlugin
+2026-05-03 23:10:19,446 | DEBUG | PIL.Image | Importing PalmImagePlugin
+2026-05-03 23:10:19,447 | DEBUG | PIL.Image | Importing PcdImagePlugin
+2026-05-03 23:10:19,447 | DEBUG | PIL.Image | Importing PcxImagePlugin
+2026-05-03 23:10:19,447 | DEBUG | PIL.Image | Importing PdfImagePlugin
+2026-05-03 23:10:19,449 | DEBUG | PIL.Image | Importing PixarImagePlugin
+2026-05-03 23:10:19,450 | DEBUG | PIL.Image | Importing PngImagePlugin
+2026-05-03 23:10:19,450 | DEBUG | PIL.Image | Importing PpmImagePlugin
+2026-05-03 23:10:19,450 | DEBUG | PIL.Image | Importing PsdImagePlugin
+2026-05-03 23:10:19,450 | DEBUG | PIL.Image | Importing QoiImagePlugin
+2026-05-03 23:10:19,450 | DEBUG | PIL.Image | Importing SgiImagePlugin
+2026-05-03 23:10:19,450 | DEBUG | PIL.Image | Importing SpiderImagePlugin
+2026-05-03 23:10:19,451 | DEBUG | PIL.Image | Importing SunImagePlugin
+2026-05-03 23:10:19,451 | DEBUG | PIL.Image | Importing TgaImagePlugin
+2026-05-03 23:10:19,451 | DEBUG | PIL.Image | Importing TiffImagePlugin
+2026-05-03 23:10:19,451 | DEBUG | PIL.Image | Importing WebPImagePlugin
+2026-05-03 23:10:19,456 | DEBUG | PIL.Image | Importing WmfImagePlugin
+2026-05-03 23:10:19,456 | DEBUG | PIL.Image | Importing XbmImagePlugin
+2026-05-03 23:10:19,457 | DEBUG | PIL.Image | Importing XpmImagePlugin
+2026-05-03 23:10:19,457 | DEBUG | PIL.Image | Importing XVThumbImagePlugin
+2026-05-03 23:10:19,457 | DEBUG | PIL.TiffImagePlugin | *** TiffImageFile._open ***
+2026-05-03 23:10:19,457 | DEBUG | PIL.TiffImagePlugin | - __first: 44648
+2026-05-03 23:10:19,458 | DEBUG | PIL.TiffImagePlugin | - ifh: b'II*\x00h\xae\x00\x00'
+2026-05-03 23:10:19,458 | DEBUG | PIL.TiffImagePlugin | Seeking to frame 0, on frame -1, __next 44648, location: 8
+2026-05-03 23:10:19,458 | DEBUG | PIL.TiffImagePlugin | Loading tags, location: 44648
+2026-05-03 23:10:19,458 | DEBUG | PIL.TiffImagePlugin | tag: ImageWidth (256) - type: short (3) - value: b'\xa4\x04'
+2026-05-03 23:10:19,458 | DEBUG | PIL.TiffImagePlugin | tag: ImageLength (257) - type: short (3) - value: b'H\x03'
+2026-05-03 23:10:19,458 | DEBUG | PIL.TiffImagePlugin | tag: BitsPerSample (258) - type: short (3) - value: b'\x08\x00'
+2026-05-03 23:10:19,458 | DEBUG | PIL.TiffImagePlugin | tag: Compression (259) - type: short (3) - value: b'\x05\x00'
+2026-05-03 23:10:19,458 | DEBUG | PIL.TiffImagePlugin | tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:10:19,458 | DEBUG | PIL.TiffImagePlugin | tag: StripOffsets (273) - type: long (4) Tag Location: 44722 - Data Location: 45358 - value: <table: 560 bytes>
+2026-05-03 23:10:19,458 | DEBUG | PIL.TiffImagePlugin | tag: SamplesPerPixel (277) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:10:19,458 | DEBUG | PIL.TiffImagePlugin | tag: RowsPerStrip (278) - type: short (3) - value: b'\x06\x00'
+2026-05-03 23:10:19,458 | DEBUG | PIL.TiffImagePlugin | tag: StripByteCounts (279) - type: long (4) Tag Location: 44758 - Data Location: 44798 - value: <table: 560 bytes>
+2026-05-03 23:10:19,458 | DEBUG | PIL.TiffImagePlugin | tag: PlanarConfiguration (284) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:10:19,458 | DEBUG | PIL.TiffImagePlugin | tag: Predictor (317) - type: short (3) - value: b'\x02\x00'
+2026-05-03 23:10:19,458 | DEBUG | PIL.TiffImagePlugin | tag: SampleFormat (339) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:10:19,458 | DEBUG | PIL.TiffImagePlugin | tag: ImageWidth (256) - type: short (3) - value: b'\xa4\x04'
+2026-05-03 23:10:19,458 | DEBUG | PIL.TiffImagePlugin | tag: ImageLength (257) - type: short (3) - value: b'H\x03'
+2026-05-03 23:10:19,458 | DEBUG | PIL.TiffImagePlugin | tag: BitsPerSample (258) - type: short (3) - value: b'\x08\x00'
+2026-05-03 23:10:19,458 | DEBUG | PIL.TiffImagePlugin | tag: Compression (259) - type: short (3) - value: b'\x05\x00'
+2026-05-03 23:10:19,458 | DEBUG | PIL.TiffImagePlugin | tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:10:19,458 | DEBUG | PIL.TiffImagePlugin | tag: StripOffsets (273) - type: long (4) Tag Location: 44722 - Data Location: 45358 - value: <table: 560 bytes>
+2026-05-03 23:10:19,458 | DEBUG | PIL.TiffImagePlugin | tag: SamplesPerPixel (277) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:10:19,458 | DEBUG | PIL.TiffImagePlugin | tag: RowsPerStrip (278) - type: short (3) - value: b'\x06\x00'
+2026-05-03 23:10:19,458 | DEBUG | PIL.TiffImagePlugin | tag: StripByteCounts (279) - type: long (4) Tag Location: 44758 - Data Location: 44798 - value: <table: 560 bytes>
+2026-05-03 23:10:19,458 | DEBUG | PIL.TiffImagePlugin | tag: PlanarConfiguration (284) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:10:19,458 | DEBUG | PIL.TiffImagePlugin | tag: Predictor (317) - type: short (3) - value: b'\x02\x00'
+2026-05-03 23:10:19,458 | DEBUG | PIL.TiffImagePlugin | tag: SampleFormat (339) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:10:19,458 | DEBUG | PIL.TiffImagePlugin | *** Summary ***
+2026-05-03 23:10:19,458 | DEBUG | PIL.TiffImagePlugin | - compression: tiff_lzw
+2026-05-03 23:10:19,458 | DEBUG | PIL.TiffImagePlugin | - photometric_interpretation: 1
+2026-05-03 23:10:19,458 | DEBUG | PIL.TiffImagePlugin | - planar_configuration: 1
+2026-05-03 23:10:19,458 | DEBUG | PIL.TiffImagePlugin | - fill_order: 1
+2026-05-03 23:10:19,458 | DEBUG | PIL.TiffImagePlugin | - YCbCr subsampling: None
+2026-05-03 23:10:19,458 | DEBUG | PIL.TiffImagePlugin | - size: (1188, 840)
+2026-05-03 23:10:19,458 | DEBUG | PIL.TiffImagePlugin | format key: (b'II', 1, (1,), 1, (8,), ())
+2026-05-03 23:10:19,458 | DEBUG | PIL.TiffImagePlugin | - raw mode: L
+2026-05-03 23:10:19,458 | DEBUG | PIL.TiffImagePlugin | - pil mode: L
+2026-05-03 23:10:19,458 | INFO | ocrnlp.progress_ocr | process_image start
+2026-05-03 23:10:19,458 | INFO | ocrnlp.progress_ocr | [12625535] ocr start
+2026-05-03 23:10:19,502 | DEBUG | PIL.TiffImagePlugin | have fileno, calling fileno version of the decoder.
+2026-05-03 23:10:19,504 | DEBUG | PIL.TiffImagePlugin | tag: ImageWidth (256) - type: short (3) - value: b'\xa4\x04'
+2026-05-03 23:10:19,504 | DEBUG | PIL.TiffImagePlugin | tag: ImageLength (257) - type: short (3) - value: b'H\x03'
+2026-05-03 23:10:19,504 | DEBUG | PIL.TiffImagePlugin | tag: BitsPerSample (258) - type: short (3) - value: b'\x08\x00'
+2026-05-03 23:10:19,504 | DEBUG | PIL.TiffImagePlugin | tag: Compression (259) - type: short (3) - value: b'\x05\x00'
+2026-05-03 23:10:19,504 | DEBUG | PIL.TiffImagePlugin | tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:10:19,504 | DEBUG | PIL.TiffImagePlugin | tag: StripOffsets (273) - type: long (4) Tag Location: 44722 - Data Location: 45358 - value: <table: 560 bytes>
+2026-05-03 23:10:19,504 | DEBUG | PIL.TiffImagePlugin | tag: SamplesPerPixel (277) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:10:19,504 | DEBUG | PIL.TiffImagePlugin | tag: RowsPerStrip (278) - type: short (3) - value: b'\x06\x00'
+2026-05-03 23:10:19,504 | DEBUG | PIL.TiffImagePlugin | tag: StripByteCounts (279) - type: long (4) Tag Location: 44758 - Data Location: 44798 - value: <table: 560 bytes>
+2026-05-03 23:10:19,504 | DEBUG | PIL.TiffImagePlugin | tag: PlanarConfiguration (284) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:10:19,504 | DEBUG | PIL.TiffImagePlugin | tag: Predictor (317) - type: short (3) - value: b'\x02\x00'
+2026-05-03 23:10:19,504 | DEBUG | PIL.TiffImagePlugin | tag: SampleFormat (339) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:10:19,505 | DEBUG | PIL.TiffImagePlugin | Tiffinfo Keys: []
+2026-05-03 23:10:19,505 | DEBUG | PIL.TiffImagePlugin | Saving using libtiff encoder
+2026-05-03 23:10:19,505 | DEBUG | PIL.TiffImagePlugin | Items: [(256, 1188), (257, 840), (258, (8,)), (259, 5), (262, 1), (273, (0, 65340, 130680, 196020, 261360, 326700, 392040, 457380, 522720, 588060, 653400, 718740, 784080, 849420, 914760, 980100)), (278, 55), (279, (65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 17820)), (284, 1)]
+2026-05-03 23:10:19,505 | DEBUG | PIL.TiffImagePlugin | Converted items: [(256, 1188), (257, 840), (258, 8), (259, 5), (262, 1), (277, 1), (278, 55), (284, 1), (317, 2)]
+2026-05-03 23:10:19,510 | DEBUG | pytesseract | ['tesseract', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_ubhauuam_input.TIFF', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_ubhauuam', '-c', 'tessedit_create_tsv=1']
+2026-05-03 23:10:19,812 | DEBUG | PIL.TiffImagePlugin | Tiffinfo Keys: []
+2026-05-03 23:10:19,812 | DEBUG | PIL.TiffImagePlugin | Saving using libtiff encoder
+2026-05-03 23:10:19,812 | DEBUG | PIL.TiffImagePlugin | Items: [(256, 1188), (257, 840), (258, (8,)), (259, 5), (262, 1), (273, (0, 65340, 130680, 196020, 261360, 326700, 392040, 457380, 522720, 588060, 653400, 718740, 784080, 849420, 914760, 980100)), (278, 55), (279, (65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 17820)), (284, 1)]
+2026-05-03 23:10:19,812 | DEBUG | PIL.TiffImagePlugin | Converted items: [(256, 1188), (257, 840), (258, 8), (259, 5), (262, 1), (277, 1), (278, 55), (284, 1), (317, 2)]
+2026-05-03 23:10:19,817 | DEBUG | pytesseract | ['tesseract', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_yybhhvuc_input.TIFF', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_yybhhvuc', '-l', 'rus+eng', 'txt']
+2026-05-03 23:10:20,159 | INFO | ocrnlp.progress_ocr | [12625535] tesseract: data=0.353s  string=0.347s  total=0.701s
+2026-05-03 23:10:20,159 | WARNING | ocrnlp.progress_ocr | [12625535] low confidence: 46.3
+2026-05-03 23:10:20,159 | INFO | ocrnlp.progress_ocr | extracting fields
+2026-05-03 23:10:20,160 | DEBUG | ocrnlp.progress_ocr |   full_name: Петров Алексей Андреевич
+2026-05-03 23:10:20,160 | DEBUG | ocrnlp.progress_ocr |   own_date: 26.01.2024
+2026-05-03 23:10:20,160 | DEBUG | ocrnlp.progress_ocr |   reg_num: 92-4567
+2026-05-03 23:10:20,160 | DEBUG | ocrnlp.progress_ocr |   doc_num: 876543210987
+2026-05-03 23:10:20,160 | DEBUG | ocrnlp.progress_ocr |   date_from: 10 января 2024 г.
+2026-05-03 23:10:20,160 | DEBUG | ocrnlp.progress_ocr |   date_to: 25 января 2024 г.
+2026-05-03 23:10:20,161 | DEBUG | ocrnlp.progress_ocr |   city_name: Санкт-Петербург
+2026-05-03 23:10:20,161 | DEBUG | ocrnlp.progress_ocr |   new_spec: Анализ данных
+2026-05-03 23:10:20,161 | WARNING | ocrnlp.progress_ocr |   hours_num: NOT FOUND
+2026-05-03 23:10:20,161 | WARNING | ocrnlp.progress_ocr |   organization: NOT FOUND
+2026-05-03 23:10:20,161 | INFO | ocrnlp.progress_ocr | fields parsed: 8/10
+2026-05-03 23:10:20,161 | INFO | ocrnlp.progress_ocr | process_image done
+2026-05-03 23:10:20,161 | INFO | ocrnlp.progress_ocr | scanned text:
+ООО «Компания Пример
+
+УДОСТОВЕРЕНИЕ
+
+© ПОВЫШЕНИИ КВАЛИФИКАЦИИ
+876543210987
+
+"Документ о квалификации
+
+Регистрационный номер
+92-4567
+
+Город
+Санкт-Петербург
+
+Дата выдачи
+26.01.2024
+
+Ныстоящее удостоверение синдетельствует о TOM, что
+
+Петров
+Алексей Андреевич
+
+прошёл(а) повышение квалификации = (на)
+ООО «Компания Пример»
+Учебный центр «Профи»
+с 10 января 2024 г. по 25 января 2024 г.
+
+по лополнительной професснональной программе
+«Анализ данных»
+
+
+2026-05-03 23:13:17,654 | DEBUG | PIL.Image | Importing AvifImagePlugin
+2026-05-03 23:13:17,661 | DEBUG | PIL.Image | Importing BlpImagePlugin
+2026-05-03 23:13:17,662 | DEBUG | PIL.Image | Importing BmpImagePlugin
+2026-05-03 23:13:17,662 | DEBUG | PIL.Image | Importing BufrStubImagePlugin
+2026-05-03 23:13:17,663 | DEBUG | PIL.Image | Importing CurImagePlugin
+2026-05-03 23:13:17,663 | DEBUG | PIL.Image | Importing DcxImagePlugin
+2026-05-03 23:13:17,664 | DEBUG | PIL.Image | Importing DdsImagePlugin
+2026-05-03 23:13:17,667 | DEBUG | PIL.Image | Importing EpsImagePlugin
+2026-05-03 23:13:17,668 | DEBUG | PIL.Image | Importing FitsImagePlugin
+2026-05-03 23:13:17,668 | DEBUG | PIL.Image | Importing FliImagePlugin
+2026-05-03 23:13:17,669 | DEBUG | PIL.Image | Importing FpxImagePlugin
+2026-05-03 23:13:17,669 | DEBUG | PIL.Image | Image: failed to import FpxImagePlugin: No module named 'olefile'
+2026-05-03 23:13:17,669 | DEBUG | PIL.Image | Importing FtexImagePlugin
+2026-05-03 23:13:17,670 | DEBUG | PIL.Image | Importing GbrImagePlugin
+2026-05-03 23:13:17,671 | DEBUG | PIL.Image | Importing GifImagePlugin
+2026-05-03 23:13:17,671 | DEBUG | PIL.Image | Importing GribStubImagePlugin
+2026-05-03 23:13:17,671 | DEBUG | PIL.Image | Importing Hdf5StubImagePlugin
+2026-05-03 23:13:17,672 | DEBUG | PIL.Image | Importing IcnsImagePlugin
+2026-05-03 23:13:17,673 | DEBUG | PIL.Image | Importing IcoImagePlugin
+2026-05-03 23:13:17,674 | DEBUG | PIL.Image | Importing ImImagePlugin
+2026-05-03 23:13:17,675 | DEBUG | PIL.Image | Importing ImtImagePlugin
+2026-05-03 23:13:17,675 | DEBUG | PIL.Image | Importing IptcImagePlugin
+2026-05-03 23:13:17,676 | DEBUG | PIL.Image | Importing JpegImagePlugin
+2026-05-03 23:13:17,676 | DEBUG | PIL.Image | Importing Jpeg2KImagePlugin
+2026-05-03 23:13:17,676 | DEBUG | PIL.Image | Importing McIdasImagePlugin
+2026-05-03 23:13:17,677 | DEBUG | PIL.Image | Importing MicImagePlugin
+2026-05-03 23:13:17,677 | DEBUG | PIL.Image | Image: failed to import MicImagePlugin: No module named 'olefile'
+2026-05-03 23:13:17,677 | DEBUG | PIL.Image | Importing MpegImagePlugin
+2026-05-03 23:13:17,678 | DEBUG | PIL.Image | Importing MpoImagePlugin
+2026-05-03 23:13:17,680 | DEBUG | PIL.Image | Importing MspImagePlugin
+2026-05-03 23:13:17,681 | DEBUG | PIL.Image | Importing PalmImagePlugin
+2026-05-03 23:13:17,682 | DEBUG | PIL.Image | Importing PcdImagePlugin
+2026-05-03 23:13:17,683 | DEBUG | PIL.Image | Importing PcxImagePlugin
+2026-05-03 23:13:17,683 | DEBUG | PIL.Image | Importing PdfImagePlugin
+2026-05-03 23:13:17,685 | DEBUG | PIL.Image | Importing PixarImagePlugin
+2026-05-03 23:13:17,686 | DEBUG | PIL.Image | Importing PngImagePlugin
+2026-05-03 23:13:17,686 | DEBUG | PIL.Image | Importing PpmImagePlugin
+2026-05-03 23:13:17,686 | DEBUG | PIL.Image | Importing PsdImagePlugin
+2026-05-03 23:13:17,687 | DEBUG | PIL.Image | Importing QoiImagePlugin
+2026-05-03 23:13:17,688 | DEBUG | PIL.Image | Importing SgiImagePlugin
+2026-05-03 23:13:17,688 | DEBUG | PIL.Image | Importing SpiderImagePlugin
+2026-05-03 23:13:17,689 | DEBUG | PIL.Image | Importing SunImagePlugin
+2026-05-03 23:13:17,689 | DEBUG | PIL.Image | Importing TgaImagePlugin
+2026-05-03 23:13:17,690 | DEBUG | PIL.Image | Importing TiffImagePlugin
+2026-05-03 23:13:17,690 | DEBUG | PIL.Image | Importing WebPImagePlugin
+2026-05-03 23:13:17,697 | DEBUG | PIL.Image | Importing WmfImagePlugin
+2026-05-03 23:13:17,698 | DEBUG | PIL.Image | Importing XbmImagePlugin
+2026-05-03 23:13:17,699 | DEBUG | PIL.Image | Importing XpmImagePlugin
+2026-05-03 23:13:17,699 | DEBUG | PIL.Image | Importing XVThumbImagePlugin
+2026-05-03 23:13:17,700 | DEBUG | PIL.TiffImagePlugin | *** TiffImageFile._open ***
+2026-05-03 23:13:17,700 | DEBUG | PIL.TiffImagePlugin | - __first: 44648
+2026-05-03 23:13:17,701 | DEBUG | PIL.TiffImagePlugin | - ifh: b'II*\x00h\xae\x00\x00'
+2026-05-03 23:13:17,701 | DEBUG | PIL.TiffImagePlugin | Seeking to frame 0, on frame -1, __next 44648, location: 8
+2026-05-03 23:13:17,701 | DEBUG | PIL.TiffImagePlugin | Loading tags, location: 44648
+2026-05-03 23:13:17,701 | DEBUG | PIL.TiffImagePlugin | tag: ImageWidth (256) - type: short (3) - value: b'\xa4\x04'
+2026-05-03 23:13:17,702 | DEBUG | PIL.TiffImagePlugin | tag: ImageLength (257) - type: short (3) - value: b'H\x03'
+2026-05-03 23:13:17,702 | DEBUG | PIL.TiffImagePlugin | tag: BitsPerSample (258) - type: short (3) - value: b'\x08\x00'
+2026-05-03 23:13:17,702 | DEBUG | PIL.TiffImagePlugin | tag: Compression (259) - type: short (3) - value: b'\x05\x00'
+2026-05-03 23:13:17,703 | DEBUG | PIL.TiffImagePlugin | tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:13:17,703 | DEBUG | PIL.TiffImagePlugin | tag: StripOffsets (273) - type: long (4) Tag Location: 44722 - Data Location: 45358 - value: <table: 560 bytes>
+2026-05-03 23:13:17,703 | DEBUG | PIL.TiffImagePlugin | tag: SamplesPerPixel (277) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:13:17,704 | DEBUG | PIL.TiffImagePlugin | tag: RowsPerStrip (278) - type: short (3) - value: b'\x06\x00'
+2026-05-03 23:13:17,704 | DEBUG | PIL.TiffImagePlugin | tag: StripByteCounts (279) - type: long (4) Tag Location: 44758 - Data Location: 44798 - value: <table: 560 bytes>
+2026-05-03 23:13:17,704 | DEBUG | PIL.TiffImagePlugin | tag: PlanarConfiguration (284) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:13:17,704 | DEBUG | PIL.TiffImagePlugin | tag: Predictor (317) - type: short (3) - value: b'\x02\x00'
+2026-05-03 23:13:17,705 | DEBUG | PIL.TiffImagePlugin | tag: SampleFormat (339) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:13:17,705 | DEBUG | PIL.TiffImagePlugin | tag: ImageWidth (256) - type: short (3) - value: b'\xa4\x04'
+2026-05-03 23:13:17,705 | DEBUG | PIL.TiffImagePlugin | tag: ImageLength (257) - type: short (3) - value: b'H\x03'
+2026-05-03 23:13:17,705 | DEBUG | PIL.TiffImagePlugin | tag: BitsPerSample (258) - type: short (3) - value: b'\x08\x00'
+2026-05-03 23:13:17,705 | DEBUG | PIL.TiffImagePlugin | tag: Compression (259) - type: short (3) - value: b'\x05\x00'
+2026-05-03 23:13:17,706 | DEBUG | PIL.TiffImagePlugin | tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:13:17,706 | DEBUG | PIL.TiffImagePlugin | tag: StripOffsets (273) - type: long (4) Tag Location: 44722 - Data Location: 45358 - value: <table: 560 bytes>
+2026-05-03 23:13:17,706 | DEBUG | PIL.TiffImagePlugin | tag: SamplesPerPixel (277) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:13:17,706 | DEBUG | PIL.TiffImagePlugin | tag: RowsPerStrip (278) - type: short (3) - value: b'\x06\x00'
+2026-05-03 23:13:17,706 | DEBUG | PIL.TiffImagePlugin | tag: StripByteCounts (279) - type: long (4) Tag Location: 44758 - Data Location: 44798 - value: <table: 560 bytes>
+2026-05-03 23:13:17,706 | DEBUG | PIL.TiffImagePlugin | tag: PlanarConfiguration (284) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:13:17,707 | DEBUG | PIL.TiffImagePlugin | tag: Predictor (317) - type: short (3) - value: b'\x02\x00'
+2026-05-03 23:13:17,707 | DEBUG | PIL.TiffImagePlugin | tag: SampleFormat (339) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:13:17,707 | DEBUG | PIL.TiffImagePlugin | *** Summary ***
+2026-05-03 23:13:17,707 | DEBUG | PIL.TiffImagePlugin | - compression: tiff_lzw
+2026-05-03 23:13:17,708 | DEBUG | PIL.TiffImagePlugin | - photometric_interpretation: 1
+2026-05-03 23:13:17,708 | DEBUG | PIL.TiffImagePlugin | - planar_configuration: 1
+2026-05-03 23:13:17,708 | DEBUG | PIL.TiffImagePlugin | - fill_order: 1
+2026-05-03 23:13:17,708 | DEBUG | PIL.TiffImagePlugin | - YCbCr subsampling: None
+2026-05-03 23:13:17,708 | DEBUG | PIL.TiffImagePlugin | - size: (1188, 840)
+2026-05-03 23:13:17,709 | DEBUG | PIL.TiffImagePlugin | format key: (b'II', 1, (1,), 1, (8,), ())
+2026-05-03 23:13:17,709 | DEBUG | PIL.TiffImagePlugin | - raw mode: L
+2026-05-03 23:13:17,709 | DEBUG | PIL.TiffImagePlugin | - pil mode: L
+2026-05-03 23:13:17,709 | INFO | ocrnlp.progress_ocr | process_image start
+2026-05-03 23:13:17,709 | INFO | ocrnlp.progress_ocr | [0fc9abe2] ocr start
+2026-05-03 23:13:17,773 | DEBUG | PIL.TiffImagePlugin | have fileno, calling fileno version of the decoder.
+2026-05-03 23:13:17,776 | DEBUG | PIL.TiffImagePlugin | tag: ImageWidth (256) - type: short (3) - value: b'\xa4\x04'
+2026-05-03 23:13:17,776 | DEBUG | PIL.TiffImagePlugin | tag: ImageLength (257) - type: short (3) - value: b'H\x03'
+2026-05-03 23:13:17,776 | DEBUG | PIL.TiffImagePlugin | tag: BitsPerSample (258) - type: short (3) - value: b'\x08\x00'
+2026-05-03 23:13:17,777 | DEBUG | PIL.TiffImagePlugin | tag: Compression (259) - type: short (3) - value: b'\x05\x00'
+2026-05-03 23:13:17,777 | DEBUG | PIL.TiffImagePlugin | tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:13:17,777 | DEBUG | PIL.TiffImagePlugin | tag: StripOffsets (273) - type: long (4) Tag Location: 44722 - Data Location: 45358 - value: <table: 560 bytes>
+2026-05-03 23:13:17,777 | DEBUG | PIL.TiffImagePlugin | tag: SamplesPerPixel (277) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:13:17,777 | DEBUG | PIL.TiffImagePlugin | tag: RowsPerStrip (278) - type: short (3) - value: b'\x06\x00'
+2026-05-03 23:13:17,777 | DEBUG | PIL.TiffImagePlugin | tag: StripByteCounts (279) - type: long (4) Tag Location: 44758 - Data Location: 44798 - value: <table: 560 bytes>
+2026-05-03 23:13:17,777 | DEBUG | PIL.TiffImagePlugin | tag: PlanarConfiguration (284) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:13:17,778 | DEBUG | PIL.TiffImagePlugin | tag: Predictor (317) - type: short (3) - value: b'\x02\x00'
+2026-05-03 23:13:17,778 | DEBUG | PIL.TiffImagePlugin | tag: SampleFormat (339) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:13:17,778 | DEBUG | PIL.TiffImagePlugin | Tiffinfo Keys: []
+2026-05-03 23:13:17,779 | DEBUG | PIL.TiffImagePlugin | Saving using libtiff encoder
+2026-05-03 23:13:17,779 | DEBUG | PIL.TiffImagePlugin | Items: [(256, 1188), (257, 840), (258, (8,)), (259, 5), (262, 1), (273, (0, 65340, 130680, 196020, 261360, 326700, 392040, 457380, 522720, 588060, 653400, 718740, 784080, 849420, 914760, 980100)), (278, 55), (279, (65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 17820)), (284, 1)]
+2026-05-03 23:13:17,779 | DEBUG | PIL.TiffImagePlugin | Converted items: [(256, 1188), (257, 840), (258, 8), (259, 5), (262, 1), (277, 1), (278, 55), (284, 1), (317, 2)]
+2026-05-03 23:13:17,784 | DEBUG | pytesseract | ['tesseract', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_abmqss8h_input.TIFF', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_abmqss8h', '-c', 'tessedit_create_tsv=1']
+2026-05-03 23:13:18,094 | DEBUG | PIL.TiffImagePlugin | Tiffinfo Keys: []
+2026-05-03 23:13:18,095 | DEBUG | PIL.TiffImagePlugin | Saving using libtiff encoder
+2026-05-03 23:13:18,095 | DEBUG | PIL.TiffImagePlugin | Items: [(256, 1188), (257, 840), (258, (8,)), (259, 5), (262, 1), (273, (0, 65340, 130680, 196020, 261360, 326700, 392040, 457380, 522720, 588060, 653400, 718740, 784080, 849420, 914760, 980100)), (278, 55), (279, (65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 17820)), (284, 1)]
+2026-05-03 23:13:18,095 | DEBUG | PIL.TiffImagePlugin | Converted items: [(256, 1188), (257, 840), (258, 8), (259, 5), (262, 1), (277, 1), (278, 55), (284, 1), (317, 2)]
+2026-05-03 23:13:18,100 | DEBUG | pytesseract | ['tesseract', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_b434bq61_input.TIFF', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_b434bq61', '-l', 'rus+eng', 'txt']
+2026-05-03 23:13:18,469 | INFO | ocrnlp.progress_ocr | [0fc9abe2] tesseract: data=0.385s  string=0.375s  total=0.760s
+2026-05-03 23:13:18,470 | WARNING | ocrnlp.progress_ocr | [0fc9abe2] low confidence: 46.3
+2026-05-03 23:13:18,470 | INFO | ocrnlp.progress_ocr | extracting fields
+2026-05-03 23:13:18,471 | DEBUG | ocrnlp.progress_ocr |   full_name: Петров Алексей Андреевич
+2026-05-03 23:13:18,471 | DEBUG | ocrnlp.progress_ocr |   own_date: 26.01.2024
+2026-05-03 23:13:18,471 | DEBUG | ocrnlp.progress_ocr |   reg_num: 92-4567
+2026-05-03 23:13:18,471 | DEBUG | ocrnlp.progress_ocr |   doc_num: 876543210987
+2026-05-03 23:13:18,471 | DEBUG | ocrnlp.progress_ocr |   date_from: 10 января 2024 г.
+2026-05-03 23:13:18,472 | DEBUG | ocrnlp.progress_ocr |   date_to: 25 января 2024 г.
+2026-05-03 23:13:18,473 | DEBUG | ocrnlp.progress_ocr |   city_name: Санкт-Петербург
+2026-05-03 23:13:18,473 | DEBUG | ocrnlp.progress_ocr |   new_spec: Анализ данных
+2026-05-03 23:13:18,473 | WARNING | ocrnlp.progress_ocr |   hours_num: NOT FOUND
+2026-05-03 23:13:18,473 | WARNING | ocrnlp.progress_ocr |   organization: NOT FOUND
+2026-05-03 23:13:18,473 | INFO | ocrnlp.progress_ocr | fields parsed: 8/10
+2026-05-03 23:13:18,474 | INFO | ocrnlp.progress_ocr | process_image done
+2026-05-03 23:13:18,474 | INFO | ocrnlp.progress_ocr | scanned text:
+ООО «Компания Пример
+
+УДОСТОВЕРЕНИЕ
+
+© ПОВЫШЕНИИ КВАЛИФИКАЦИИ
+876543210987
+
+"Документ о квалификации
+
+Регистрационный номер
+92-4567
+
+Город
+Санкт-Петербург
+
+Дата выдачи
+26.01.2024
+
+Ныстоящее удостоверение синдетельствует о TOM, что
+
+Петров
+Алексей Андреевич
+
+прошёл(а) повышение квалификации = (на)
+ООО «Компания Пример»
+Учебный центр «Профи»
+с 10 января 2024 г. по 25 января 2024 г.
+
+по лополнительной професснональной программе
+«Анализ данных»
+
+
+2026-05-03 23:14:02,588 | DEBUG | PIL.Image | Importing AvifImagePlugin
+2026-05-03 23:14:02,592 | DEBUG | PIL.Image | Importing BlpImagePlugin
+2026-05-03 23:14:02,593 | DEBUG | PIL.Image | Importing BmpImagePlugin
+2026-05-03 23:14:02,593 | DEBUG | PIL.Image | Importing BufrStubImagePlugin
+2026-05-03 23:14:02,593 | DEBUG | PIL.Image | Importing CurImagePlugin
+2026-05-03 23:14:02,594 | DEBUG | PIL.Image | Importing DcxImagePlugin
+2026-05-03 23:14:02,594 | DEBUG | PIL.Image | Importing DdsImagePlugin
+2026-05-03 23:14:02,596 | DEBUG | PIL.Image | Importing EpsImagePlugin
+2026-05-03 23:14:02,597 | DEBUG | PIL.Image | Importing FitsImagePlugin
+2026-05-03 23:14:02,597 | DEBUG | PIL.Image | Importing FliImagePlugin
+2026-05-03 23:14:02,597 | DEBUG | PIL.Image | Importing FpxImagePlugin
+2026-05-03 23:14:02,598 | DEBUG | PIL.Image | Image: failed to import FpxImagePlugin: No module named 'olefile'
+2026-05-03 23:14:02,598 | DEBUG | PIL.Image | Importing FtexImagePlugin
+2026-05-03 23:14:02,598 | DEBUG | PIL.Image | Importing GbrImagePlugin
+2026-05-03 23:14:02,598 | DEBUG | PIL.Image | Importing GifImagePlugin
+2026-05-03 23:14:02,598 | DEBUG | PIL.Image | Importing GribStubImagePlugin
+2026-05-03 23:14:02,598 | DEBUG | PIL.Image | Importing Hdf5StubImagePlugin
+2026-05-03 23:14:02,598 | DEBUG | PIL.Image | Importing IcnsImagePlugin
+2026-05-03 23:14:02,599 | DEBUG | PIL.Image | Importing IcoImagePlugin
+2026-05-03 23:14:02,600 | DEBUG | PIL.Image | Importing ImImagePlugin
+2026-05-03 23:14:02,600 | DEBUG | PIL.Image | Importing ImtImagePlugin
+2026-05-03 23:14:02,601 | DEBUG | PIL.Image | Importing IptcImagePlugin
+2026-05-03 23:14:02,601 | DEBUG | PIL.Image | Importing JpegImagePlugin
+2026-05-03 23:14:02,601 | DEBUG | PIL.Image | Importing Jpeg2KImagePlugin
+2026-05-03 23:14:02,601 | DEBUG | PIL.Image | Importing McIdasImagePlugin
+2026-05-03 23:14:02,601 | DEBUG | PIL.Image | Importing MicImagePlugin
+2026-05-03 23:14:02,602 | DEBUG | PIL.Image | Image: failed to import MicImagePlugin: No module named 'olefile'
+2026-05-03 23:14:02,602 | DEBUG | PIL.Image | Importing MpegImagePlugin
+2026-05-03 23:14:02,602 | DEBUG | PIL.Image | Importing MpoImagePlugin
+2026-05-03 23:14:02,604 | DEBUG | PIL.Image | Importing MspImagePlugin
+2026-05-03 23:14:02,604 | DEBUG | PIL.Image | Importing PalmImagePlugin
+2026-05-03 23:14:02,605 | DEBUG | PIL.Image | Importing PcdImagePlugin
+2026-05-03 23:14:02,606 | DEBUG | PIL.Image | Importing PcxImagePlugin
+2026-05-03 23:14:02,606 | DEBUG | PIL.Image | Importing PdfImagePlugin
+2026-05-03 23:14:02,608 | DEBUG | PIL.Image | Importing PixarImagePlugin
+2026-05-03 23:14:02,608 | DEBUG | PIL.Image | Importing PngImagePlugin
+2026-05-03 23:14:02,608 | DEBUG | PIL.Image | Importing PpmImagePlugin
+2026-05-03 23:14:02,608 | DEBUG | PIL.Image | Importing PsdImagePlugin
+2026-05-03 23:14:02,609 | DEBUG | PIL.Image | Importing QoiImagePlugin
+2026-05-03 23:14:02,609 | DEBUG | PIL.Image | Importing SgiImagePlugin
+2026-05-03 23:14:02,609 | DEBUG | PIL.Image | Importing SpiderImagePlugin
+2026-05-03 23:14:02,610 | DEBUG | PIL.Image | Importing SunImagePlugin
+2026-05-03 23:14:02,610 | DEBUG | PIL.Image | Importing TgaImagePlugin
+2026-05-03 23:14:02,610 | DEBUG | PIL.Image | Importing TiffImagePlugin
+2026-05-03 23:14:02,610 | DEBUG | PIL.Image | Importing WebPImagePlugin
+2026-05-03 23:14:02,615 | DEBUG | PIL.Image | Importing WmfImagePlugin
+2026-05-03 23:14:02,615 | DEBUG | PIL.Image | Importing XbmImagePlugin
+2026-05-03 23:14:02,616 | DEBUG | PIL.Image | Importing XpmImagePlugin
+2026-05-03 23:14:02,616 | DEBUG | PIL.Image | Importing XVThumbImagePlugin
+2026-05-03 23:14:02,617 | DEBUG | PIL.TiffImagePlugin | *** TiffImageFile._open ***
+2026-05-03 23:14:02,617 | DEBUG | PIL.TiffImagePlugin | - __first: 44648
+2026-05-03 23:14:02,617 | DEBUG | PIL.TiffImagePlugin | - ifh: b'II*\x00h\xae\x00\x00'
+2026-05-03 23:14:02,617 | DEBUG | PIL.TiffImagePlugin | Seeking to frame 0, on frame -1, __next 44648, location: 8
+2026-05-03 23:14:02,617 | DEBUG | PIL.TiffImagePlugin | Loading tags, location: 44648
+2026-05-03 23:14:02,617 | DEBUG | PIL.TiffImagePlugin | tag: ImageWidth (256) - type: short (3) - value: b'\xa4\x04'
+2026-05-03 23:14:02,617 | DEBUG | PIL.TiffImagePlugin | tag: ImageLength (257) - type: short (3) - value: b'H\x03'
+2026-05-03 23:14:02,617 | DEBUG | PIL.TiffImagePlugin | tag: BitsPerSample (258) - type: short (3) - value: b'\x08\x00'
+2026-05-03 23:14:02,617 | DEBUG | PIL.TiffImagePlugin | tag: Compression (259) - type: short (3) - value: b'\x05\x00'
+2026-05-03 23:14:02,617 | DEBUG | PIL.TiffImagePlugin | tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:14:02,617 | DEBUG | PIL.TiffImagePlugin | tag: StripOffsets (273) - type: long (4) Tag Location: 44722 - Data Location: 45358 - value: <table: 560 bytes>
+2026-05-03 23:14:02,617 | DEBUG | PIL.TiffImagePlugin | tag: SamplesPerPixel (277) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:14:02,617 | DEBUG | PIL.TiffImagePlugin | tag: RowsPerStrip (278) - type: short (3) - value: b'\x06\x00'
+2026-05-03 23:14:02,617 | DEBUG | PIL.TiffImagePlugin | tag: StripByteCounts (279) - type: long (4) Tag Location: 44758 - Data Location: 44798 - value: <table: 560 bytes>
+2026-05-03 23:14:02,617 | DEBUG | PIL.TiffImagePlugin | tag: PlanarConfiguration (284) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:14:02,617 | DEBUG | PIL.TiffImagePlugin | tag: Predictor (317) - type: short (3) - value: b'\x02\x00'
+2026-05-03 23:14:02,617 | DEBUG | PIL.TiffImagePlugin | tag: SampleFormat (339) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:14:02,617 | DEBUG | PIL.TiffImagePlugin | tag: ImageWidth (256) - type: short (3) - value: b'\xa4\x04'
+2026-05-03 23:14:02,617 | DEBUG | PIL.TiffImagePlugin | tag: ImageLength (257) - type: short (3) - value: b'H\x03'
+2026-05-03 23:14:02,617 | DEBUG | PIL.TiffImagePlugin | tag: BitsPerSample (258) - type: short (3) - value: b'\x08\x00'
+2026-05-03 23:14:02,617 | DEBUG | PIL.TiffImagePlugin | tag: Compression (259) - type: short (3) - value: b'\x05\x00'
+2026-05-03 23:14:02,617 | DEBUG | PIL.TiffImagePlugin | tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:14:02,617 | DEBUG | PIL.TiffImagePlugin | tag: StripOffsets (273) - type: long (4) Tag Location: 44722 - Data Location: 45358 - value: <table: 560 bytes>
+2026-05-03 23:14:02,617 | DEBUG | PIL.TiffImagePlugin | tag: SamplesPerPixel (277) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:14:02,617 | DEBUG | PIL.TiffImagePlugin | tag: RowsPerStrip (278) - type: short (3) - value: b'\x06\x00'
+2026-05-03 23:14:02,617 | DEBUG | PIL.TiffImagePlugin | tag: StripByteCounts (279) - type: long (4) Tag Location: 44758 - Data Location: 44798 - value: <table: 560 bytes>
+2026-05-03 23:14:02,617 | DEBUG | PIL.TiffImagePlugin | tag: PlanarConfiguration (284) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:14:02,617 | DEBUG | PIL.TiffImagePlugin | tag: Predictor (317) - type: short (3) - value: b'\x02\x00'
+2026-05-03 23:14:02,617 | DEBUG | PIL.TiffImagePlugin | tag: SampleFormat (339) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:14:02,617 | DEBUG | PIL.TiffImagePlugin | *** Summary ***
+2026-05-03 23:14:02,617 | DEBUG | PIL.TiffImagePlugin | - compression: tiff_lzw
+2026-05-03 23:14:02,617 | DEBUG | PIL.TiffImagePlugin | - photometric_interpretation: 1
+2026-05-03 23:14:02,617 | DEBUG | PIL.TiffImagePlugin | - planar_configuration: 1
+2026-05-03 23:14:02,617 | DEBUG | PIL.TiffImagePlugin | - fill_order: 1
+2026-05-03 23:14:02,617 | DEBUG | PIL.TiffImagePlugin | - YCbCr subsampling: None
+2026-05-03 23:14:02,617 | DEBUG | PIL.TiffImagePlugin | - size: (1188, 840)
+2026-05-03 23:14:02,617 | DEBUG | PIL.TiffImagePlugin | format key: (b'II', 1, (1,), 1, (8,), ())
+2026-05-03 23:14:02,617 | DEBUG | PIL.TiffImagePlugin | - raw mode: L
+2026-05-03 23:14:02,617 | DEBUG | PIL.TiffImagePlugin | - pil mode: L
+2026-05-03 23:14:02,617 | INFO | ocrnlp.progress_ocr | process_image start
+2026-05-03 23:14:02,617 | INFO | ocrnlp.progress_ocr | [70cae906] ocr start
+2026-05-03 23:14:02,680 | DEBUG | PIL.TiffImagePlugin | have fileno, calling fileno version of the decoder.
+2026-05-03 23:14:02,682 | DEBUG | PIL.TiffImagePlugin | tag: ImageWidth (256) - type: short (3) - value: b'\xa4\x04'
+2026-05-03 23:14:02,682 | DEBUG | PIL.TiffImagePlugin | tag: ImageLength (257) - type: short (3) - value: b'H\x03'
+2026-05-03 23:14:02,682 | DEBUG | PIL.TiffImagePlugin | tag: BitsPerSample (258) - type: short (3) - value: b'\x08\x00'
+2026-05-03 23:14:02,682 | DEBUG | PIL.TiffImagePlugin | tag: Compression (259) - type: short (3) - value: b'\x05\x00'
+2026-05-03 23:14:02,682 | DEBUG | PIL.TiffImagePlugin | tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:14:02,682 | DEBUG | PIL.TiffImagePlugin | tag: StripOffsets (273) - type: long (4) Tag Location: 44722 - Data Location: 45358 - value: <table: 560 bytes>
+2026-05-03 23:14:02,682 | DEBUG | PIL.TiffImagePlugin | tag: SamplesPerPixel (277) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:14:02,682 | DEBUG | PIL.TiffImagePlugin | tag: RowsPerStrip (278) - type: short (3) - value: b'\x06\x00'
+2026-05-03 23:14:02,682 | DEBUG | PIL.TiffImagePlugin | tag: StripByteCounts (279) - type: long (4) Tag Location: 44758 - Data Location: 44798 - value: <table: 560 bytes>
+2026-05-03 23:14:02,682 | DEBUG | PIL.TiffImagePlugin | tag: PlanarConfiguration (284) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:14:02,682 | DEBUG | PIL.TiffImagePlugin | tag: Predictor (317) - type: short (3) - value: b'\x02\x00'
+2026-05-03 23:14:02,682 | DEBUG | PIL.TiffImagePlugin | tag: SampleFormat (339) - type: short (3) - value: b'\x01\x00'
+2026-05-03 23:14:02,682 | DEBUG | PIL.TiffImagePlugin | Tiffinfo Keys: []
+2026-05-03 23:14:02,683 | DEBUG | PIL.TiffImagePlugin | Saving using libtiff encoder
+2026-05-03 23:14:02,683 | DEBUG | PIL.TiffImagePlugin | Items: [(256, 1188), (257, 840), (258, (8,)), (259, 5), (262, 1), (273, (0, 65340, 130680, 196020, 261360, 326700, 392040, 457380, 522720, 588060, 653400, 718740, 784080, 849420, 914760, 980100)), (278, 55), (279, (65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 17820)), (284, 1)]
+2026-05-03 23:14:02,683 | DEBUG | PIL.TiffImagePlugin | Converted items: [(256, 1188), (257, 840), (258, 8), (259, 5), (262, 1), (277, 1), (278, 55), (284, 1), (317, 2)]
+2026-05-03 23:14:02,687 | DEBUG | pytesseract | ['tesseract', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_6t_7yhsl_input.TIFF', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess_6t_7yhsl', '-c', 'tessedit_create_tsv=1']
+2026-05-03 23:14:02,980 | DEBUG | PIL.TiffImagePlugin | Tiffinfo Keys: []
+2026-05-03 23:14:02,980 | DEBUG | PIL.TiffImagePlugin | Saving using libtiff encoder
+2026-05-03 23:14:02,980 | DEBUG | PIL.TiffImagePlugin | Items: [(256, 1188), (257, 840), (258, (8,)), (259, 5), (262, 1), (273, (0, 65340, 130680, 196020, 261360, 326700, 392040, 457380, 522720, 588060, 653400, 718740, 784080, 849420, 914760, 980100)), (278, 55), (279, (65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 65340, 17820)), (284, 1)]
+2026-05-03 23:14:02,980 | DEBUG | PIL.TiffImagePlugin | Converted items: [(256, 1188), (257, 840), (258, 8), (259, 5), (262, 1), (277, 1), (278, 55), (284, 1), (317, 2)]
+2026-05-03 23:14:02,985 | DEBUG | pytesseract | ['tesseract', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess__fspefxr_input.TIFF', '/var/folders/vy/cp516jcd6sx956mt5l6mqtjr0000gn/T/tess__fspefxr', '-l', 'rus+eng', 'txt']
+2026-05-03 23:14:03,356 | INFO | ocrnlp.progress_ocr | [70cae906] tesseract: data=0.362s  string=0.377s  total=0.738s
+2026-05-03 23:14:03,356 | WARNING | ocrnlp.progress_ocr | [70cae906] low confidence: 46.3
+2026-05-03 23:14:03,356 | INFO | ocrnlp.progress_ocr | extracting fields
+2026-05-03 23:14:03,357 | DEBUG | ocrnlp.progress_ocr |   full_name: Петров Алексей Андреевич
+2026-05-03 23:14:03,357 | DEBUG | ocrnlp.progress_ocr |   own_date: 26.01.2024
+2026-05-03 23:14:03,357 | DEBUG | ocrnlp.progress_ocr |   reg_num: 92-4567
+2026-05-03 23:14:03,357 | DEBUG | ocrnlp.progress_ocr |   doc_num: 876543210987
+2026-05-03 23:14:03,357 | DEBUG | ocrnlp.progress_ocr |   date_from: 10 января 2024 г.
+2026-05-03 23:14:03,357 | DEBUG | ocrnlp.progress_ocr |   date_to: 25 января 2024 г.
+2026-05-03 23:14:03,358 | DEBUG | ocrnlp.progress_ocr |   city_name: Санкт-Петербург
+2026-05-03 23:14:03,358 | DEBUG | ocrnlp.progress_ocr |   new_spec: Анализ данных
+2026-05-03 23:14:03,358 | WARNING | ocrnlp.progress_ocr |   hours_num: NOT FOUND
+2026-05-03 23:14:03,359 | WARNING | ocrnlp.progress_ocr |   organization: NOT FOUND
+2026-05-03 23:14:03,359 | INFO | ocrnlp.progress_ocr | fields parsed: 8/10
+2026-05-03 23:14:03,359 | INFO | ocrnlp.progress_ocr | process_image done
+2026-05-03 23:14:03,359 | INFO | ocrnlp.progress_ocr | scanned text:
+ООО «Компания Пример
+
+УДОСТОВЕРЕНИЕ
+
+© ПОВЫШЕНИИ КВАЛИФИКАЦИИ
+876543210987
+
+"Документ о квалификации
+
+Регистрационный номер
+92-4567
+
+Город
+Санкт-Петербург
+
+Дата выдачи
+26.01.2024
+
+Ныстоящее удостоверение синдетельствует о TOM, что
+
+Петров
+Алексей Андреевич
+
+прошёл(а) повышение квалификации = (на)
+ООО «Компания Пример»
+Учебный центр «Профи»
+с 10 января 2024 г. по 25 января 2024 г.
+
+по лополнительной професснональной программе
+«Анализ данных»
+
+
