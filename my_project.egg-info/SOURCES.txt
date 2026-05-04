@@ -1,0 +1,16 @@
+pyproject.toml
+OpenCV_proj/__init__.py
+OpenCV_proj/cv.py
+my_project.egg-info/PKG-INFO
+my_project.egg-info/SOURCES.txt
+my_project.egg-info/dependency_links.txt
+my_project.egg-info/requires.txt
+my_project.egg-info/top_level.txt
+ocrnlp/WITHOWT_NIKITA_TESTS.py
+ocrnlp/__init__.py
+ocrnlp/log_config.py
+ocrnlp/normalizer.py
+ocrnlp/patterns.py
+ocrnlp/process.py
+ocrnlp/progress_ocr.py
+ocrnlp/rules.py

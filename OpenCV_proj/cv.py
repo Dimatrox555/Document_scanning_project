@@ -5,7 +5,7 @@ from pathlib import Path
 from pdf2image import convert_from_path
 import platform
 import shutil
-
+b = 0
 
 ### создание точек назначения для трансформации (примерно лист а4)
 destination_points = np.array([[0, 0], [297, 0], [0, 210], [297, 210]], dtype=np.float32)
@@ -16,22 +16,16 @@ parent_dir = Path(__file__).parent.absolute()
 def pdf2png(path):
     pdf_path = str(path)
 
-    # try system poppler first (Mac/Linux/Windows PATH)
-    pdfinfo = shutil.which("pdfinfo")
-
-    if pdfinfo:
-        poppler_path = str(Path(pdfinfo).parent)
-    else:
-        poppler_path = None  # pdf2image will try PATH automatically
+    poppler_path = parent_dir / "poppler" / "Library" / "bin"
+    images_dir = parent_dir / "images"
 
     images = convert_from_path(pdf_path, poppler_path=poppler_path)
 
-    images_dir = parent_dir / "images"
-    images_dir.mkdir(parents=True, exist_ok=True)
-
-    for i, image in enumerate(images, start=1):
-        image.save(images_dir / f"{i}.png", "PNG")
-
+    ## переименование картинок в 1234...
+    global b
+    for i, image in enumerate(images, start=b):
+        image.save(images_dir / f"{b}.png", "PNG")
+        b += 1
 
 def read(img_path, json_path, k):
     ## чтение картиночки
@@ -72,20 +66,20 @@ def grayscale(image):
     _, result = cv.threshold(result, 0, 255, cv.THRESH_BINARY+cv.THRESH_OTSU)
     return result
 
-def preprocess(img_path="0.png", k=4):
+def preprocess(img_path="0.png", k=2):
     ### создание путей
     json_dir = parent_dir / "json/json_main.json"
     pdf_dir = parent_dir / "pdfs/0.pdf"
     image_dir = parent_dir / "images"
-    image_dir.mkdir(parents=True, exist_ok=True)
     ## вычисление количества изображений
     num = sum(1 for i in image_dir.iterdir() if i.suffix.lower() == ".png")
 
     ## проверка и переделка пдфов
     if pdf_dir.exists():
-        pdf2png(pdf_dir)
+        for i in range(0, sum(1 for i in (parent_dir/"pdfs").iterdir() if i.suffix.lower() == ".pdf")):
+            pdf_dir = parent_dir / f"pdfs/{i}.pdf"
+            pdf2png(pdf_dir)
 
-    Path(parent_dir / "processed_images").mkdir(parents=True, exist_ok=True)
 
     if num == 0:
         return []
@@ -99,8 +93,9 @@ def preprocess(img_path="0.png", k=4):
 
         ### обработка изображения
         img, points = read(str(img_dir), str(json_dir), k)
-        img = image_transform(img, k, points)
         img = grayscale(img)
+        img = image_transform(img, k, points)
+
 
         ### запись готового результата в файл
         cv.imwrite(output_dir, img)
